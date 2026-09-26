@@ -14,6 +14,7 @@ const BUDGETS = {
   css: 12 * 1024, // 12 KB gzip
   jsHome: 8 * 1024, // 8 KB for home page
   jsOther: 2 * 1024, // 2 KB for other pages
+  searchIndex: 8 * 1024, // 8 KB for search index
   totalFirstLoad: 100 * 1024, // 100 KB uncompressed
 };
 
@@ -111,6 +112,35 @@ function checkBudgets() {
     }
     
     results.push({ type: 'js', path, size: fileSize, budget });
+  }
+  
+  // Check search index
+  const searchIndexFiles = findFiles(join(DIST_DIR, 'data'), '.json').filter(f => f.includes('search-index'));
+  console.log(`\n🔍 Search Index (${searchIndexFiles.length}):`);
+  
+  for (const file of searchIndexFiles) {
+    const fileSize = getFileSize(file);
+    const path = file.replace(DIST_DIR + '/', '');
+    const status = fileSize <= BUDGETS.searchIndex ? '✅' : '❌';
+    const sizeKB = (fileSize / 1024).toFixed(2);
+    const budgetKB = (BUDGETS.searchIndex / 1024).toFixed(0);
+    
+    console.log(`  ${status} ${path}: ${sizeKB} KB (budget: ${budgetKB} KB)`);
+    
+    // Check content hashing
+    const isHashed = /search-index\.[a-z0-9]+\.json/.test(path);
+    if (!isHashed) {
+      console.log(`  ⚠️  Search index is not content-hashed`);
+      failed = true;
+    } else {
+      console.log(`  ✅ Content-hashed filename`);
+    }
+    
+    if (fileSize > BUDGETS.searchIndex) {
+      failed = true;
+    }
+    
+    results.push({ type: 'search-index', path, size: fileSize, budget: BUDGETS.searchIndex });
   }
   
   // Summary

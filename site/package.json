@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build && node scripts/build-search-index.js",
     "preview": "astro preview",
     "test": "vitest run",
     "test:watch": "vitest",
