@@ -1,3 +1,6 @@
+# Negate root .gitignore lib/ pattern for our source code
+!src/lib/
+
 # Dependencies
 node_modules/
 
