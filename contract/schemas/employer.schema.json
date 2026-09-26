@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/employer.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "slug",
+    "name",
+    "sector",
+    "ats_type",
+    "source_url",
+    "active",
+    "tracked_since",
+    "tracked_days",
+    "has_data",
+    "last_run",
+    "last_successful_check_at",
+    "consecutive_failed_runs",
+    "check_status",
+    "total_listings_seen",
+    "metrics",
+    "overview",
+    "listings"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "id": {
+      "$ref": "defs.schema.json#/$defs/slug"
+    },
+    "slug": {
+      "$ref": "defs.schema.json#/$defs/slug"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sector": {
+      "$ref": "defs.schema.json#/$defs/sector"
+    },
+    "ats_type": {
+      "$ref": "defs.schema.json#/$defs/ats_type"
+    },
+    "source_url": {
+      "$ref": "defs.schema.json#/$defs/url"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "tracked_since": {
+      "anyOf": [
+        {
+          "$ref": "defs.schema.json#/$defs/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "tracked_days": {
+      "anyOf": [
+        {
+          "$ref": "defs.schema.json#/$defs/nonneg"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "has_data": {
+      "type": "boolean"
+    },
+    "last_run": {
+      "$ref": "defs.schema.json#/$defs/last_run"
+    },
+    "last_successful_check_at": {
+      "anyOf": [
+        {
+          "$ref": "defs.schema.json#/$defs/datetime"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "consecutive_failed_runs": {
+      "$ref": "defs.schema.json#/$defs/nonneg"
+    },
+    "check_status": {
+      "$ref": "defs.schema.json#/$defs/check_status"
+    },
+    "total_listings_seen": {
+      "$ref": "defs.schema.json#/$defs/nonneg"
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "open_count",
+        "median_days_seen",
+        "share_open_90",
+        "repost_rate",
+        "long_open_possible_from"
+      ],
+      "properties": {
+        "open_count": {
+          "$ref": "defs.schema.json#/$defs/metric"
+        },
+        "median_days_seen": {
+          "$ref": "defs.schema.json#/$defs/metric"
+        },
+        "share_open_90": {
+          "$ref": "defs.schema.json#/$defs/metric"
+        },
+        "repost_rate": {
+          "$ref": "defs.schema.json#/$defs/metric"
+        },
+        "long_open_possible_from": {
+          "anyOf": [
+            {
+              "$ref": "defs.schema.json#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "overview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "eligible",
+        "eligible_from",
+        "reason"
+      ],
+      "properties": {
+        "eligible": {
+          "type": "boolean"
+        },
+        "eligible_from": {
+          "anyOf": [
+            {
+              "$ref": "defs.schema.json#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "tracked_days",
+                "open_listings",
+                "tracked_days_and_open_listings",
+                "no_data",
+                "inactive"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "listings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "open",
+        "recently_closed"
+      ],
+      "properties": {
+        "open": {
+          "type": "array",
+          "items": {
+            "$ref": "defs.schema.json#/$defs/listing_summary"
+          }
+        },
+        "recently_closed": {
+          "type": "array",
+          "items": {
+            "$ref": "defs.schema.json#/$defs/listing_summary"
+          }
+        }
+      }
+    }
+  }
+}

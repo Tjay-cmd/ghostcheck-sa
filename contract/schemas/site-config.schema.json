@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/site-config.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "CORRECTIONS_EMAIL",
+    "FEATURE_OVERVIEW",
+    "SITE_PHASE",
+    "POPIA_REVIEWED"
+  ],
+  "properties": {
+    "CORRECTIONS_EMAIL": {
+      "type": "string",
+      "minLength": 3
+    },
+    "FEATURE_OVERVIEW": {
+      "type": "boolean"
+    },
+    "SITE_PHASE": {
+      "enum": [
+        "soft",
+        "public"
+      ]
+    },
+    "POPIA_REVIEWED": {
+      "type": "boolean"
+    }
+  }
+}

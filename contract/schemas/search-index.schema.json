@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/search-index.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "v",
+    "generated_at",
+    "fields",
+    "employers",
+    "rows"
+  ],
+  "properties": {
+    "v": {
+      "const": 1
+    },
+    "generated_at": {
+      "$ref": "defs.schema.json#/$defs/datetime"
+    },
+    "fields": {
+      "const": [
+        "listing_id",
+        "employer",
+        "title",
+        "location",
+        "first_seen",
+        "days_seen",
+        "age_state",
+        "open_before_tracking",
+        "reposted",
+        "repost_count"
+      ]
+    },
+    "employers": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "prefixItems": [
+          {
+            "$ref": "defs.schema.json#/$defs/slug"
+          },
+          {
+            "type": "string"
+          }
+        ],
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 10,
+        "maxItems": 10,
+        "prefixItems": [
+          {
+            "$ref": "defs.schema.json#/$defs/listing_id"
+          },
+          {
+            "$ref": "defs.schema.json#/$defs/nonneg"
+          },
+          {
+            "$ref": "defs.schema.json#/$defs/title"
+          },
+          {
+            "$ref": "defs.schema.json#/$defs/location"
+          },
+          {
+            "$ref": "defs.schema.json#/$defs/date"
+          },
+          {
+            "$ref": "defs.schema.json#/$defs/nonneg"
+          },
+          {
+            "$ref": "defs.schema.json#/$defs/open_age_state"
+          },
+          {
+            "enum": [
+              0,
+              1
+            ]
+          },
+          {
+            "enum": [
+              0,
+              1
+            ]
+          },
+          {
+            "$ref": "defs.schema.json#/$defs/nonneg"
+          }
+        ]
+      }
+    }
+  }
+}

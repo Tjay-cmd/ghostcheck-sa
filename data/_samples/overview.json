@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "generated_at": "2027-02-03T06:31:00+02:00",
+  "data_date": "2027-02-03",
+  "default_sort": "share_open_90_desc",
+  "employers": [
+    {
+      "slug": "example-bank",
+      "name": "Example Bank",
+      "sector": "Banking & Finance",
+      "tracked_since": "2026-09-28",
+      "open_count": 7,
+      "median_days_seen": {
+        "value": 55,
+        "unit": "days",
+        "numerator": null,
+        "denominator": null,
+        "window_label": null,
+        "window_start": null,
+        "available": true,
+        "unavailable_reason": null,
+        "available_from": null
+      },
+      "share_open_90": {
+        "value": 29,
+        "unit": "percent",
+        "numerator": 2,
+        "denominator": 7,
+        "window_label": null,
+        "window_start": null,
+        "available": true,
+        "unavailable_reason": null,
+        "available_from": null
+      },
+      "repost_rate": {
+        "value": 20,
+        "unit": "percent",
+        "numerator": 2,
+        "denominator": 10,
+        "window_label": "since 28 Sep 2026",
+        "window_start": "2026-09-28",
+        "available": true,
+        "unavailable_reason": null,
+        "available_from": null
+      }
+    }
+  ],
+  "not_yet_eligible": [
+    {
+      "slug": "example-mining",
+      "name": "Example Mining",
+      "sector": "Mining & Energy",
+      "tracked_since": "2027-01-15",
+      "open_count": 5,
+      "eligible_from": "2027-04-16",
+      "reason": "tracked_days"
+    },
+    {
+      "slug": "example-utility-soc",
+      "name": "Example Utility SOC Ltd",
+      "sector": "Government & SOEs",
+      "tracked_since": null,
+      "open_count": null,
+      "eligible_from": null,
+      "reason": "no_data"
+    }
+  ],
+  "earliest_eligible_from": "2027-04-16"
+}

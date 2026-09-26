@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/corrections-log.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "entries"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "date",
+          "employer",
+          "employer_slug",
+          "correction_id",
+          "summary"
+        ],
+        "properties": {
+          "date": {
+            "$ref": "defs.schema.json#/$defs/date"
+          },
+          "employer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "employer_slug": {
+            "$ref": "defs.schema.json#/$defs/slug"
+          },
+          "correction_id": {
+            "type": "string",
+            "pattern": "^corr-\\d{4}-\\d{4}$"
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          }
+        }
+      }
+    }
+  }
+}

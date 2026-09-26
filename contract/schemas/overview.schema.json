@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/overview.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "data_date",
+    "default_sort",
+    "employers",
+    "not_yet_eligible",
+    "earliest_eligible_from"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "generated_at": {
+      "$ref": "defs.schema.json#/$defs/datetime"
+    },
+    "data_date": {
+      "anyOf": [
+        {
+          "$ref": "defs.schema.json#/$defs/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "default_sort": {
+      "const": "share_open_90_desc"
+    },
+    "employers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slug",
+          "name",
+          "sector",
+          "tracked_since",
+          "open_count",
+          "median_days_seen",
+          "share_open_90",
+          "repost_rate"
+        ],
+        "properties": {
+          "slug": {
+            "$ref": "defs.schema.json#/$defs/slug"
+          },
+          "name": {
+            "type": "string"
+          },
+          "sector": {
+            "$ref": "defs.schema.json#/$defs/sector"
+          },
+          "tracked_since": {
+            "$ref": "defs.schema.json#/$defs/date"
+          },
+          "open_count": {
+            "$ref": "defs.schema.json#/$defs/nonneg"
+          },
+          "median_days_seen": {
+            "$ref": "defs.schema.json#/$defs/metric"
+          },
+          "share_open_90": {
+            "$ref": "defs.schema.json#/$defs/metric"
+          },
+          "repost_rate": {
+            "$ref": "defs.schema.json#/$defs/metric"
+          }
+        }
+      }
+    },
+    "not_yet_eligible": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slug",
+          "name",
+          "sector",
+          "tracked_since",
+          "open_count",
+          "eligible_from",
+          "reason"
+        ],
+        "properties": {
+          "slug": {
+            "$ref": "defs.schema.json#/$defs/slug"
+          },
+          "name": {
+            "type": "string"
+          },
+          "sector": {
+            "$ref": "defs.schema.json#/$defs/sector"
+          },
+          "tracked_since": {
+            "anyOf": [
+              {
+                "$ref": "defs.schema.json#/$defs/date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "open_count": {
+            "anyOf": [
+              {
+                "$ref": "defs.schema.json#/$defs/nonneg"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "eligible_from": {
+            "anyOf": [
+              {
+                "$ref": "defs.schema.json#/$defs/date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reason": {
+            "enum": [
+              "tracked_days",
+              "open_listings",
+              "tracked_days_and_open_listings",
+              "no_data"
+            ]
+          }
+        }
+      }
+    },
+    "earliest_eligible_from": {
+      "anyOf": [
+        {
+          "$ref": "defs.schema.json#/$defs/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

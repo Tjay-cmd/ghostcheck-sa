@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/corrections.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "corrections"
+  ],
+  "properties": {
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "received_on",
+          "type",
+          "status",
+          "employer_id",
+          "hides_listing",
+          "resolved_on",
+          "public_summary",
+          "note"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^corr-\\d{4}-\\d{4}$"
+          },
+          "received_on": {
+            "$ref": "defs.schema.json#/$defs/date"
+          },
+          "type": {
+            "enum": [
+              "hide_listing",
+              "suppress_repost_link",
+              "fix_listing_field",
+              "note_only"
+            ]
+          },
+          "reason": {
+            "enum": [
+              "personal_data_claim",
+              "employer_removal_approved",
+              "other"
+            ]
+          },
+          "status": {
+            "enum": [
+              "pending_review",
+              "upheld",
+              "rejected"
+            ]
+          },
+          "employer_id": {
+            "$ref": "defs.schema.json#/$defs/slug"
+          },
+          "listing_id": {
+            "$ref": "defs.schema.json#/$defs/listing_id"
+          },
+          "earlier_listing_id": {
+            "$ref": "defs.schema.json#/$defs/listing_id"
+          },
+          "field": {
+            "enum": [
+              "title",
+              "location"
+            ]
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 200
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "hides_listing": {
+            "type": "boolean"
+          },
+          "resolved_on": {
+            "anyOf": [
+              {
+                "$ref": "defs.schema.json#/$defs/date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "public_summary": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 300
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 300
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "hide_listing"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "listing_id",
+                "reason"
+              ],
+              "properties": {
+                "hides_listing": {
+                  "const": true
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "hides_listing": {
+                  "const": false
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "suppress_repost_link"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "listing_id",
+                "earlier_listing_id"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "fix_listing_field"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "listing_id",
+                "field",
+                "value"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "pending_review"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "resolved_on": {
+                  "type": "null"
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "resolved_on": {
+                  "$ref": "defs.schema.json#/$defs/date"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
