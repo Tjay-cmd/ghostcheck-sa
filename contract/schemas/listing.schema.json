@@ -1,0 +1,329 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/listing.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "listing_id",
+    "employer_id",
+    "employer_slug",
+    "employer_name",
+    "ats_job_id",
+    "title",
+    "normalised_title",
+    "location",
+    "normalised_location",
+    "fingerprint",
+    "url",
+    "apply_domain",
+    "first_seen",
+    "last_seen",
+    "days_seen",
+    "status",
+    "closed_on",
+    "gaps",
+    "age_state",
+    "open_before_tracking",
+    "reposted",
+    "repost_count",
+    "chain_first_seen",
+    "repost_of",
+    "chain",
+    "later_reposts",
+    "correction_ids",
+    "employer",
+    "more_at_employer"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "listing_id": {
+      "$ref": "defs.schema.json#/$defs/listing_id"
+    },
+    "employer_id": {
+      "$ref": "defs.schema.json#/$defs/slug"
+    },
+    "employer_slug": {
+      "$ref": "defs.schema.json#/$defs/slug"
+    },
+    "employer_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ats_job_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "title": {
+      "$ref": "defs.schema.json#/$defs/title"
+    },
+    "normalised_title": {
+      "type": "string",
+      "pattern": "^[^A-Z]*$",
+      "minLength": 1
+    },
+    "location": {
+      "$ref": "defs.schema.json#/$defs/location"
+    },
+    "normalised_location": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "fingerprint": {
+      "type": "string",
+      "minLength": 3
+    },
+    "url": {
+      "$ref": "defs.schema.json#/$defs/url"
+    },
+    "apply_domain": {
+      "type": "string",
+      "pattern": "^[a-z0-9.-]+\\.[a-z]{2,}$"
+    },
+    "first_seen": {
+      "$ref": "defs.schema.json#/$defs/date"
+    },
+    "last_seen": {
+      "$ref": "defs.schema.json#/$defs/date"
+    },
+    "days_seen": {
+      "$ref": "defs.schema.json#/$defs/nonneg"
+    },
+    "status": {
+      "$ref": "defs.schema.json#/$defs/listing_status"
+    },
+    "closed_on": {
+      "anyOf": [
+        {
+          "$ref": "defs.schema.json#/$defs/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "closed_on",
+          "reopened_on"
+        ],
+        "properties": {
+          "closed_on": {
+            "$ref": "defs.schema.json#/$defs/date"
+          },
+          "reopened_on": {
+            "$ref": "defs.schema.json#/$defs/date"
+          }
+        }
+      }
+    },
+    "age_state": {
+      "$ref": "defs.schema.json#/$defs/age_state"
+    },
+    "open_before_tracking": {
+      "type": "boolean"
+    },
+    "reposted": {
+      "type": "boolean"
+    },
+    "repost_count": {
+      "$ref": "defs.schema.json#/$defs/nonneg"
+    },
+    "chain_first_seen": {
+      "anyOf": [
+        {
+          "$ref": "defs.schema.json#/$defs/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "repost_of": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "listing_id",
+            "match_basis",
+            "gap_days"
+          ],
+          "properties": {
+            "listing_id": {
+              "$ref": "defs.schema.json#/$defs/listing_id"
+            },
+            "match_basis": {
+              "const": "same_title_location"
+            },
+            "gap_days": {
+              "$ref": "defs.schema.json#/$defs/nonneg"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "chain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "listing_id",
+          "title",
+          "location",
+          "first_seen",
+          "last_seen",
+          "days_seen",
+          "status",
+          "closed_on",
+          "match_basis",
+          "gap_days"
+        ],
+        "properties": {
+          "listing_id": {
+            "$ref": "defs.schema.json#/$defs/listing_id"
+          },
+          "title": {
+            "$ref": "defs.schema.json#/$defs/title"
+          },
+          "location": {
+            "$ref": "defs.schema.json#/$defs/location"
+          },
+          "first_seen": {
+            "$ref": "defs.schema.json#/$defs/date"
+          },
+          "last_seen": {
+            "$ref": "defs.schema.json#/$defs/date"
+          },
+          "days_seen": {
+            "$ref": "defs.schema.json#/$defs/nonneg"
+          },
+          "status": {
+            "$ref": "defs.schema.json#/$defs/listing_status"
+          },
+          "closed_on": {
+            "anyOf": [
+              {
+                "$ref": "defs.schema.json#/$defs/date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "match_basis": {
+            "const": "same_title_location"
+          },
+          "gap_days": {
+            "$ref": "defs.schema.json#/$defs/nonneg"
+          }
+        }
+      }
+    },
+    "later_reposts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "listing_id",
+          "first_seen",
+          "status"
+        ],
+        "properties": {
+          "listing_id": {
+            "$ref": "defs.schema.json#/$defs/listing_id"
+          },
+          "first_seen": {
+            "$ref": "defs.schema.json#/$defs/date"
+          },
+          "status": {
+            "$ref": "defs.schema.json#/$defs/listing_status"
+          }
+        }
+      }
+    },
+    "correction_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^corr-\\d{4}-\\d{4}$"
+      }
+    },
+    "employer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tracked_since",
+        "active",
+        "last_run",
+        "last_successful_check_at",
+        "consecutive_failed_runs",
+        "check_status",
+        "open_count"
+      ],
+      "properties": {
+        "tracked_since": {
+          "anyOf": [
+            {
+              "$ref": "defs.schema.json#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "active": {
+          "type": "boolean"
+        },
+        "last_run": {
+          "$ref": "defs.schema.json#/$defs/last_run"
+        },
+        "last_successful_check_at": {
+          "anyOf": [
+            {
+              "$ref": "defs.schema.json#/$defs/datetime"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "consecutive_failed_runs": {
+          "$ref": "defs.schema.json#/$defs/nonneg"
+        },
+        "check_status": {
+          "$ref": "defs.schema.json#/$defs/check_status"
+        },
+        "open_count": {
+          "$ref": "defs.schema.json#/$defs/nonneg"
+        }
+      }
+    },
+    "more_at_employer": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "$ref": "defs.schema.json#/$defs/listing_summary"
+      }
+    }
+  }
+}

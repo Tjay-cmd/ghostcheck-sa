@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "date": "2027-01-29",
+      "employer": "Example Bank",
+      "employer_slug": "example-bank",
+      "correction_id": "corr-2027-0002",
+      "summary": "Corrected the location of one Example Bank listing (Branch Consultant): it had an internal branch code attached. Now shown as Polokwane."
+    }
+  ]
+}

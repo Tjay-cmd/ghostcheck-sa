@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "build_time": "2027-02-03T06:31:00+02:00",
+  "data_date": "2027-02-03",
+  "last_successful_run_at": "2027-02-03T06:12:00+02:00",
+  "tracking_started_on": "2026-09-28",
+  "stale": {
+    "stale_after": "2027-02-04T18:12:00+02:00",
+    "stale_at_build": false,
+    "last_run_date": "2027-02-03",
+    "last_run_employers_ok": 1,
+    "last_run_employers_failed": 2
+  },
+  "counts": {
+    "open_listings": 12,
+    "employers_tracked": 3,
+    "employers_with_data": 2,
+    "fresh": 4,
+    "seen": 6,
+    "long_open": 2,
+    "reposted_open": 1,
+    "open_before_tracking_open": 4,
+    "closed_listings": 4,
+    "listings_total": 16
+  },
+  "earliest_long_open_possible_on": "2026-12-28"
+}

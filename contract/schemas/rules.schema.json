@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/rules.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "FRESH_MAX_DAYS",
+    "LONG_OPEN_MIN_DAYS",
+    "CLOSE_AFTER_MISSED_SUCCESSFUL_CHECKS",
+    "REPOST_WINDOW_DAYS",
+    "REPOST_RATE_WINDOW_DAYS",
+    "EMPLOYER_METRICS_MIN_TRACKED_DAYS",
+    "EMPLOYER_METRICS_MIN_LISTINGS_SEEN",
+    "OVERVIEW_MIN_TRACKED_DAYS",
+    "OVERVIEW_MIN_OPEN_LISTINGS",
+    "STALE_BUILD_HOURS",
+    "FAILED_STREAK_WARNING_RUNS",
+    "RECENTLY_CLOSED_WINDOW_DAYS"
+  ],
+  "properties": {
+    "FRESH_MAX_DAYS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "LONG_OPEN_MIN_DAYS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "CLOSE_AFTER_MISSED_SUCCESSFUL_CHECKS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "REPOST_WINDOW_DAYS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "REPOST_RATE_WINDOW_DAYS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "EMPLOYER_METRICS_MIN_TRACKED_DAYS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "EMPLOYER_METRICS_MIN_LISTINGS_SEEN": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "OVERVIEW_MIN_TRACKED_DAYS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "OVERVIEW_MIN_OPEN_LISTINGS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "STALE_BUILD_HOURS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "FAILED_STREAK_WARNING_RUNS": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "RECENTLY_CLOSED_WINDOW_DAYS": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

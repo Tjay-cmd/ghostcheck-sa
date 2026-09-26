@@ -1,0 +1,131 @@
+{
+  "defaults": {
+    "delay_seconds": 1.5,
+    "max_pages": 40,
+    "timeout_seconds": 30
+  },
+  "employers": [
+    {
+      "id": "absa",
+      "name": "Absa Group",
+      "sector": "Banking & Finance",
+      "ats_type": "workday",
+      "tenant": "absa",
+      "host": "absa.wd3.myworkdayjobs.com",
+      "site": "ABSAcareersite",
+      "source_url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite",
+      "slug": "absa",
+      "active": true,
+      "added_on": "2026-09-26"
+    },
+    {
+      "id": "discovery",
+      "name": "Discovery",
+      "sector": "Banking & Finance",
+      "ats_type": "successfactors",
+      "base_url": "https://careers.discovery.co.za",
+      "source_url": "https://careers.discovery.co.za/",
+      "slug": "discovery",
+      "active": true,
+      "added_on": "2026-09-26"
+    },
+    {
+      "id": "firstrand",
+      "name": "FirstRand (FNB, RMB, WesBank)",
+      "sector": "Banking & Finance",
+      "ats_type": "workday",
+      "tenant": "firstrand",
+      "host": "firstrand.wd3.myworkdayjobs.com",
+      "site": "FRB",
+      "source_url": "https://firstrand.wd3.myworkdayjobs.com/FRB",
+      "slug": "firstrand",
+      "active": true,
+      "added_on": "2026-09-26"
+    },
+    {
+      "id": "goldfields",
+      "name": "Gold Fields",
+      "sector": "Mining & Energy",
+      "ats_type": "successfactors",
+      "base_url": "https://careers.goldfields.com",
+      "source_url": "https://careers.goldfields.com/",
+      "slug": "goldfields",
+      "active": true,
+      "added_on": "2026-09-26"
+    },
+    {
+      "id": "nedbank",
+      "name": "Nedbank",
+      "sector": "Banking & Finance",
+      "ats_type": "successfactors",
+      "base_url": "https://jobs.nedbank.co.za",
+      "source_url": "https://jobs.nedbank.co.za/",
+      "slug": "nedbank",
+      "active": true,
+      "added_on": "2026-09-26"
+    },
+    {
+      "id": "oldmutual",
+      "name": "Old Mutual",
+      "sector": "Banking & Finance",
+      "ats_type": "workday",
+      "tenant": "oldmutual",
+      "host": "oldmutual.wd3.myworkdayjobs.com",
+      "site": "Old_Mutual_Careers",
+      "source_url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers",
+      "slug": "oldmutual",
+      "active": true,
+      "added_on": "2026-09-26"
+    },
+    {
+      "id": "picknpay",
+      "name": "Pick n Pay",
+      "sector": "Retail & FMCG",
+      "ats_type": "workday",
+      "tenant": "picknpay",
+      "host": "picknpay.wd3.myworkdayjobs.com",
+      "site": "PNP_Careers",
+      "source_url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers",
+      "slug": "picknpay",
+      "active": true,
+      "added_on": "2026-09-26"
+    },
+    {
+      "id": "sasol",
+      "name": "Sasol",
+      "sector": "Mining & Energy",
+      "ats_type": "successfactors",
+      "base_url": "https://jobs.sasol.com",
+      "sf_company": "sasolchemP3",
+      "source_url": "https://jobs.sasol.com/",
+      "slug": "sasol",
+      "active": true,
+      "added_on": "2026-09-26"
+    },
+    {
+      "id": "telkom",
+      "name": "Telkom",
+      "sector": "Telecoms & Tech",
+      "ats_type": "successfactors",
+      "base_url": "https://jobs.telkom.co.za",
+      "sf_company": "telkomsaltP",
+      "source_url": "https://jobs.telkom.co.za/",
+      "slug": "telkom",
+      "active": true,
+      "added_on": "2026-09-26"
+    },
+    {
+      "id": "tigerbrands",
+      "name": "Tiger Brands",
+      "sector": "Retail & FMCG",
+      "ats_type": "workday",
+      "tenant": "tigerbrands",
+      "host": "tigerbrands.wd103.myworkdayjobs.com",
+      "site": "TigerBrands",
+      "source_url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands",
+      "slug": "tigerbrands",
+      "active": true,
+      "added_on": "2026-09-26"
+    }
+  ]
+}

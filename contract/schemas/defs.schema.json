@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/defs.schema.json",
+  "$defs": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$",
+      "description": "SAST calendar date YYYY-MM-DD"
+    },
+    "datetime": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\+02:00$",
+      "description": "ISO 8601 with the SAST offset +02:00"
+    },
+    "time": {
+      "type": "string",
+      "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$",
+      "description": "SAST wall-clock HH:MM"
+    },
+    "listing_id": {
+      "type": "string",
+      "pattern": "^[0-9a-hjkmnp-tv-z]{10}$",
+      "description": "10-char lowercase Crockford base32, stable forever, never reused"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 60
+    },
+    "sector": {
+      "enum": [
+        "Banking & Finance",
+        "Mining & Energy",
+        "Retail & FMCG",
+        "Telecoms & Tech",
+        "Consulting & Professional Services",
+        "Manufacturing & Industrial",
+        "Government & SOEs",
+        "Healthcare & Pharma",
+        "Other"
+      ]
+    },
+    "ats_type": {
+      "enum": [
+        "workday",
+        "successfactors",
+        "other"
+      ]
+    },
+    "run_status": {
+      "enum": [
+        "ok",
+        "blocked",
+        "error"
+      ]
+    },
+    "check_status": {
+      "enum": [
+        "ok",
+        "last_run_failed",
+        "failed_streak",
+        "no_data"
+      ]
+    },
+    "age_state": {
+      "enum": [
+        "fresh",
+        "seen",
+        "long_open",
+        "closed"
+      ]
+    },
+    "open_age_state": {
+      "enum": [
+        "fresh",
+        "seen",
+        "long_open"
+      ]
+    },
+    "listing_status": {
+      "enum": [
+        "open",
+        "closed"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://",
+      "maxLength": 500
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "location": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "nonneg": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "last_run": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "date",
+            "time",
+            "status"
+          ],
+          "properties": {
+            "date": {
+              "$ref": "defs.schema.json#/$defs/date"
+            },
+            "time": {
+              "$ref": "defs.schema.json#/$defs/time"
+            },
+            "status": {
+              "$ref": "defs.schema.json#/$defs/run_status"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "unit",
+        "numerator",
+        "denominator",
+        "window_label",
+        "window_start",
+        "available",
+        "unavailable_reason",
+        "available_from"
+      ],
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "enum": [
+            "count",
+            "days",
+            "percent"
+          ]
+        },
+        "numerator": {
+          "anyOf": [
+            {
+              "$ref": "defs.schema.json#/$defs/nonneg"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "denominator": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "window_label": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(last \\d+ days|since \\d{1,2} [A-Z][a-z]{2} \\d{4})$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "window_start": {
+          "anyOf": [
+            {
+              "$ref": "defs.schema.json#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "available": {
+          "type": "boolean"
+        },
+        "unavailable_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "gate",
+                "no_open",
+                "no_data"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "available_from": {
+          "anyOf": [
+            {
+              "$ref": "defs.schema.json#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "listing_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "listing_id",
+        "employer_slug",
+        "employer_name",
+        "title",
+        "location",
+        "first_seen",
+        "last_seen",
+        "days_seen",
+        "status",
+        "closed_on",
+        "age_state",
+        "open_before_tracking",
+        "reposted",
+        "repost_count",
+        "chain_first_seen"
+      ],
+      "properties": {
+        "listing_id": {
+          "$ref": "defs.schema.json#/$defs/listing_id"
+        },
+        "employer_slug": {
+          "$ref": "defs.schema.json#/$defs/slug"
+        },
+        "employer_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "$ref": "defs.schema.json#/$defs/title"
+        },
+        "location": {
+          "$ref": "defs.schema.json#/$defs/location"
+        },
+        "first_seen": {
+          "$ref": "defs.schema.json#/$defs/date"
+        },
+        "last_seen": {
+          "$ref": "defs.schema.json#/$defs/date"
+        },
+        "days_seen": {
+          "$ref": "defs.schema.json#/$defs/nonneg"
+        },
+        "status": {
+          "$ref": "defs.schema.json#/$defs/listing_status"
+        },
+        "closed_on": {
+          "anyOf": [
+            {
+              "$ref": "defs.schema.json#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "age_state": {
+          "$ref": "defs.schema.json#/$defs/age_state"
+        },
+        "open_before_tracking": {
+          "type": "boolean"
+        },
+        "reposted": {
+          "type": "boolean"
+        },
+        "repost_count": {
+          "$ref": "defs.schema.json#/$defs/nonneg"
+        },
+        "chain_first_seen": {
+          "anyOf": [
+            {
+              "$ref": "defs.schema.json#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "example-utility-soc",
+  "slug": "example-utility-soc",
+  "name": "Example Utility SOC Ltd",
+  "sector": "Government & SOEs",
+  "ats_type": "other",
+  "source_url": "https://www.exampleutility.example/careers",
+  "active": true,
+  "tracked_since": null,
+  "tracked_days": null,
+  "has_data": false,
+  "last_run": {
+    "date": "2027-02-03",
+    "time": "06:20",
+    "status": "error"
+  },
+  "last_successful_check_at": null,
+  "consecutive_failed_runs": 9,
+  "check_status": "no_data",
+  "total_listings_seen": 0,
+  "metrics": {
+    "open_count": {
+      "value": null,
+      "unit": "count",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "no_data",
+      "available_from": null
+    },
+    "median_days_seen": {
+      "value": null,
+      "unit": "days",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "no_data",
+      "available_from": null
+    },
+    "share_open_90": {
+      "value": null,
+      "unit": "percent",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "no_data",
+      "available_from": null
+    },
+    "repost_rate": {
+      "value": null,
+      "unit": "percent",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "no_data",
+      "available_from": null
+    },
+    "long_open_possible_from": null
+  },
+  "overview": {
+    "eligible": false,
+    "eligible_from": null,
+    "reason": "no_data"
+  },
+  "listings": {
+    "open": [],
+    "recently_closed": []
+  }
+}

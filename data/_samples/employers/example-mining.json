@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "id": "example-mining",
+  "slug": "example-mining",
+  "name": "Example Mining",
+  "sector": "Mining & Energy",
+  "ats_type": "successfactors",
+  "source_url": "https://careers.examplemining.example/",
+  "active": true,
+  "tracked_since": "2027-01-15",
+  "tracked_days": 19,
+  "has_data": true,
+  "last_run": {
+    "date": "2027-02-03",
+    "time": "06:14",
+    "status": "blocked"
+  },
+  "last_successful_check_at": "2027-02-01T06:14:00+02:00",
+  "consecutive_failed_runs": 2,
+  "check_status": "last_run_failed",
+  "total_listings_seen": 6,
+  "metrics": {
+    "open_count": {
+      "value": 5,
+      "unit": "count",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": true,
+      "unavailable_reason": null,
+      "available_from": null
+    },
+    "median_days_seen": {
+      "value": null,
+      "unit": "days",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "gate",
+      "available_from": "2027-02-14"
+    },
+    "share_open_90": {
+      "value": null,
+      "unit": "percent",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "gate",
+      "available_from": "2027-02-14"
+    },
+    "repost_rate": {
+      "value": null,
+      "unit": "percent",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "gate",
+      "available_from": "2027-02-14"
+    },
+    "long_open_possible_from": "2027-04-16"
+  },
+  "overview": {
+    "eligible": false,
+    "eligible_from": "2027-04-16",
+    "reason": "tracked_days"
+  },
+  "listings": {
+    "open": [
+      {
+        "listing_id": "0z50n3w8qe",
+        "employer_slug": "example-mining",
+        "employer_name": "Example Mining",
+        "title": "Geologist in Training",
+        "location": "Kathu",
+        "first_seen": "2027-01-29",
+        "last_seen": "2027-02-01",
+        "days_seen": 3,
+        "status": "open",
+        "closed_on": null,
+        "age_state": "fresh",
+        "open_before_tracking": false,
+        "reposted": false,
+        "repost_count": 0,
+        "chain_first_seen": null
+      },
+      {
+        "listing_id": "a6srfnkfbf",
+        "employer_slug": "example-mining",
+        "employer_name": "Example Mining",
+        "title": "Mine Surveyor in Training",
+        "location": "Rustenburg",
+        "first_seen": "2027-01-26",
+        "last_seen": "2027-02-01",
+        "days_seen": 6,
+        "status": "open",
+        "closed_on": null,
+        "age_state": "fresh",
+        "open_before_tracking": false,
+        "reposted": false,
+        "repost_count": 0,
+        "chain_first_seen": null
+      },
+      {
+        "listing_id": "zgtz0r4r7k",
+        "employer_slug": "example-mining",
+        "employer_name": "Example Mining",
+        "title": "Environmental Officer",
+        "location": "Kathu",
+        "first_seen": "2027-01-15",
+        "last_seen": "2027-02-01",
+        "days_seen": 17,
+        "status": "open",
+        "closed_on": null,
+        "age_state": "seen",
+        "open_before_tracking": true,
+        "reposted": false,
+        "repost_count": 0,
+        "chain_first_seen": null
+      },
+      {
+        "listing_id": "jke8eh144t",
+        "employer_slug": "example-mining",
+        "employer_name": "Example Mining",
+        "title": "Learner Official Artisan",
+        "location": "Rustenburg",
+        "first_seen": "2027-01-15",
+        "last_seen": "2027-02-01",
+        "days_seen": 17,
+        "status": "open",
+        "closed_on": null,
+        "age_state": "seen",
+        "open_before_tracking": true,
+        "reposted": false,
+        "repost_count": 0,
+        "chain_first_seen": null
+      },
+      {
+        "listing_id": "7vwnt8qsf8",
+        "employer_slug": "example-mining",
+        "employer_name": "Example Mining",
+        "title": "Graduate Trainee: Mining Engineering",
+        "location": "Rustenburg",
+        "first_seen": "2027-01-15",
+        "last_seen": "2027-02-01",
+        "days_seen": 17,
+        "status": "open",
+        "closed_on": null,
+        "age_state": "seen",
+        "open_before_tracking": true,
+        "reposted": false,
+        "repost_count": 0,
+        "chain_first_seen": null
+      }
+    ],
+    "recently_closed": [
+      {
+        "listing_id": "6mvf56mjw1",
+        "employer_slug": "example-mining",
+        "employer_name": "Example Mining",
+        "title": "Shift Supervisor",
+        "location": "Rustenburg",
+        "first_seen": "2027-01-15",
+        "last_seen": "2027-01-22",
+        "days_seen": 7,
+        "status": "closed",
+        "closed_on": "2027-01-24",
+        "age_state": "closed",
+        "open_before_tracking": true,
+        "reposted": false,
+        "repost_count": 0,
+        "chain_first_seen": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostcheck-sa.invalid/schemas/employers-registry.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "defaults",
+    "employers"
+  ],
+  "properties": {
+    "defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "delay_seconds",
+        "max_pages",
+        "timeout_seconds"
+      ],
+      "properties": {
+        "delay_seconds": {
+          "type": "number"
+        },
+        "max_pages": {
+          "type": "integer"
+        },
+        "timeout_seconds": {
+          "type": "number"
+        }
+      }
+    },
+    "employers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "slug",
+          "name",
+          "sector",
+          "ats_type",
+          "source_url",
+          "active",
+          "added_on"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "defs.schema.json#/$defs/slug"
+          },
+          "slug": {
+            "$ref": "defs.schema.json#/$defs/slug"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sector": {
+            "$ref": "defs.schema.json#/$defs/sector"
+          },
+          "ats_type": {
+            "$ref": "defs.schema.json#/$defs/ats_type"
+          },
+          "source_url": {
+            "$ref": "defs.schema.json#/$defs/url"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "added_on": {
+            "$ref": "defs.schema.json#/$defs/date"
+          },
+          "tenant": {
+            "type": "string"
+          },
+          "host": {
+            "type": "string"
+          },
+          "site": {
+            "type": "string"
+          },
+          "base_url": {
+            "$ref": "defs.schema.json#/$defs/url"
+          },
+          "sf_company": {
+            "type": "string"
+          },
+          "overrides": {
+            "type": "object"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "ats_type": {
+                  "const": "workday"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "tenant",
+                "host",
+                "site"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "ats_type": {
+                  "const": "successfactors"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "base_url"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

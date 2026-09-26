@@ -1,0 +1,58 @@
+{
+  "corrections": [
+    {
+      "id": "corr-2027-0001",
+      "received_on": "2027-01-22",
+      "type": "fix_listing_field",
+      "status": "rejected",
+      "employer_id": "example-bank",
+      "listing_id": "7md14shwt8",
+      "field": "location",
+      "value": "Sandton",
+      "hides_listing": false,
+      "resolved_on": "2027-01-26",
+      "public_summary": null,
+      "note": "Posting on the careers page still says Johannesburg; no change made."
+    },
+    {
+      "id": "corr-2027-0002",
+      "received_on": "2027-01-28",
+      "type": "fix_listing_field",
+      "status": "upheld",
+      "employer_id": "example-bank",
+      "listing_id": "1q5hkhev1v",
+      "field": "location",
+      "value": "Polokwane",
+      "hides_listing": false,
+      "resolved_on": "2027-01-29",
+      "public_summary": "Corrected the location of one Example Bank listing (Branch Consultant): it had an internal branch code attached. Now shown as Polokwane.",
+      "note": "Employer confirmed branch code is internal."
+    },
+    {
+      "id": "corr-2027-0003",
+      "received_on": "2027-02-01",
+      "type": "suppress_repost_link",
+      "status": "pending_review",
+      "employer_id": "example-bank",
+      "listing_id": "ha7g2x9rad",
+      "earlier_listing_id": "bmqvzc53r8",
+      "hides_listing": false,
+      "resolved_on": null,
+      "public_summary": null,
+      "note": "Employer says this is a new intake, not a repost. Link stays visible during review."
+    },
+    {
+      "id": "corr-2027-0004",
+      "received_on": "2027-02-02",
+      "type": "hide_listing",
+      "reason": "personal_data_claim",
+      "status": "pending_review",
+      "employer_id": "example-bank",
+      "listing_id": "wqrybqztf9",
+      "hides_listing": true,
+      "resolved_on": null,
+      "public_summary": null,
+      "note": "Report says the title contains a staff member's name. Hidden immediately pending review."
+    }
+  ]
+}

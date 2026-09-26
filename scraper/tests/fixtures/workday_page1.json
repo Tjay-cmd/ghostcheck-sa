@@ -1,0 +1,35 @@
+{
+ "total": 52,
+ "jobPostings": [
+  {
+   "title": "Manager Deli",
+   "externalPath": "/job/Vangate-Mall---Western-Cape/Manager-Deli_JR106017",
+   "locationsText": "Vangate Mall - Western Cape"
+  },
+  {
+   "title": "Trainee Manager Stores",
+   "externalPath": "/job/Langehoven-Park---Mangaung/Trainee-Manager-Stores_JR106014",
+   "locationsText": "Langehoven Park - Mangaung"
+  },
+  {
+   "title": "Occ.Health Practitioner",
+   "externalPath": "/job/Free-State/OccHealth-Practitioner_JR104660-2",
+   "locationsText": "Free State"
+  },
+  {
+   "title": "  Store   Manager\n Trainee ",
+   "externalPath": "/job/Kensington---Gauteng/Store-Manager-Trainee_JR105880-2",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR105880-2"
+   ]
+  },
+  {
+   "title": "No location example",
+   "externalPath": "/job/X/No-location-example_R53199"
+  }
+ ],
+ "facets": [],
+ "userAuthenticated": false
+}
