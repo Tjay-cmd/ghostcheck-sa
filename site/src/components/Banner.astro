@@ -1,0 +1,87 @@
+---
+/**
+ * Banner components for info, warning, and error messages
+ */
+
+import Icon from './Icon.astro';
+
+interface Props {
+  type?: 'info' | 'warning' | 'error';
+  icon?: string;
+  class?: string;
+}
+
+const {
+  type = 'info',
+  icon,
+  class: className = '',
+} = Astro.props;
+
+const iconMap = {
+  info: 'info',
+  warning: 'triangle-alert',
+  error: 'triangle-alert',
+};
+
+const defaultIcon = icon || iconMap[type];
+---
+
+<div class:list={['banner', `banner-${type}`, className]} role={type === 'error' ? 'alert' : 'status'}>
+  <div class="banner-icon">
+    <Icon name={defaultIcon} size={20} />
+  </div>
+  <div class="banner-content">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .banner {
+    display: flex;
+    gap: var(--s-3);
+    padding: var(--s-4);
+    border-radius: 8px;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+  }
+
+  .banner-icon {
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+
+  .banner-content {
+    flex: 1;
+  }
+
+  .banner-content p {
+    margin-bottom: var(--s-2);
+  }
+
+  .banner-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .banner-content a {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  /* Info banner */
+  .banner-info {
+    color: var(--banner-info-text);
+    background-color: var(--banner-info-bg);
+  }
+
+  /* Warning banner */
+  .banner-warning {
+    color: var(--banner-warning-text);
+    background-color: var(--banner-warning-bg);
+  }
+
+  /* Error banner */
+  .banner-error {
+    color: var(--banner-error-text);
+    background-color: var(--banner-error-bg);
+  }
+</style>

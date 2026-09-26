@@ -1,0 +1,25 @@
+{
+  "name": "ghostcheck-sa-site",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "astro check",
+    "budget": "node scripts/check-budget.js"
+  },
+  "dependencies": {
+    "astro": "^5.2.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "@vitest/ui": "^2.1.0",
+    "happy-dom": "^16.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,0 +1,157 @@
+---
+/**
+ * Listing card component - used in search results and lists
+ */
+
+import AgeBadge from './AgeBadge.astro';
+import RepostBadge from './RepostBadge.astro';
+import { formatDate } from '@/lib/format';
+import type { ListingSummary } from '@/lib/data';
+
+interface Props {
+  listing: ListingSummary;
+  showEmployer?: boolean;
+  class?: string;
+}
+
+const {
+  listing,
+  showEmployer = true,
+  class: className = '',
+} = Astro.props;
+
+const url = `/employers/${listing.employer_slug}/${listing.listing_id}/`;
+---
+
+<a href={url} class:list={['listing-card', className]}>
+  <div class="listing-card-content">
+    <h3 class="listing-title">{listing.title}</h3>
+    
+    {showEmployer && (
+      <div class="listing-meta">
+        <span class="listing-employer">{listing.employer_name}</span>
+        {listing.location && (
+          <>
+            <span class="meta-separator">·</span>
+            <span class="listing-location">{listing.location}</span>
+          </>
+        )}
+      </div>
+    )}
+    
+    {!showEmployer && listing.location && (
+      <div class="listing-meta">
+        <span class="listing-location">{listing.location}</span>
+      </div>
+    )}
+    
+    <div class="listing-badges">
+      <AgeBadge
+        ageState={listing.age_state}
+        daysSeen={listing.days_seen}
+        openBeforeTracking={listing.open_before_tracking}
+        trackedSince={listing.open_before_tracking ? listing.first_seen : null}
+        lastSeen={listing.last_seen}
+        variant="compact"
+      />
+      
+      {listing.reposted && listing.repost_count > 0 && (
+        <RepostBadge
+          repostCount={listing.repost_count}
+          chainFirstSeen={listing.chain_first_seen}
+          variant="compact"
+        />
+      )}
+    </div>
+    
+    <div class="listing-footer">
+      <time datetime={listing.first_seen} class="listing-first-seen">
+        {listing.open_before_tracking
+          ? 'Already listed when we started tracking this employer'
+          : `First seen ${formatDate(listing.first_seen)}`}
+      </time>
+    </div>
+  </div>
+  
+  <div class="listing-chevron" aria-hidden="true">›</div>
+</a>
+
+<style>
+  .listing-card {
+    display: flex;
+    align-items: center;
+    gap: var(--s-4);
+    padding: var(--s-4);
+    background: var(--c-bg);
+    border: 1px solid var(--c-border-subtle);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--c-text);
+    transition: border-color 0.2s;
+    min-height: 44px;
+  }
+
+  .listing-card:hover {
+    border-color: var(--c-border);
+  }
+
+  .listing-card:focus-visible {
+    outline: 2px solid var(--c-primary);
+    outline-offset: 2px;
+    border-radius: 8px;
+  }
+
+  .listing-card-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .listing-title {
+    font-size: var(--fs-base);
+    font-weight: 600;
+    line-height: var(--lh-base);
+    margin-bottom: var(--s-1);
+    color: var(--c-text);
+  }
+
+  .listing-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-2);
+  }
+
+  .meta-separator {
+    color: var(--c-border);
+  }
+
+  .listing-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    margin-bottom: var(--s-2);
+  }
+
+  .listing-footer {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+  }
+
+  .listing-chevron {
+    flex-shrink: 0;
+    font-size: 24px;
+    color: var(--c-text-muted);
+    user-select: none;
+  }
+
+  @media (min-width: 640px) {
+    .listing-title {
+      font-size: var(--fs-lg);
+      line-height: var(--lh-lg);
+    }
+  }
+</style>

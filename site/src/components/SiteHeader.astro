@@ -1,0 +1,183 @@
+---
+/**
+ * Site Header - wordmark, LastCheckedChip, navigation
+ */
+
+import LastCheckedChip from './LastCheckedChip.astro';
+import { getSiteConfig } from '@/lib/rules';
+
+const config = getSiteConfig();
+const showOverview = config.FEATURE_OVERVIEW;
+---
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <div class="header-left">
+        <a href="/" class="wordmark">
+          <span class="ghost-mark" aria-hidden="true">👻</span>
+          <span class="wordmark-text">GhostCheck SA</span>
+        </a>
+        <LastCheckedChip />
+      </div>
+      
+      <nav class="header-nav" aria-label="Main navigation">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list">
+          <span class="sr-only">Menu</span>
+          <span class="menu-icon">☰</span>
+        </button>
+        
+        <ul id="menu-list" class="menu-list">
+          <li><a href="/">Search</a></li>
+          <li><a href="/employers/">Employers</a></li>
+          {showOverview && <li><a href="/overview/">Overview</a></li>}
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu-list');
+  
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', (!expanded).toString());
+      menu.classList.toggle('menu-open');
+    });
+  }
+</script>
+
+<style>
+  .site-header {
+    background: var(--c-bg);
+    border-bottom: 1px solid var(--c-border-subtle);
+    padding: var(--s-4) 0;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-4);
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+  }
+
+  .wordmark {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-lg);
+    line-height: var(--lh-lg);
+    font-weight: 700;
+    color: var(--c-text);
+    text-decoration: none;
+  }
+
+  .wordmark:hover {
+    opacity: 0.8;
+  }
+
+  .ghost-mark {
+    font-size: 20px;
+  }
+
+  .header-nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: none;
+    border: 1px solid var(--c-border);
+    border-radius: 4px;
+    color: var(--c-text);
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover {
+    background: var(--c-surface);
+  }
+
+  .menu-icon {
+    font-size: 20px;
+  }
+
+  .menu-list {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + var(--s-2));
+    background: var(--c-bg);
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: var(--s-2);
+    min-width: 160px;
+    z-index: 100;
+  }
+
+  .menu-list.menu-open {
+    display: block;
+  }
+
+  .menu-list li {
+    margin: 0;
+  }
+
+  .menu-list a {
+    display: block;
+    padding: var(--s-2) var(--s-3);
+    color: var(--c-text);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-list a:hover {
+    background: var(--c-surface);
+  }
+
+  @media (min-width: 1024px) {
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-list {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      gap: var(--s-1);
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      min-width: auto;
+    }
+
+    .menu-list a {
+      padding: var(--s-2) var(--s-3);
+      min-height: auto;
+    }
+  }
+</style>
