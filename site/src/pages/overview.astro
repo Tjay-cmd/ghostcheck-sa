@@ -64,7 +64,7 @@ const ruleMessage = getOverviewRuleMessage();
               </thead>
               <tbody>
                 {eligible.map((employer) => (
-                  <tr key={employer.slug}>
+                  <tr>
                     <td>
                       <a href={`/employers/${employer.slug}/`} class="employer-link">
                         {employer.name}
@@ -106,7 +106,7 @@ const ruleMessage = getOverviewRuleMessage();
               <p><strong>Not yet included ({notYetEligible.length}):</strong></p>
               <ul>
                 {notYetEligible.map((employer) => (
-                  <li key={employer.slug}>
+                  <li>
                     {employer.name} — eligible from {formatDate(employer.eligible_from)}
                   </li>
                 ))}

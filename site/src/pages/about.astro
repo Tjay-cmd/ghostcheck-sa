@@ -128,7 +128,7 @@ const mailtoLink = `mailto:${config.CORRECTIONS_EMAIL}?subject=${encodeURICompon
   ) : (
     <div class="corrections-list">
       {corrections.corrections.map((correction) => (
-        <div class="correction-item" key={correction.id}>
+        <div class="correction-item">
           <div class="correction-date">{formatDate(correction.date)}</div>
           <div class="correction-employer">{correction.employer}</div>
           <div class="correction-summary">{correction.summary}</div>

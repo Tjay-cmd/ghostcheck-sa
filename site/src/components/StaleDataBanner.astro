@@ -11,10 +11,10 @@ const site = getSiteData();
 const stale = site.stale;
 ---
 
-{stale.stale_at_build && stale.last_successful_run_at && (
+{stale.stale_at_build && stale.last_run_date && (
   <Banner type="warning" class="stale-banner">
     <p>
-      <strong>Our daily check hasn't run since {formatDateTime(stale.last_successful_run_at)}.</strong>{' '}
+      <strong>Our daily check hasn't run since {formatDateTime(stale.last_run_date)}.</strong>{' '}
       Numbers may be out of date.
     </p>
   </Banner>

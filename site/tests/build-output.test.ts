@@ -157,17 +157,20 @@ describe('External origin restrictions', () => {
     for (const file of htmlFiles) {
       const content = readFileSync(file, 'utf-8');
       
-      // Find all external URLs (http:// or https://)
-      const externalUrls = content.match(/https?:\/\/[^"'\s]+/g) || [];
+      // Find all external URLs (http:// or https://), excluding SVG namespaces
+      const externalUrls = (content.match(/https?:\/\/[^"'\s]+/g) || [])
+        .filter(url => !url.includes('w3.org'));
       
       for (const url of externalUrls) {
         const isAllowed = allowedOrigins.some(origin => url.includes(origin));
-        const isDataUrl = url.startsWith('http') && url.includes('://example') || url.includes('myworkdayjobs.com');
         
-        if (!isAllowed && !isDataUrl) {
-          // This should only be employer career site links (which are in data)
-          expect(isDataUrl).toBe(true);
+        // Allow data URLs from employer career sites
+        const isEmployerUrl = url.includes('myworkdayjobs.com') || url.includes('example');
+        
+        if (!isAllowed && !isEmployerUrl) {
+          console.log(`Unexpected external URL: ${url} in ${file}`);
         }
+        expect(isAllowed || isEmployerUrl).toBe(true);
       }
     }
   });

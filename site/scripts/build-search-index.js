@@ -3,13 +3,13 @@
  * Generates search-index.{hash}.json in dist/data/
  */
 
-import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
-import { getAllListings, getEmployers } from '../src/lib/data.js';
 
 const DIST_DIR = './dist';
 const DATA_DIR = join(DIST_DIR, 'data');
+const SOURCE_DATA_DIR = existsSync('../data/listings') ? '../data' : '../data/_samples';
 
 function buildSearchIndex() {
   console.log('🔍 Building search index...');
@@ -19,20 +19,35 @@ function buildSearchIndex() {
     mkdirSync(DATA_DIR, { recursive: true });
   }
   
-  const listings = getAllListings();
-  const employers = getEmployers();
+  // Load listings
+  const listingsDir = join(SOURCE_DATA_DIR, 'listings');
+  const listingFiles = readdirSync(listingsDir).filter(f => f.endsWith('.json'));
+  const listings = listingFiles.map(file => {
+    const content = readFileSync(join(listingsDir, file), 'utf-8');
+    return JSON.parse(content);
+  });
+  
+  // Load employers for name lookup
+  const employersDir = join(SOURCE_DATA_DIR, 'employers');
+  const employerFiles = readdirSync(employersDir).filter(f => f.endsWith('.json'));
+  const employers = employerFiles.map(file => {
+    const content = readFileSync(join(employersDir, file), 'utf-8');
+    return JSON.parse(content);
+  });
   
   // Create employer lookup
   const employerMap = new Map();
   employers.forEach(emp => {
-    employerMap.set(emp.employer_slug, emp.employer_name);
+    employerMap.set(emp.slug, emp.name);
   });
   
   // Build employer index (dedup)
   const employerIndex = new Map();
   let employerCounter = 0;
   
-  listings.forEach(listing => {
+  const openListings = listings.filter(l => l.status === 'open');
+  
+  openListings.forEach(listing => {
     if (!employerIndex.has(listing.employer_slug)) {
       employerIndex.set(listing.employer_slug, {
         id: employerCounter++,
@@ -62,24 +77,26 @@ function buildSearchIndex() {
   ];
   
   // Build rows
-  const rows = listings
-    .filter(l => l.status === 'open') // Only open listings in search
-    .map(listing => {
-      const employerId = employerIndex.get(listing.employer_slug)!.id;
-      
-      return [
-        listing.listing_id,
-        employerId,
-        listing.title,
-        listing.location,
-        listing.first_seen,
-        listing.days_seen,
-        listing.age_state,
-        listing.open_before_tracking ? 1 : 0,
-        listing.reposted ? 1 : 0,
-        listing.repost_count || 0,
-      ];
-    });
+  const rows = openListings.map(listing => {
+    const employerData = employerIndex.get(listing.employer_slug);
+    if (!employerData) {
+      throw new Error(`Employer not found: ${listing.employer_slug}`);
+    }
+    const employerId = employerData.id;
+    
+    return [
+      listing.listing_id,
+      employerId,
+      listing.title,
+      listing.location,
+      listing.first_seen,
+      listing.days_seen,
+      listing.age_state,
+      listing.open_before_tracking ? 1 : 0,
+      listing.reposted ? 1 : 0,
+      listing.repost_count || 0,
+    ];
+  });
   
   // Create index object
   const searchIndex = {

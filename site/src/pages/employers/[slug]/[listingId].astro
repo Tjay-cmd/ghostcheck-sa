@@ -151,7 +151,7 @@ const checkStatus = listing.employer.check_status;
               <dt>Gaps</dt>
               <dd>
                 {listing.gaps.map((gap, i) => (
-                  <div class="gap-item" key={i}>
+                  <div class="gap-item">
                     Not listed {formatDate(gap.closed_on)} to {formatDate(gap.reopened_on)}, then back with the same job ID
                   </div>
                 ))}
@@ -193,7 +193,7 @@ const checkStatus = listing.employer.check_status;
               </div>
               
               {listing.chain.map((earlier) => (
-                <div class="timeline-item timeline-earlier" key={earlier.listing_id}>
+                <div class="timeline-item timeline-earlier">
                   <div class="timeline-marker">○</div>
                   <div class="timeline-content">
                     <div class="timeline-title">
@@ -227,7 +227,7 @@ const checkStatus = listing.employer.check_status;
           <h2>More open listings at {listing.employer_name}</h2>
           <ul class="more-list">
             {listing.more_at_employer.slice(0, 3).map((other) => (
-              <li key={other.listing_id}>
+              <li>
                 <a href={`/employers/${listing.employer_slug}/${other.listing_id}/`}>
                   {other.title}
                   {other.age_state === 'fresh' && ' (New)'}

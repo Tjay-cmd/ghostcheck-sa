@@ -27,7 +27,6 @@ interface Listing {
 }
 
 let searchIndex: SearchIndex | null = null;
-let searchIndexHash: string | null = null;
 let isLoading = false;
 
 // Find the hashed search index filename
@@ -198,6 +197,8 @@ export async function initSearch() {
   });
   
   async function performSearch() {
+    if (!resultsContainer) return;
+    
     try {
       // Load index if not loaded
       if (!searchIndex) {
@@ -245,6 +246,8 @@ export async function initSearch() {
   }
   
   function renderResults() {
+    if (!resultsContainer) return;
+    
     const toShow = filteredListings.slice(0, displayCount);
     
     resultsContainer.innerHTML = '';

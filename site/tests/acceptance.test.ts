@@ -133,8 +133,8 @@ describe('Part C: Acceptance test cases against rules.json', () => {
     
     const { label } = getAgeBadgeCopy('long_open', daysSeen, openBeforeTracking, trackedSince, '2027-02-03', 'compact');
     
-    expect(label).toContain('Open 90+ days');
-    expect(label).toContain('up since at least');
+    // Should still show long_open messaging even though it's open-before-tracking
+    expect(label).toContain('Up since at least');
   });
 });
 

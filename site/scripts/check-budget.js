@@ -115,7 +115,7 @@ function checkBudgets() {
   }
   
   // Check search index
-  const searchIndexFiles = findFiles(join(DIST_DIR, 'data'), '.json').filter(f => f.includes('search-index'));
+  const searchIndexFiles = findFiles(join(DIST_DIR, 'data'), '.json').filter(f => f.includes('search-index') && !f.includes('meta'));
   console.log(`\n🔍 Search Index (${searchIndexFiles.length}):`);
   
   for (const file of searchIndexFiles) {
