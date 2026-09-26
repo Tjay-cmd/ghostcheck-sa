@@ -1,0 +1,260 @@
+---
+/**
+ * Employer listing overview page - flag-gated
+ */
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Banner from '@/components/Banner.astro';
+import EmptyState from '@/components/EmptyState.astro';
+import { getOverviewData } from '@/lib/data';
+import { getSiteConfig } from '@/lib/rules';
+import { getOverviewRuleMessage, formatDate, formatPercentage } from '@/lib/format';
+
+const config = getSiteConfig();
+
+// If feature is off, show 404
+if (!config.FEATURE_OVERVIEW) {
+  return Astro.redirect('/404', 301);
+}
+
+const overview = getOverviewData();
+const eligible = overview?.eligible_employers || [];
+const notYetEligible = overview?.not_yet_eligible || [];
+const ruleMessage = getOverviewRuleMessage();
+---
+
+<BaseLayout title="Employer Listing Overview" description="Compare employers' listing patterns">
+  <div class="overview-page">
+    <div class="container">
+      <h1>Employer listing overview</h1>
+      <p class="page-subtitle">
+        How long employers' listings stay up, and how often similar listings are posted again.
+      </p>
+      
+      <Banner type="info" class="context-banner">
+        <p>
+          <strong>What this shows:</strong> patterns our daily check observed. It doesn't show why. Long-open listings are normal for talent pools and rolling intakes.
+        </p>
+        <p><a href="/about/#how-age-is-measured">Read the methodology →</a></p>
+      </Banner>
+      
+      {eligible.length === 0 ? (
+        <EmptyState
+          icon="calendar-clock"
+          heading="Collecting data"
+          message={notYetEligible.length > 0 ? `First figures from ${formatDate(notYetEligible[0].eligible_from)}` : "Check back soon"}
+        />
+      ) : (
+        <>
+          <div class="overview-header">
+            <p class="overview-count">{eligible.length} employers · data to {overview?.data_date ? formatDate(overview.data_date) : 'today'}</p>
+          </div>
+          
+          <div class="overview-table-wrapper">
+            <table class="overview-table">
+              <thead>
+                <tr>
+                  <th>Employer</th>
+                  <th>Sector</th>
+                  <th class="numeric">Open</th>
+                  <th class="numeric">Open 90+ days</th>
+                  <th class="numeric">Reposted</th>
+                  <th>Tracked since</th>
+                </tr>
+              </thead>
+              <tbody>
+                {eligible.map((employer) => (
+                  <tr key={employer.slug}>
+                    <td>
+                      <a href={`/employers/${employer.slug}/`} class="employer-link">
+                        {employer.name}
+                      </a>
+                    </td>
+                    <td class="sector-cell">{employer.sector}</td>
+                    <td class="numeric">{employer.open_count}</td>
+                    <td class="numeric">
+                      {formatPercentage(
+                        employer.share_open_90.value,
+                        employer.share_open_90.numerator,
+                        employer.share_open_90.denominator,
+                        null
+                      )}
+                    </td>
+                    <td class="numeric">
+                      {formatPercentage(
+                        employer.repost_rate.value,
+                        employer.repost_rate.numerator,
+                        employer.repost_rate.denominator,
+                        employer.repost_rate.window_label
+                      )}
+                    </td>
+                    <td class="tracked-cell">{formatDate(employer.tracked_since)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+      
+      <details class="eligibility-disclosure">
+        <summary>Why isn't an employer listed?</summary>
+        <div class="disclosure-content">
+          <p>{ruleMessage}</p>
+          {notYetEligible.length > 0 && (
+            <>
+              <p><strong>Not yet included ({notYetEligible.length}):</strong></p>
+              <ul>
+                {notYetEligible.map((employer) => (
+                  <li key={employer.slug}>
+                    {employer.name} — eligible from {formatDate(employer.eligible_from)}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </div>
+      </details>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .overview-page {
+    padding: var(--s-6) 0;
+  }
+
+  .page-subtitle {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    color: var(--c-text-muted);
+    max-width: 60ch;
+    margin-bottom: var(--s-5);
+  }
+
+  .context-banner {
+    margin-bottom: var(--s-5);
+  }
+
+  .context-banner p:last-child {
+    margin-bottom: 0;
+  }
+
+  .overview-header {
+    margin-bottom: var(--s-4);
+    padding-bottom: var(--s-3);
+    border-bottom: 1px solid var(--c-border-subtle);
+  }
+
+  .overview-count {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin: 0;
+  }
+
+  .overview-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: var(--s-6);
+  }
+
+  .overview-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+  }
+
+  .overview-table th {
+    text-align: left;
+    padding: var(--s-3);
+    background: var(--c-surface);
+    border-bottom: 2px solid var(--c-border);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .overview-table th.numeric {
+    text-align: right;
+  }
+
+  .overview-table td {
+    padding: var(--s-3);
+    border-bottom: 1px solid var(--c-border-subtle);
+  }
+
+  .overview-table td.numeric {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .employer-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--c-text);
+  }
+
+  .employer-link:hover {
+    color: var(--c-primary);
+  }
+
+  .sector-cell {
+    color: var(--c-text-muted);
+  }
+
+  .tracked-cell {
+    color: var(--c-text-muted);
+    white-space: nowrap;
+  }
+
+  .eligibility-disclosure {
+    padding: var(--s-4);
+    background: var(--c-surface);
+    border-radius: 8px;
+    border: 1px solid var(--c-border-subtle);
+  }
+
+  .eligibility-disclosure summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    user-select: none;
+  }
+
+  .eligibility-disclosure summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .eligibility-disclosure summary::before {
+    content: '▸';
+    display: inline-block;
+    margin-right: var(--s-2);
+    transition: transform 0.2s;
+  }
+
+  .eligibility-disclosure[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .disclosure-content {
+    margin-top: var(--s-4);
+  }
+
+  .disclosure-content p {
+    margin-bottom: var(--s-3);
+  }
+
+  .disclosure-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .disclosure-content li {
+    padding: var(--s-2);
+    background: var(--c-bg);
+    border-radius: 4px;
+    margin-bottom: var(--s-2);
+    font-size: var(--fs-sm);
+  }
+</style>

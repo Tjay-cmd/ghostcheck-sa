@@ -1,0 +1,70 @@
+---
+/**
+ * Open 90+ days listings page
+ */
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ListingCard from '@/components/ListingCard.astro';
+import EmptyState from '@/components/EmptyState.astro';
+import Banner from '@/components/Banner.astro';
+import { getAllListings, getSiteData } from '@/lib/data';
+import { getChipLabels, getEarlyLongOpenMessage } from '@/lib/format';
+
+const site = getSiteData();
+const listings = getAllListings().filter(l => l.age_state === 'long_open');
+const sortedListings = listings.sort((a, b) => b.days_seen - a.days_seen);
+
+const chipLabels = getChipLabels();
+const earliestLongOpen = site.earliest_long_open_possible_on;
+const isTooEarly = listings.length === 0 && earliestLongOpen;
+---
+
+<BaseLayout title="Open 90+ Days" description="Job listings open for more than 90 days">
+  <div class="listings-page">
+    <div class="container">
+      <h1>Open 90+ Days</h1>
+      <p class="page-subtitle">
+        {chipLabels.longOpen} · {sortedListings.length} listings
+      </p>
+      
+      {isTooEarly && earliestLongOpen && (
+        <Banner type="info">
+          <p>{getEarlyLongOpenMessage(earliestLongOpen)}</p>
+        </Banner>
+      )}
+      
+      {sortedListings.length === 0 ? (
+        <EmptyState
+          icon="hourglass"
+          heading={isTooEarly ? "No listings have been open 90+ days yet" : "No open 90+ day listings right now"}
+          message={isTooEarly ? undefined : "Check back as listings age."}
+        />
+      ) : (
+        <div class="listings-grid">
+          {sortedListings.map((listing) => (
+            <ListingCard listing={listing} showEmployer={true} />
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .listings-page {
+    padding: var(--s-6) 0;
+  }
+
+  .page-subtitle {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-6);
+  }
+
+  .listings-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+  }
+</style>
