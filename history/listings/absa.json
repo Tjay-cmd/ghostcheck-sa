@@ -1,4 +1,461 @@
 {
  "employer_id": "absa",
- "listings": []
+ "listings": [
+  {
+   "ats_job_id": "90242471",
+   "title": "Manager Project",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Manager-Project_90242471",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15940447-1",
+   "title": "Banking Sales Account Executive (FAIS)",
+   "location": "Cape Town",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Cape-Town/Sales--Consultant--FAIS----Atlantic-Seaboard--Boland--Metro-North--South-Peninsula-and-West-Coast_R-15940447-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15953005-1",
+   "title": "Talent Pipeline: Area Segment Manager - North West",
+   "location": null,
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Talent-Pipeline--Area-Segment-Manager---North-West_R-15953005-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15953011-2",
+   "title": "Talent Pipeline: Wealth Banker - Pretoria",
+   "location": null,
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Talent-Pipeline--Wealth-Banker---Pretoria_R-15953011-2",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15953027-1",
+   "title": "Talent Pipeline: Private Wealth Banker - Paarl",
+   "location": null,
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Talent-Pipeline--Private-Wealth-Banker---Paarl_R-15953027-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15953029",
+   "title": "Talent Pipeline: Private Wealth Banker - Limpopo",
+   "location": null,
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Talent-Pipeline--Private-Wealth-Banker---Limpopo_R-15953029",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15953030-1",
+   "title": "Talent Pipeline: Private Wealth Banker - Gauteng",
+   "location": null,
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Talent-Pipeline--Private-Wealth-Banker---Gauteng_R-15953030-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15958674",
+   "title": "Private Wealth Banker Pipeline - Bloemfontein",
+   "location": "Bloemfontein",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Bloemfontein/Private-Wealth-Banker-Pipeline---Bloemfontein_R-15958674",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15959579-1",
+   "title": "Wealth Banker",
+   "location": "George",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/George/Wealth-Banker_R-15959579-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15959849",
+   "title": "Private Wealth Banker",
+   "location": "Cape Town",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Cape-Town/Private-Wealth-Banker_R-15959849",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15960614",
+   "title": "Private Wealth Banker",
+   "location": "Bethlehem",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Bethlehem/Private-Wealth-Banker_R-15960614",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15962337-1",
+   "title": "Acquisition Banker - Pipeline Mpumalanga",
+   "location": null,
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Acquisition-Banker---Pipeline-Mpumalanga_R-15962337-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15967221-1",
+   "title": "Specialist Solution Analyst",
+   "location": "Sandton",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Sandton/Specialist-Solution-Analyst_R-15967221-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15977234-1",
+   "title": "Specialist: Property Finance (FAIS)",
+   "location": "Cape Town",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Cape-Town/Specialist--Property-Finance--FAIS-_R-15977234-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15978732",
+   "title": "Financial Adviser AIFA Everyday Banking (FAIS)",
+   "location": "Uitenhage",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Uitenhage/Adviser-AIFA-Everyday-Banking-STLT--FAIS-_R-15978732",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15979201-1",
+   "title": "Recoveries Agents",
+   "location": null,
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Recoveries-Agents_R-15979201-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15982619",
+   "title": "Financial Adviser AIFA Everyday Banking (FAIS)",
+   "location": "Sea Point",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Sea-Point/Financial-Adviser-AIFA-Everyday-Banking--FAIS-_R-15982619",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15984439",
+   "title": "Lead Generator",
+   "location": "Queensway House",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Queensway-House/Lead-Generator_R-15984439",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15984764",
+   "title": "Financial Adviser AIFA Everyday Banking (FAIS)",
+   "location": "Plettenberg Bay",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Plettenberg-Bay/Financial-Adviser-AIFA-Everyday-Banking--FAIS-_R-15984764",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15987987",
+   "title": "Advisor Client Care & Service Hub",
+   "location": "Ebene",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Ebene/Advisor-Client-Care---Service-Hub_R-15987987",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15988143",
+   "title": "Lead Generator (Various Locations)",
+   "location": null,
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Lead-Generator--Various-Locations-_R-15988143",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989001-1",
+   "title": "Financial Adviser AIFA: Everyday Banking (FAIS)",
+   "location": "Rondebosch",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Rondebosch/Financial-Adviser-AIFA--Everyday-Banking--FAIS-_R-15989001-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989004",
+   "title": "Financial Adviser AIFA: Everyday Banking (FAIS)",
+   "location": "Cape Town",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Cape-Town/Financial-Adviser-AIFA--Everyday-Banking--FAIS-_R-15989004",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989006",
+   "title": "Financial Adviser AIFA: Everyday Banking (FAIS)",
+   "location": "Hout Bay",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Hout-Bay/Financial-Adviser-AIFA--Everyday-Banking--FAIS-_R-15989006",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989050",
+   "title": "Financial Adviser AIFA: Everyday Banking (FAIS)",
+   "location": "Cape Town",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Cape-Town/Financial-Adviser-AIFA--Everyday-Banking--FAIS-_R-15989050",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989448",
+   "title": "Adviser AIFA: Everyday Banking STLT (FAIS)",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Adviser-AIFA--Everyday-Banking-STLT--FAIS-_R-15989448",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989451",
+   "title": "Adviser AIFA: Everyday Banking STLT (FAIS)",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Adviser-AIFA--Everyday-Banking-STLT--FAIS-_R-15989451",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989452",
+   "title": "Adviser AIFA: Everyday Banking STLT (FAIS)",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Adviser-AIFA--Everyday-Banking-STLT--FAIS-_R-15989452",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989495",
+   "title": "Experienced Financial Adviser (Commission-Based) – FAIS Fit & Proper",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Experienced-Financial-Adviser--Commission-Based----FAIS-Fit---Proper_R-15989495",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989514",
+   "title": "Senior Data Scientist (Advanced Coding Focus)",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Senior-Data-Scientist--Advanced-Coding-Focus-_R-15989514",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989946",
+   "title": "Consultant: Sales External (FAIS) - Robertson",
+   "location": "Robertson",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Robertson/Consultant--Sales-External--FAIS----Overberg_R-15989946",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989950",
+   "title": "Consultant: Sales External (FAIS) - Vredenberg",
+   "location": "Vredenburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Vredenburg/Consultant--Sales-External--FAIS----West-Coast-Winelands_R-15989950",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989986",
+   "title": "Consultant: Sales External (FAIS) - Citrusdal",
+   "location": "Citrusdal",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Citrusdal/Consultant--Sales-External--FAIS----Malmesbury_R-15989986",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15989988",
+   "title": "Consultant: Sales External (FAIS) - Worcester",
+   "location": "Worcester",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Worcester/Consultant--Sales-External--FAIS----Somerset-West_R-15989988",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15990015",
+   "title": "Junior Consultant Sales (FAIS) - Barrydale",
+   "location": "Absa Barrydale",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Absa-Barrydale/Junior-Consultant-Sales--FAIS----Barrydale_R-15990015",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15990074",
+   "title": "Private Banker",
+   "location": "Stellenbosch",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Stellenbosch/Private-Banker_R-15990074",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15990615-1",
+   "title": "Senior Specialist: Marketing Cloud & Data Cloud",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Senior-Specialist--Marketing-Cloud---Data-Cloud_R-15990615-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15990868-1",
+   "title": "Relationship Executive - Small Business (FAIS)",
+   "location": "Colesberg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Colesberg/Relationship-Executive---Small-Business--FAIS-_R-15990868-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15990963",
+   "title": "Relationship Executive - Small Business (FAIS)",
+   "location": "Paarl",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Paarl/Relationship-Executive---Small-Business--FAIS-_R-15990963",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991025-1",
+   "title": "Team Manager Credit Lending",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Team-Manager-Credit-Lending_R-15991025-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991047-1",
+   "title": "LaRiba Universal Banker",
+   "location": "Queensway House",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Queensway-House/LaRiba-Universal-Banker_R-15991047-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991079",
+   "title": "Security Office Support and Data Analyst",
+   "location": "Ebene",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Ebene/Security-Office-Support-and-Data-Analyst_R-15991079",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991115",
+   "title": "Head: Independent Contractor Channel",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Head--Independent-Contractor-Channel_R-15991115",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991122-1",
+   "title": "Senior Manager: Credit Risk Strategy (Home Loans)",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Senior-Manager--Credit-Risk-Strategy--Home-Loans-_R-15991122-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991158",
+   "title": "Senior Product Manager: Core Transactional VAS",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Senior-Product-Manager--Core-Transactional-VAS_R-15991158",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991174",
+   "title": "Consultant: Sales (FAIS)",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Consultant--Sales--FAIS-_R-15991174",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991181",
+   "title": "Executive Assistant and Office Manager",
+   "location": "DIFC Square Dubai",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/DIFC-Square-Dubai/Executive-Assistant-and-Office-Manager_R-15991181",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991209-1",
+   "title": "Head: Performance, Data & Transformation",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Head--Performance--Data---Transformation_R-15991209-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991214",
+   "title": "Private Wealth Banker - Coverage (FAIS)",
+   "location": "Pietermaritzburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Pietermaritzburg/Private-Wealth-Banker---Coverage--FAIS-_R-15991214",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991216-1",
+   "title": "Universal Banker",
+   "location": "Lunga Lunga Square",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Lunga-Lunga-Square/Universal-Banker_R-15991216-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991227",
+   "title": "Trust Administrator",
+   "location": "Pretoria",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Pretoria/Trust-Administrator_R-15991227",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991228",
+   "title": "Wealth Banker",
+   "location": "Grand Bay",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Grand-Bay/Wealth-Banker_R-15991228",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991229",
+   "title": "Customer Service Advisor",
+   "location": "Ebene",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Ebene/Customer-Service-Advisor_R-15991229",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991244-1",
+   "title": "QA Domain Lead",
+   "location": "Randburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Randburg/QA-Domain-Lead_R-15991244-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991274",
+   "title": "Custody Operations Officer",
+   "location": "Ebene",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Ebene/Custody-Operations-Officer_R-15991274",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991277",
+   "title": "Sector Head -Telecommunications, Media and Technology (TMT) and Industrials",
+   "location": "Absa Headquarters (KE)",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Absa-Headquarters-KE/Sector-Head--Telecommunications--Media-and-Technology--TMT--and-Industrials_R-15991277",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "R-15991295-1",
+   "title": "Executive: Sales and Commercialisation",
+   "location": "Johannesburg",
+   "url": "https://absa.wd3.myworkdayjobs.com/ABSAcareersite/job/Johannesburg/Executive--Sales-and-Commercialisation_R-15991295-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  }
+ ]
 }

@@ -1,4 +1,4597 @@
 {
  "employer_id": "oldmutual",
- "listings": []
+ "listings": [
+  {
+   "ats_job_id": "JR-50326",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "Bizana",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bizana/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-50326",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-67481",
+   "title": "MFC Sales Agent",
+   "location": "Witbank",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/MFC-Sales-Agent_JR-67481",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-67665-1",
+   "title": "MFC Sales Agent",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/MFC-Sales-Agent_JR-67665-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-67667",
+   "title": "MFC Sales Agent",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/MFC-Sales-Agent_JR-67667",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-67668",
+   "title": "MFC Sales Agent",
+   "location": "Lebowakgomo",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Lebowakgomo/MFC-Sales-Agent_JR-67668",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-67669",
+   "title": "MFC Sales Agent",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/MFC-Sales-Agent_JR-67669",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-67671",
+   "title": "MFC Sales Agent",
+   "location": "Siyabuswa",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Siyabuswa/MFC-Sales-Agent_JR-67671",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-67673-1",
+   "title": "MFC Sales Agent",
+   "location": "Bushbuckridge",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bushbuckridge/MFC-Sales--Agent_JR-67673-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-68256",
+   "title": "Salaried Financial Advisor (King Williams Town and Surrounding Rural Areas)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/King-Williams-Town/Salaried-Financial-Advisor--King-Williams-Town-and-Surrounding-Rural-Areas-_JR-68256",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-68751",
+   "title": "MFC Sales Agent",
+   "location": "Kimberley",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kimberley/MFC-Sales-Agent_JR-68751",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-68768",
+   "title": "MFC Sales Agent",
+   "location": "Kroonstad",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kroonstad/MFC-Sales-Agent_JR-68768",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-68794",
+   "title": "MFC Sales Agent",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/MFC-Sales-Agent_JR-68794",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-68856",
+   "title": "MFC Sales Agent",
+   "location": "Phuthaditjhaba",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Phuthaditjhaba/MFC-Sales-Agent_JR-68856",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-68963",
+   "title": "MFC Sales Agent",
+   "location": "Bethlehem",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bethlehem/MFC-Sales-Agent_JR-68963",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70029",
+   "title": "MFC Sales Agent",
+   "location": "Welkom",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Welkom/MFC-Sales-Agent_JR-70029",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70127",
+   "title": "MFC Sales Agent",
+   "location": "Mokopane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mokopane/MFC-Sales-Agent_JR-70127",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70557",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-70557",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70919",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Port Shepstone",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Shepstone/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-70919",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70924-1",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Krugersdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Krugersdorp/MFC-Salaried-Financial-Advisor_JR-70924-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70935",
+   "title": "MFC Salaried Financial Adviser",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Adviser_JR-70935",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70938",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/MFC-Salaried-Financial-Advisor_JR-70938",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70940",
+   "title": "MFC Salaried Financial Adviser",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Adviser_JR-70940",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70947",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Benoni",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Benoni/MFC-Salaried-Financial-Advisor_JR-70947",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70949",
+   "title": "MFC Salaried Financial Adviser",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Adviser_JR-70949",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70951",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/MFC-Salaried-Financial-Advisor_JR-70951",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70956",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Vereeniging",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vereeniging/MFC-Salaried-Financial-Advisor_JR-70956",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70957",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "7 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-70957",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70962-1",
+   "title": "MFC Salaried Financial Advisor (Kokstad and Surrounding Locations)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kokstad/MFC-Salaried-Financial-Advisor--Kokstad-and-Surrounding-Locations-_JR-70962-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-70970",
+   "title": "Salaried Financial Advisor",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Salaried-Financial-Advisor_JR-70970",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71003-1",
+   "title": "MFC Salaried Financial Adviser (Talent Pool)",
+   "location": "Nongoma",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nongoma/MFC-Salaried-Financial-Adviser--Talent-Pool-_JR-71003-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71284",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Newcastle",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Newcastle/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-71284",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71611",
+   "title": "Aspiring Financial Adviser",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Aspiring-Financial-Adviser_JR-71611",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71652",
+   "title": "Salaried Financial Advisor",
+   "location": "Upington",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Upington/Salaried-Financial-Advisor_JR-71652",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71659-1",
+   "title": "Salaried Financial Advisor",
+   "location": "Springbok",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Springbok/Salaried-Financial-Advisor_JR-71659-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71703",
+   "title": "Salaried Financial Advisor",
+   "location": "De Aar",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/De-Aar/Salaried-Financial-Advisor_JR-71703",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71711",
+   "title": "Salaried Financial Advisor",
+   "location": "Kimberley",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kimberley/Salaried-Financial-Advisor_JR-71711",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71718",
+   "title": "Salaried Financial Advisor",
+   "location": "Kimberley",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kimberley/Salaried-Financial-Advisor_JR-71718",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71720",
+   "title": "Salaried Financial Advisor",
+   "location": "Kuruman",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kuruman/Salaried-Financial-Advisor_JR-71720",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71976",
+   "title": "Salaried Financial Advisor",
+   "location": "Klerksdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Klerksdorp/Salaried-Financial-Advisor_JR-71976",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71986",
+   "title": "Salaried Financial Advisor",
+   "location": "Klerksdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Klerksdorp/Salaried-Financial-Advisor_JR-71986",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71989",
+   "title": "Salaried Financial Advisor",
+   "location": "Rustenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Salaried-Financial-Advisor_JR-71989",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-71993",
+   "title": "Salaried Financial Advisor",
+   "location": "Mmabatho",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mmabatho/Salaried-Financial-Advisor_JR-71993",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72025",
+   "title": "Salaried Financial Advisor",
+   "location": "Vryburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vryburg/Salaried-Financial-Advisor_JR-72025",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72027-1",
+   "title": "Salaried Financial Advisor",
+   "location": "Lichtenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Lichtenburg/Salaried-Financial-Advisor_JR-72027-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72028",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/MFC-Salaried-Financial-Advisor_JR-72028",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72044",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/MFC-Salaried-Financial-Advisor_JR-72044",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72052",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/MFC-Salaried-Financial-Advisor_JR-72052",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72054",
+   "title": "MFC Salaried Financial Advisor (Thaba Nchu)",
+   "location": "Botshabelo",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Botshabelo/MFC-Salaried-Financial-Advisor--Thaba-Nchu-_JR-72054",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72058",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Botshabelo",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Botshabelo/MFC-Salaried-Financial-Advisor_JR-72058",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72079",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Bethlehem",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bethlehem/MFC-Salaried-Financial-Advisor_JR-72079",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72081",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Harrismith",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Harrismith/MFC-Salaried-Financial-Advisor_JR-72081",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72082",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Kroonstad",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kroonstad/MFC-Salaried-Financial-Advisor_JR-72082",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72083",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Qwa Qwa",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Qwa-Qwa/MFC-Salaried-Financial-Advisor_JR-72083",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72084",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Welkom",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Welkom/MFC-Salaried-Financial-Advisor_JR-72084",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72085",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Potchefstroom",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Potchefstroom/MFC-Salaried-Financial-Advisor_JR-72085",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72086",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Potchefstroom",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Potchefstroom/MFC-Salaried-Financial-Advisor_JR-72086",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72088",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Rustenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/MFC-Salaried-Financial-Advisor_JR-72088",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72091-1",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Rustenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/MFC-Salaried-Financial-Advisor_JR-72091-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72092",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Brits",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Brits/MFC-Salaried-Financial-Advisor_JR-72092",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72115",
+   "title": "MFC Salaried Financial Advisor (RECRUITMENT POOL)",
+   "location": "18 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/MFC-Salaried-Financial-Advisor--RECRUITMENT-POOL-_JR-72115",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72733",
+   "title": "Salaried Financial Advisor",
+   "location": "Bochum",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bochum/Salaried-Financial-Advisor_JR-72733",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-72736-1",
+   "title": "MFC Salaried Financial Advisor: Aliwal North, Burgersdorp, Steynsburg, Venterstad & Barkley East",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Aliwal-North/MFC-Salaried-Financial-Advisor--Aliwal-North--Burgersdorp--Steynsburg--Venterstad---Barkley-East_JR-72736-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-73337",
+   "title": "MFC Salaried Financial Advisor (Ngqamakwe, Butterworth and Surrounding Areas)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Butterworth/MFC-Salaried-Financial-Advisor--Ngqamakwe--Butterworth-and-Surrounding-Areas-_JR-73337",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-73818",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "7 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kokstad/MFC-Salaried-Financial-Advisor_JR-73818",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-73819-1",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/MFC-Salaried-Financial-Advisor_JR-73819-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-74137",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Manguzi",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Manguzi/MFC-Salaried-Financial-Advisor_JR-74137",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-74887",
+   "title": "Salaried Financial Advisor",
+   "location": "Ermelo",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ermelo/Salaried-Financial-Advisor_JR-74887",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-74889",
+   "title": "Salaried Financial Advisor",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Salaried-Financial-Advisor_JR-74889",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-74897",
+   "title": "Salaried Financial Advisor",
+   "location": "Piet Retief",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Piet-Retief/Salaried-Financial-Advisor_JR-74897",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-74904",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-74904",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-74905",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Scottburgh",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Scottburgh/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-74905",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-74942",
+   "title": "Salaried Financial Advisor",
+   "location": "Mokopane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mokopane/Salaried-Financial-Advisor_JR-74942",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75122",
+   "title": ")MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Pietermaritzburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/XMLNAME--MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-75122",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75148",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-75148",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75243",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Mkuze",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mkuze/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-75243",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75249",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-75249",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75375-1",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/King-Williams-Town/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-75375-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75383",
+   "title": "MFC Salaried Financial Advisor - Mount Frere, Tsolo, Ntabankulu and Surroundings (Recruitment Pool)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mount-Frere/MFC-Salaried-Financial-Advisor---Mount-Frere--Tsolo--Ntabankulu-and-Surroundings--Recruitment-Pool-_JR-75383",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75400",
+   "title": "Salaried Financial Advisor",
+   "location": "Musina",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Musina/Salaried-Financial-Advisor_JR-75400",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75406",
+   "title": "Salaried Financial Advisor",
+   "location": "Witbank",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Salaried-Financial-Advisor_JR-75406",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75408",
+   "title": "Salaried Financial Advisor",
+   "location": "Witbank",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Salaried-Financial-Advisor_JR-75408",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75412",
+   "title": "Salaried Financial Advisor",
+   "location": "Jane Furse",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Jane-Furse/Salaried-Financial-Advisor_JR-75412",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75415",
+   "title": "Salaried Financial Advisor",
+   "location": "Malelane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Malelane/Salaried-Financial-Advisor_JR-75415",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75440",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "Lusikisiki",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Lusikisiki/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-75440",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75442",
+   "title": "Salaried Financial Advisor",
+   "location": "Middelburg - Mpumalanga",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Middelburg---Mpumalanga/Salaried-Financial-Advisor_JR-75442",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75444",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Standerton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Standerton/MFC-Salaried-Financial-Advisor_JR-75444",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75449",
+   "title": "Salaried Financial Advisor",
+   "location": "Kwaggafontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kwaggafontein/Salaried-Financial-Advisor_JR-75449",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75452",
+   "title": "Salaried Financial Advisor",
+   "location": "Secunda",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Secunda/Salaried-Financial-Advisor_JR-75452",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75454",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mdantsane/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-75454",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75462",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-75462",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75529",
+   "title": "Salaried Financial Advisor",
+   "location": "Tzaneen",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Tzaneen/Salaried-Financial-Advisor_JR-75529",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75604",
+   "title": "Salaried Financial Advisor",
+   "location": "Lebowakgomo",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Lebowakgomo/Salaried-Financial-Advisor_JR-75604",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75611",
+   "title": "Salaried Financial Advisor",
+   "location": "Burgersfort",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Burgersfort/Salaried-Financial-Advisor_JR-75611",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75620-1",
+   "title": "Salaried Financial Advisor",
+   "location": "Acornhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Acornhoek/Salaried-Financial-Advisor_JR-75620-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75627",
+   "title": "Salaried Financial Advisor",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Salaried-Financial-Advisor_JR-75627",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75638-1",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-75638-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75664",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-75664",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75691",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/MFC-Salaried-Financial-Advisor_JR-75691",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75842",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-75842",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75903-1",
+   "title": "Salaried Financial Advisor",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/Salaried-Financial-Advisor_JR-75903-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75970-1",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "Port Alfred",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Alfred/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-75970-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75973-1",
+   "title": "Salaried Financial Advisor",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Salaried-Financial-Advisor_JR-75973-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75979",
+   "title": "Salaried Financial Advisor",
+   "location": "Mankweng",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mankweng/Salaried-Financial-Advisor_JR-75979",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-75995",
+   "title": "Salaried Financial Advisor",
+   "location": "Elukwatini",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Elukwatini/Salaried-Financial-Advisor_JR-75995",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76149",
+   "title": "Salaried Financial Advisor",
+   "location": "Bushbuckridge",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bushbuckridge/Salaried-Financial-Advisor_JR-76149",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76178",
+   "title": "Salaried Financial Advisor",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Salaried-Financial-Advisor_JR-76178",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76190-1",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Pietermaritzburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-76190-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76227",
+   "title": "Salaried Financial Advisor",
+   "location": "Groblersdal",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Groblersdal/Salaried-Financial-Advisor_JR-76227",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76302",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "7 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-76302",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76409",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Grahamstown/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-76409",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76429",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-76429",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76547",
+   "title": "Salaried Financial Advisor",
+   "location": "Modimolle",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Modimolle/Salaried-Financial-Advisor_JR-76547",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76604",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-76604",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76694",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-76694",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76857",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-76857",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76860",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Mtubatuba",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mtubatuba/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-76860",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76873-1",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Greytown",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Greytown/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-76873-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76878",
+   "title": "Salaried Financial Advisor",
+   "location": "Giyani",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Giyani/Salaried-Financial-Advisor_JR-76878",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-76974",
+   "title": "Salaried Financial Advisor",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/Salaried-Financial-Advisor_JR-76974",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77088",
+   "title": "Faulu MFB - Senior Relationship Officer SME",
+   "location": "Nairobi",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nairobi/Faulu-MFB---Senior-Relationship-Officer-SME_JR-77088",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77125",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "8 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/MFC-Salaried-Financial-Advisor_JR-77125",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77152",
+   "title": "OMF Financial Consultant (Bronkhorstspruit)(Talent Pool)",
+   "location": "Bronkhorstspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bronkhorstspruit/OMF-Financial-Consultant--Bronkhortspruit--Talent-Pool-_JR-77152",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77208",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-77208",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77266",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "7 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/MFC-Salaried-Financial-Advisor_JR-77266",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77378",
+   "title": "Salaried Financial Advisor",
+   "location": "Elim-Mpheni",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Elim-Mpheni/Salaried-Financial-Advisor_JR-77378",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77664",
+   "title": "Salaried Financial Advisor",
+   "location": "Malamulele",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Malamulele/Salaried-Financial-Advisor_JR-77664",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77731",
+   "title": "Salaried Financial Advisor",
+   "location": "Bochum",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bochum/Salaried-Financial-Advisor_JR-77731",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77853",
+   "title": "OMF Financial Consultant (Nelspruit)(Talent pool)",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/OMF-Financial-Consultant--Nelspruit--Talent-pool-_JR-77853",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77985",
+   "title": "MFC Salaried Financial Advisor (Talent Pool)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor--Talent-Pool-_JR-77985",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-77988",
+   "title": "Salaried Financial Advisor",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/Salaried-Financial-Advisor_JR-77988",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-78271",
+   "title": "Branch Manager - Marondera",
+   "location": "Marondera",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Marondera/Branch-Manager---Marondera_JR-78271",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-78490",
+   "title": "Salaried Financial Advisor",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Salaried-Financial-Advisor_JR-78490",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-78565",
+   "title": "OMF Financial Consultant (Groblersdal and surrounding areas) (Talent pool)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Groblersdal/OMF-Financial-Consultant--Groblersdal-and-surrounding-areas---Talent-pool-_JR-78565",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-78569",
+   "title": "OMF Financial Consultant (Klerksdorp Pipline)",
+   "location": "Klerksdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Klerksdorp/OMF-Financial-Consultant--Klerksdorp-Pipline-_JR-78569",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-78610",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Mmabatho",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mmabatho/MFC-Salaried-Financial-Advisor_JR-78610",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-78811",
+   "title": "MFC Sales Manager (Ladysmith)",
+   "location": "Ladysmith",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ladysmith/MFC-Sales-Manager--Ladysmith-_JR-78811",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-78927",
+   "title": "Salaried Financial Advisor",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Salaried-Financial-Advisor_JR-78927",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-78935",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "8 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/MFC-Salaried-Financial-Advisor_JR-78935",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-78960",
+   "title": "CABS Branch Manager - Murambinda",
+   "location": "Murambinda",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Murambinda/CABS-Branch-Manager---Murambinda_JR-78960",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-79031",
+   "title": "Salaried Financial Advisor",
+   "location": "Ellisras",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ellisras/Salaried-Financial-Advisor_JR-79031",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-79038",
+   "title": "Salaried Financial Advisor",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Salaried-Financial-Advisor_JR-79038",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-79188",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "7 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Jeffreys-Bay/MFC-Salaried-Financial-Advisor_JR-79188",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-79273-1",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Uitenhage/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-79273-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-79528",
+   "title": "Commercial Sales Agent Tied-23",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Commercial-Sales-Agent-Tied-23_JR-79528",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-79554",
+   "title": "Part-time Financial Advisor",
+   "location": "Kimberley",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kimberley/Part-time-Financial-Advisor_JR-79554",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-79667",
+   "title": "Salaried Financial Advisors (Evergreen)",
+   "location": "Windhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Windhoek/Salaried-Financial-Advisors--Evergreen-_JR-79667",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-79670",
+   "title": "JR-69461 Salaried Financial Advisor (Evergreen)",
+   "location": "Ondangwa",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ondangwa/JR-69461-Salaried-Financial-Advisor--Evergreen-_JR-79670",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-79972-1",
+   "title": "OMF Financial Consultant (Thohoyandou Thavhani Mall) (Talent Pool)",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/OMF-Financial-Consultant--Thohoyandou-Thavhani-Mall---Talent-Pool-_JR-79972-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80214",
+   "title": "Commercial Sales Agent Tied-2",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Commercial-Sales-Agent-Tied-2_JR-80214",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80226",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-80226",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80418",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-80418",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80584",
+   "title": "MFC Salaried Financial Advisor (Recruitment Pool)",
+   "location": "7 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/MFC-Salaried-Financial-Advisor--Recruitment-Pool-_JR-80584",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80590",
+   "title": "Advancing Financial Adviser",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/Advancing-Financial-Adviser_JR-80590",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80631-1",
+   "title": "Salaried Financial Advisor",
+   "location": "Phalaborwa",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Phalaborwa/Salaried-Financial-Advisor_JR-80631-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80783",
+   "title": "Aspiring Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Aspiring-Financial-Adviser_JR-80783",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80792",
+   "title": "Advancing Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Advancing-Financial-Adviser_JR-80792",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80794",
+   "title": "Advancing Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Advancing-Financial-Adviser_JR-80794",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80809",
+   "title": "Commissioned Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Commissioned-Financial-Adviser_JR-80809",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80811",
+   "title": "Commissioned Financial Adviser",
+   "location": "Krugersdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Krugersdorp/Commissioned-Financial-Adviser_JR-80811",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80817-1",
+   "title": "Aspiring Financial Adviser",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/Aspiring-Financial-Adviser_JR-80817-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80827",
+   "title": "Commissioned Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Commissioned-Financial-Adviser_JR-80827",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80830",
+   "title": "Advancing Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Advancing-Financial-Adviser_JR-80830",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-80996",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-80996",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81000",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-81000",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81002",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-81002",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81009",
+   "title": "Aspiring Financial Adviser",
+   "location": "Krugersdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Krugersdorp/Aspiring-Financial-Adviser_JR-81009",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81013",
+   "title": "Aspiring Financial Adviser",
+   "location": "Krugersdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Krugersdorp/Aspiring-Financial-Adviser_JR-81013",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81014",
+   "title": "Aspiring Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Aspiring-Financial-Adviser_JR-81014",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81016",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-81016",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81017",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-81017",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81018",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-81018",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81027",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-81027",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81028",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-81028",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81029",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-81029",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81030",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-81030",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81031",
+   "title": "Aspiring Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Aspiring-Financial-Adviser_JR-81031",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81033",
+   "title": "Aspiring Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Aspiring-Financial-Adviser_JR-81033",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81034",
+   "title": "Aspiring Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Aspiring-Financial-Adviser_JR-81034",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81035",
+   "title": "Aspiring Financial Advisor",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Aspiring-Financial-Advisor_JR-81035",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81036",
+   "title": "Aspiring Financial Advisor",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Aspiring-Financial-Advisor_JR-81036",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81039",
+   "title": "Aspiring Financial Advisor",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Aspiring-Financial-Advisor_JR-81039",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81041",
+   "title": "Aspiring Financial Adviser",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Aspiring-Financial-Adviser_JR-81041",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81045",
+   "title": "MFC Salaried Financial Advisor",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/MFC-Salaried-Financial-Advisor_JR-81045",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81633",
+   "title": "Aspiring Financial Adviser",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Aspiring-Financial-Adviser_JR-81633",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81636",
+   "title": "Aspiring Financial Adviser (Queenstown)",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Aspiring-Financial-Adviser--Queenstown-_JR-81636",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81652",
+   "title": "Aspiring Financial Adviser ( Fish Hoek)",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Aspiring-Financial-Adviser---Fish-Hoek-_JR-81652",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81653",
+   "title": "Aspiring Financial Adviser ( Claremont)",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Aspiring-Financial-Adviser---Claremont-_JR-81653",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81654",
+   "title": "Aspiring Financial Adviser",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Aspiring-Financial-Adviser_JR-81654",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81657",
+   "title": "Aspiring Financial Adviser",
+   "location": "Vredendal",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vredendal/Aspiring-Financial-Adviser_JR-81657",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81658",
+   "title": "Aspiring Financial Adviser",
+   "location": "Hermanus",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Hermanus/Aspiring-Financial-Adviser_JR-81658",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81659",
+   "title": "Aspiring Financial Adviser",
+   "location": "Ceres",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ceres/Aspiring-Financial-Adviser_JR-81659",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81661",
+   "title": "Aspiring Financial Adviser",
+   "location": "Worcester",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Worcester/Aspiring-Financial-Adviser_JR-81661",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81663",
+   "title": "Aspiring Financial Adviser",
+   "location": "George",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/George/Aspiring-Financial-Adviser_JR-81663",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81698",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-81698",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81705",
+   "title": "Advancing Financial Adviser",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/Advancing-Financial-Adviser_JR-81705",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81712",
+   "title": "Commissioned Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Commissioned-Financial-Adviser_JR-81712",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81720",
+   "title": "Part-time Financial Advisor",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Delareyville/Part-time-Financial-Advisor_JR-81720",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81796",
+   "title": "Financial Adviser – Short Term Specialist (Ballito)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Financial-Adviser---Short-Term-Specialist--Ballito-_JR-81796",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81839",
+   "title": "Commercial Sale Agent",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Commercial-Sale-Agent_JR-81839",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81842",
+   "title": "Commissioned Financial Adviser (Springbok)",
+   "location": "Springbok",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Springbok/Commissioned-Financial-Adviser--Springbok-_JR-81842",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81844",
+   "title": "Advancing Financial Adviser (Springbok)",
+   "location": "Springbok",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Springbok/Advancing-Financial-Adviser--Springbok-_JR-81844",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81845",
+   "title": "Aspiring Financial Adviser (Springbok)",
+   "location": "Springbok",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Springbok/Aspiring-Financial-Adviser--Springbok-_JR-81845",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81863-1",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Rustenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Advancing-Financial-Adviser-1_JR-81863-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81864",
+   "title": "Commissioned Financial Adviser-1",
+   "location": "Rustenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Commissioned-Financial-Adviser-1_JR-81864",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81869",
+   "title": "Commissioned Financial Advisor-1",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/Commissioned-Financial-Advisor-1_JR-81869",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81875",
+   "title": "Financial Adviser – Short Term Specialist (Klerksdorp)",
+   "location": "Klerksdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Klerksdorp/Financial-Adviser---Short-Term-Specialist_JR-81875",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81884",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Advancing-Financial-Adviser-1_JR-81884",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81917",
+   "title": "Commissioned Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Commissioned-Financial-Adviser_JR-81917",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81957",
+   "title": "Commissioned Financial Adviser",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Commissioned-Financial-Adviser_JR-81957",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81964",
+   "title": "Commissioned Financial Adviser-1",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Commissioned-Financial-Adviser-1_JR-81964",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-81965",
+   "title": "Commissioned Financial Adviser-1",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Commissioned-Financial-Adviser-1_JR-81965",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82028",
+   "title": "Commissioned Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Commissioned-Financial-Adviser_JR-82028",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82147",
+   "title": "Commercial Sales Agent Tied",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Commercial-Sales-Agent-Tied_JR-82147",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82197",
+   "title": "Commissioned Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Commissioned-Financial-Adviser_JR-82197",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82206",
+   "title": "OMF Financial Consultant (Eastgate Mall)",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/OMF-Financial-Consultant--Eastgate-Mall-_JR-82206",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82248",
+   "title": "Software Quality Engineer: Customer Identity and Access Management (CIAM)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Software-Quality-Engineer--Customer-Identity-and-Access-Management--CIAM-_JR-82248",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82333",
+   "title": "Aspiring Financial Adviser",
+   "location": "Knysna",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Knysna/Aspiring-Financial-Adviser_JR-82333",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82431",
+   "title": "OMF Financial Consultant (OMF Upington)",
+   "location": "Upington",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Upington/OMF-Financial-Consultant--OMF-Upington-_JR-82431",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82460",
+   "title": "Advancing Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Advancing-Financial-Adviser_JR-82460",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82501-1",
+   "title": "Commissioned Financial Adviser",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Commissioned-Financial-Adviser_JR-82501-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82502",
+   "title": "Advancing Financial Adviser",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Advancing-Financial-Adviser_JR-82502",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82505",
+   "title": "Advancing Financial Adviser",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Advancing-Financial-Adviser_JR-82505",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82507",
+   "title": "Advancing Financial Adviser",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Advancing-Financial-Adviser_JR-82507",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82511",
+   "title": "Commissioned Financial Adviser",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Commissioned-Financial-Adviser_JR-82511",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82541",
+   "title": "Commercial Sales Agent-1",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Commercial-Sales-Agent-1_JR-82541",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82554",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-82554",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82561",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-82561",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82563-1",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-82563-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82569",
+   "title": "Commissioned Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Commissioned-Financial-Adviser_JR-82569",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82573",
+   "title": "Advancing Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Advancing-Financial-Adviser_JR-82573",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82596",
+   "title": "MFC Salaried Financial Advisor (Ngcobo, Tsomo, Libode and Surrounding)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/MFC-Salaried-Financial-Advisor--Ngcobo--Tsomo--Libode-and-Surrounding-_JR-82596",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82630",
+   "title": "Advancing Financial Adviser-2",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Advancing-Financial-Adviser-2_JR-82630",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82708",
+   "title": "Commissioned Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Commissioned-Financial-Adviser_JR-82708",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82798",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Advancing-Financial-Adviser-1_JR-82798",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82812",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-82812",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82813",
+   "title": "Commissioned Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Commissioned-Financial-Adviser_JR-82813",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82815",
+   "title": "Advancing Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Advancing-Financial-Adviser_JR-82815",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82817",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-82817",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82818",
+   "title": "Commissioned Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Commissioned-Financial-Adviser_JR-82818",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82819",
+   "title": "Advancing Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Advancing-Financial-Adviser_JR-82819",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82821",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-82821",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82822",
+   "title": "Commissioned Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Commissioned-Financial-Adviser_JR-82822",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82823-1",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Mafikeng",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mafikeng/Advancing-Financial-Adviser-1_JR-82823-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82824",
+   "title": "Advancing Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Advancing-Financial-Adviser_JR-82824",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82826",
+   "title": "Aspiring Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Aspiring-Financial-Adviser_JR-82826",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82827",
+   "title": "Commissioned Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Commissioned-Financial-Adviser_JR-82827",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82828",
+   "title": "Advancing Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Advancing-Financial-Adviser_JR-82828",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82829",
+   "title": "Aspiring Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Aspiring-Financial-Adviser_JR-82829",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82830",
+   "title": "Commissioned Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Commissioned-Financial-Adviser_JR-82830",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82832",
+   "title": "Advancing Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Advancing-Financial-Adviser_JR-82832",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82833",
+   "title": "Aspiring Financial Adviser",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Aspiring-Financial-Adviser_JR-82833",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82834",
+   "title": "Commissioned Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Commissioned-Financial-Adviser_JR-82834",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82836",
+   "title": "Advancing Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Advancing-Financial-Adviser_JR-82836",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82860",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-82860",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82862",
+   "title": "Aspiring Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Aspiring-Financial-Adviser_JR-82862",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82863",
+   "title": "Commissioned Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Commissioned-Financial-Adviser_JR-82863",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82865",
+   "title": "Advancing Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Advancing-Financial-Adviser_JR-82865",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82867",
+   "title": "Commissioned Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Commissioned-Financial-Adviser_JR-82867",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82868",
+   "title": "Advancing Financial Adviser",
+   "location": "Alberton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Alberton/Advancing-Financial-Adviser_JR-82868",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82881",
+   "title": "Advancing Financial Adviser ( Somerset West )",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Advancing-Financial-Adviser---Somerset-West--_JR-82881",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82887",
+   "title": "Aspiring Financial Advisor",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Aspiring-Financial-Advisor_JR-82887",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82888",
+   "title": "Commissioned Financial Adviser",
+   "location": "Paarl",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Paarl/Commissioned-Financial-Adviser_JR-82888",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82891",
+   "title": "Aspiring Financial Adviser",
+   "location": "Vredenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vredenburg/Aspiring-Financial-Adviser_JR-82891",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82905",
+   "title": "Commissioned Financial Adviser",
+   "location": "Knysna",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Knysna/Commissioned-Financial-Adviser_JR-82905",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82924",
+   "title": "Aspiring Financial Adviser (Westville, Chesterville, Durban and Surrrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Westville--Chesterville--Durban-and-Surrrounds-_JR-82924",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82925",
+   "title": "Aspiring Financial Adviser (Amanzimtoti, Umlazi, Chatsworth and Surrrounds)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Amanzimtoti--Umlazi--Chatsworth-and-Surrrounds-_JR-82925",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82927",
+   "title": "Aspiring Financial Adviser (Westville, Chesterville, Durban and Surrrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Westville--Chesterville--Durban-and-Surrrounds-_JR-82927",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82928-1",
+   "title": "Aspiring Financial Adviser (Hillcrest, Pinetown, New Germany, Hammarsdale, Kloof and Surrrounds )",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Hillcrest--Pinetown--New-Germany--Hammarsdale--Kloof-and-Surrrounds--_JR-82928-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82930",
+   "title": "Advancing Financial Adviser (Westville, Chesterville, Durban and Surrrounds)",
+   "location": "Westville",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Westville/Advancing-Financial-Adviser--Westville--Chesterville--Durban-and-Surrrounds-_JR-82930",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82933",
+   "title": "Aspiring Financial Adviser (PMB, Howick, Estcourt and Surrounds)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Aspiring-Financial-Adviser---PMB--Howick--Estcourt-and-Surrounds-_JR-82933",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82936",
+   "title": "Advancing Financial Adviser (Amanzimtoti, Umlazi, Chatsworth and Surroundings )",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advancing-Financial-Adviser---Amanzimtoti--Umlazi--Chatsworth-and-Surroundings--_JR-82936",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82939",
+   "title": "Advancing Financial Adviser (Hillcrest, Pinetown, New Germany, Hammarsdale, Kloof and Surroundings)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advancing-Financial-Adviser----Hillcrest--Pinetown--New-Germany--Hammarsdale--Kloof-and-Surroundings-_JR-82939",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82944",
+   "title": "Commissioned Financial Adviser (Hillcrest, Pinetown, New Germany, Hammarsdale, Kloof and Surrounding)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Commissioned-Financial-Adviser----Hillcrest--Pinetown--New-Germany--Hammarsdale--Kloof-and-Surrounding-_JR-82944",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82945",
+   "title": "Commissioned Financial Adviser (Amanzimtoti, Umlazi, Chatsworth and Surroundings)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Commissioned-Financial-Adviser--Amanzimtoti--Umlazi--Chatsworth-and-Surroundings-_JR-82945",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82946",
+   "title": "Commissioned Financial Adviser ( Bizana/ Shelly Beach / Kokstad / Port Shepstone / Umzimkulu / Mount Frere and Surroundings)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kokstad/Commissioned-Financial-Adviser---Bizana--Shelly-Beach---Kokstad---Port-Shepstone---Umzimkulu----Mount-Frere-and-Surroundings-_JR-82946",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82948",
+   "title": "Part Time Financial Adviser (Westville/ Chesterville/ Sherwood/ Durban)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser--Westville--Chesterville--Sherwood--Durban-_JR-82948",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82950",
+   "title": "Part Time Financial Adviser (Amazimtoti, Umlazi, Scottburgh, Chatsworth)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser--Amazimtoti--Umlazi--Scottburgh--Chatsworth-_JR-82950",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82951",
+   "title": "Part Time Financial Adviser (Hillcrest, Bothas Hill, Assagay, Pinetown, New Germany)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser---Hillcrest--Bothas-Hill--Assagay--Pinetown--New-Germany-_JR-82951",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82953",
+   "title": "Advisory Paraplanner",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advisory-Paraplanner_JR-82953",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82955",
+   "title": "Aspiring Financial Advisor (Butterworth and Surrounds)",
+   "location": "Butterworth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Butterworth/Aspiring-Financial-Advisor--Butterworth-and-Surrounds-_JR-82955",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82956",
+   "title": "Advancing Financial Adviser (Butterworth and Surrounds)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Butterworth/Advancing-Financial-Adviser--Butterworth-and-Surrounds-_JR-82956",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82957",
+   "title": "Commissioned Financial Adviser (Butterworth and Surrounds)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Butterworth/Commissioned-Financial-Adviser--Butterworth-and-Surrounds-_JR-82957",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82958",
+   "title": "Part Time Financial Adviser (Butterworth and Surrounds)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Butterworth/Part-Time-Financial-Adviser--Butterworth-and-Surrounds-_JR-82958",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82959",
+   "title": "Aspiring Financial Advisor (Mthatha and Surrounds)",
+   "location": "Mthatha",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/Aspiring-Financial-Advisor--Mthatha-and-Surrounds-_JR-82959",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82960-1",
+   "title": "Advancing Financial Adviser (Mthatha and Surrounds)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/Advancing-Financial-Adviser--Mthatha-and-Surrounds-_JR-82960-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82962",
+   "title": "Commissioned Financial Adviser (Mthatha and Surrounds)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/Commissioned-Financial-Adviser--Mthatha-and-Surrounds-_JR-82962",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82963-1",
+   "title": "Part Time Financial Adviser (Mthatha and Surrounds)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/Part-Time-Financial-Adviser--Mthatha-and-Surrounds-_JR-82963-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82969",
+   "title": "Aspiring Financial Advisor (Mthatha and Surrounds)",
+   "location": "Mthatha",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/Aspiring-Financial-Advisor--Mthatha-and-Surrounds-_JR-82969",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82970",
+   "title": "Advancing Financial Adviser (Mthatha and Surrounds)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/Advancing-Financial-Adviser--Mthatha-and-Surrounds-_JR-82970",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82971",
+   "title": "Commissioned Financial Adviser (Mthatha and Surrounds)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/Commissioned-Financial-Adviser--Mthatha-and-Surrounds-_JR-82971",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82972",
+   "title": "Part Time Financial Adviser (Mthatha and Surrounds)",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mthatha/Part-Time-Financial-Adviser--Mthatha-and-Surrounds-_JR-82972",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82973",
+   "title": "Aspiring Financial Adviser (Ballito, Stanger, Darnall, Tongaat and Surrounds)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Ballito--Stanger--Darnall--Tongaat-and-Surrounds-_JR-82973",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82975",
+   "title": "Advancing Financial Adviser (Ballito/ Stanger/ KwaDukuza/ Mthunzini/ Darnall)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/KwaDukuza/Advancing-Financial-Adviser--Ballito--Stanger--KwaDukuza--Mthunzini--Darnall-_JR-82975",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82976",
+   "title": "Commissioned Financial Adviser (Ballito/ Stanger/ KwaDukuza/ Mthunzini/ Darnall)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/KwaDukuza/Commissioned-Financial-Adviser--Ballito--Stanger--KwaDukuza--Mthunzini--Darnall-_JR-82976",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82977-1",
+   "title": "Part Time Financial Adviser (Ballito/ Stanger/ KwaDukuza/ Tongaat)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser--Ballito--Stanger--KwaDukuza--Tongaat-_JR-82977-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82978",
+   "title": "Aspiring Financial Adviser (Umhlanga, Phoenix, Avoca, KwaMashu and Surrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Umhlanga--Phoenix--Avoca--KwaMashu-and-Surrounds-_JR-82978",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82979",
+   "title": "Advancing Financial Adviser (Umhlanga/ La Lucia/ Phoenix/ Verulam/ KwaMashu and Surrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advancing-Financial-Adviser--Umhlanga--La-Lucia--Phoenix--Verulam--KwaMashu-and-Surrounds-_JR-82979",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82981",
+   "title": "Commissioned Financial Adviser (Umhlanga/ La Lucia/ Phoenix/ Verulam/ KwaMashu and Surrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Commissioned-Financial-Adviser--Umhlanga--La-Lucia--Phoenix--Verulam--KwaMashu-and-Surrounds-_JR-82981",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82982-1",
+   "title": "Part Time Financial Adviser (Umhlanga/ La Lucia/ Phoenix/ Verulam/ KwaMashu and Surrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser--Umhlanga--La-Lucia--Phoenix--Verulam--KwaMashu-and-Surrounds-_JR-82982-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82983",
+   "title": "Aspiring Financial Adviser (Ricahrds Bay, Mtubatuba, Empangeni, Esikhawini and Zululand))",
+   "location": "8 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Ricahrds-Bay--Mtubatuba--Empangeni--Esikhawini-and-Zululand--_JR-82983",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82984",
+   "title": "Advancing Financial Adviser (Richards Bay/ Empangeni/ Esikhawini and Surrounds)",
+   "location": "10 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advancing-Financial-Adviser--Richards-Bay--Empangeni--Esikhawini-and-Surrounds-_JR-82984",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82985",
+   "title": "Commissioned Financial Adviser (Richards Bay/ Empangeni/ Esikhawini and Surrounds)",
+   "location": "10 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Commissioned-Financial-Adviser--Richards-Bay--Empangeni--Esikhawini-and-Surrounds-_JR-82985",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82986",
+   "title": "Part Time Financial Adviser (Richards Bay/ Empangeni/ Esikhawini and Surrounds)",
+   "location": "10 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser--Richards-Bay--Empangeni--Esikhawini-and-Surrounds-_JR-82986",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82987",
+   "title": "Advancing Financial Adviser (Pietermaritzburg/ Estcourt/ Howick)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Advancing-Financial-Adviser--Pietermaritzburg--Estcourt--Howick-_JR-82987",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82988",
+   "title": "Commissioned Financial Adviser (Pietermaritzburg/ Estcourt/ Howick)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Commissioned-Financial-Adviser--Pietermaritzburg--Estcourt--Howick-_JR-82988",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82989-1",
+   "title": "Part Time Financial Adviser (Pietermaritzburg/ Estcourt/ Howick)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Part-Time-Financial-Adviser--Pietermaritzburg--Estcourt--Howick-_JR-82989-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82990",
+   "title": "Aspiring Financial Adviser (Ladysmith, Dundee and Surrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ladysmith/Aspiring-Financial-Adviser--Ladysmith--Dundee-and-Surrounds-_JR-82990",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82991",
+   "title": "Advancing Financial Adviser (Ladysmith/ Bergville/ Dundee/ Glencoe/ Nqutu)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ladysmith/Advancing-Financial-Adviser--Ladysmith--Bergville--Dundee--Glencoe--Nqutu-_JR-82991",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82992",
+   "title": "Commissioned Financial Adviser (Ladysmith/ Bergville/ Dundee/ Glencoe/ Nqutu)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ladysmith/Commissioned-Financial-Adviser--Ladysmith--Bergville--Dundee--Glencoe--Nqutu-_JR-82992",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82993",
+   "title": "Part Time Financial Adviser (Ladysmith/ Bergville/ Dundee/ Glencoe/ Nqutu)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ladysmith/Part-Time-Financial-Adviser--Ladysmith--Bergville--Dundee--Glencoe--Nqutu-_JR-82993",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82994",
+   "title": "Aspiring Financial Adviser (Pietermaritzburg)",
+   "location": "Pietermaritzburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Aspiring-Financial-Adviser--Pietermaritzburg-_JR-82994",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82995",
+   "title": "Advancing Financial Adviser (Pietermaritzburg/ Howick and Surrounds)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Advancing-Financial-Adviser--Pietermaritzburg--Howick-and-Surrounds-_JR-82995",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82997",
+   "title": "Commissioned Financial Adviser (Pietermaritzburg)",
+   "location": "Pietermaritzburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Commissioned-Financial-Adviser--Pietermaritzburg-_JR-82997",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82998",
+   "title": "Part Time Financial Adviser (Pietermaritzburg/ Howick and Surrounds)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Part-Time-Financial-Adviser--Pietermaritzburg--Howick-and-Surrounds-_JR-82998",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-82999",
+   "title": "Aspiring Financial Adviser (PMB, Howick, Estcourt and Surrounds)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Aspiring-Financial-Adviser--PMB--Howick--Estcourt-and-Surrounds-_JR-82999",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83000",
+   "title": "Advancing Financial Adviser (Pietermaritzburg/ Howick and Surrounds)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Advancing-Financial-Adviser--Pietermaritzburg--Howick-and-Surrounds-_JR-83000",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83001",
+   "title": "Commissioned Financial Adviser (Pietermaritzburg/ Howick and Surrounds)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Commissioned-Financial-Adviser--Pietermaritzburg--Howick-and-Surrounds-_JR-83001",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83002",
+   "title": "Aspiring Financial Adviser (Hartswater / De Aar / Douglas / Kimberley)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kimberley/Aspiring-Financial-Adviser--Hartswater---De-Aar---Douglas---Kimberley-_JR-83002",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83003-1",
+   "title": "Part Time Financial Adviser (Pietermaritzburg/ Howick and Surrounds)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Part-Time-Financial-Adviser--Pietermaritzburg--Howick-and-Surrounds-_JR-83003-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83005",
+   "title": "Aspiring Financial Adviser (Newcastle, Vryheid and Surrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Newcastle/Aspiring-Financial-Adviser--Newcastle--Vryheid-and-Surrounds-_JR-83005",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83006",
+   "title": "Advancing Financial Adviser (Newcastle/ Vryheid and Surrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Newcastle/Advancing-Financial-Adviser--Newcastle--Vryheid-and-Surrounds-_JR-83006",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83007",
+   "title": "Commissioned Financial Adviser (Newcastle/ Vryheid and Surrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Newcastle/Commissioned-Financial-Adviser--Newcastle--Vryheid-and-Surrounds-_JR-83007",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83008",
+   "title": "Aspiring Financial Adviser (Vryburg / Kathu / Postmasburg / Kuruman)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vryburg/Aspiring-Financial-Adviser--Vryburg---Kathu---Postmasburg---Kuruman-_JR-83008",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83009",
+   "title": "Part Time Financial Adviser (Newcastle/ Vryheid and Surrounds)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Newcastle/Part-Time-Financial-Adviser--Newcastle--Vryheid-and-Surrounds-_JR-83009",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83010-1",
+   "title": "Aspiring Financial Adviser (Upington, Groblershoop)",
+   "location": "Upington",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Upington/Aspiring-Financial-Adviser--Upington--Groblersdal-_JR-83010-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83011",
+   "title": "Advancing Financial Adviser (Hartswater / De Aar / Kimberley / Douglas)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/De-Aar/Advancing-Financial-Adviser--Hartswater---De-Aar---Kimberley---Douglas-_JR-83011",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83012",
+   "title": "Aspiring Financial Adviser (PMB, Howick, Estcourt and Surrounds)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Aspiring-Financial-Adviser--PMB--Howick--Estcourt-and-Surrounds-_JR-83012",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83013",
+   "title": "Advancing Financial Adviser (Vryburg / Postmasburg /Kuruman / Kathu)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kuruman/Advancing-Financial-Adviser--Vryburg---Postmasburg--Kuruman---Kathu-_JR-83013",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83014",
+   "title": "Advancing Financial Adviser (Pietermaritzburg/ Greytown/ Howick)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Advancing-Financial-Adviser--Pietermaritzburg--Greytown--Howick-_JR-83014",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83015",
+   "title": "Commissioned Financial Adviser (Pietermaritzburg/ Greytown/ Howick)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Commissioned-Financial-Adviser--Pietermaritzburg--Greytown--Howick-_JR-83015",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83016",
+   "title": "Part Time Financial Adviser (Pietermaritzburg/ Greytown/ Howick)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Part-Time-Financial-Adviser--Pietermaritzburg--Greytown--Howick-_JR-83016",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83017",
+   "title": "Aspiring Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Morningside-Durban-_JR-83017",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83018-1",
+   "title": "Advancing Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advancing-Financial-Adviser--Morningside-Durban-_JR-83018-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83019",
+   "title": "Commissioned Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Commissioned-Financial-Adviser--Morningside-Durban-_JR-83019",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83020",
+   "title": "Part Time Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser--Morningside-Durban-_JR-83020",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83021",
+   "title": "Aspiring Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Morningside-Durban-_JR-83021",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83022",
+   "title": "Advancing Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advancing-Financial-Adviser--Morningside-Durban-_JR-83022",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83023",
+   "title": "Commissioned Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Commissioned-Financial-Adviser--Morningside-Durban-_JR-83023",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83024",
+   "title": "Part Time Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser--Morningside-Durban-_JR-83024",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83025-1",
+   "title": "Aspiring Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Morningside-Durban-_JR-83025-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83026",
+   "title": "Advancing Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advancing-Financial-Adviser--Morningside-Durban-_JR-83026",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83027",
+   "title": "Commissioned Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Commissioned-Financial-Adviser--Morningside-Durban-_JR-83027",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83028",
+   "title": "Part Time Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser--Morningside-Durban-_JR-83028",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83029",
+   "title": "Aspiring Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Aspiring-Financial-Adviser--Morningside-Durban-_JR-83029",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83030",
+   "title": "Advancing Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advancing-Financial-Adviser--Morningside-Durban-_JR-83030",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83031",
+   "title": "Commissioned Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Commissioned-Financial-Adviser--Morningside-Durban-_JR-83031",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83032",
+   "title": "Part Time Financial Adviser (Morningside Durban)",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Part-Time-Financial-Adviser--Morningside-Durban-_JR-83032",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83046",
+   "title": "Advancing Financial Adviser (Upington / Groblershoop)",
+   "location": "Upington",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Upington/Advancing-Financial-Adviser--Upington---Groblersdal-_JR-83046",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83047",
+   "title": "Commissioned Financial Adviser (Kimberley / Hartswater / Douglas / De Aar)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Hartswater/Commissioned-Financial-Adviser--Kimberley---Hartswater---Douglas---De-Aar-_JR-83047",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83048",
+   "title": "Commissioned Financial Adviser (Vryburg / Kuruman / Kathu / Postmasburg)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kathu/Commissioned-Financial-Adviser--Vryburg---Kuruman---Kathu---Postmasburg-_JR-83048",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83049",
+   "title": "Commissioned Financial Adviser (Upington, Groblershoop)",
+   "location": "Upington",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Upington/Commissioned-Financial-Adviser--Upington--Groblersdal-_JR-83049",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83051",
+   "title": "Part-Time Financial Advisor",
+   "location": "Kimberley",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kimberley/Part-Time-Financial-Advisor_JR-83051",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83056",
+   "title": "Aspiring Financial Adviser",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Aspiring-Financial-Adviser_JR-83056",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83057",
+   "title": "Aspiring Financial Adviser (Welkom / Hoopstad)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Welkom/Aspiring-Financial-Adviser--Welkom---Hoopstad-_JR-83057",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83058",
+   "title": "Aspiring Financial Adviser (Welkom / Bloemfontein)",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Aspiring-Financial-Adviser--Welkom---Bloemfontein-_JR-83058",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83060",
+   "title": "Aspiring Financial Adviser (Bloemfontein / Welkom / Colesberg)",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Aspiring-Financial-Adviser--Bloemfontein---Welkom---Colesberg-_JR-83060",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83062",
+   "title": "Aspiring Financial Adviser (Aliwal North / Theunissen / Ladybrand / Ficksburg)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ladybrand/Aspiring-Financial-Adviser--Aliwal-North---Theunissen---Ladybrand---Ficksburg-_JR-83062",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83063",
+   "title": "Advancing Financial Adviser",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Advancing-Financial-Adviser_JR-83063",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83064",
+   "title": "Advancing Financial Adviser (Welkom / Hoopstad)",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Advancing-Financial-Adviser--Welkom---Hoopstad-_JR-83064",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83066",
+   "title": "Advancing Financial Adviser",
+   "location": "Welkom",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Welkom/Advancing-Financial-Adviser_JR-83066",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83068",
+   "title": "Advancing Financial Adviser (Bloemfontein / Welkom / Colesberg)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Colesburg/Advancing-Financial-Adviser--Bloemfontein---Welkom---Colesberg-_JR-83068",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83070",
+   "title": "Advancing Financial Adviser (Aliwal North / Theunissen / Ladybrand / Ficksburg)",
+   "location": "Ladybrand",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ladybrand/Advancing-Financial-Adviser--Aliwal-North---Theunissen---Ladybrand---Ficksburg-_JR-83070",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83073",
+   "title": "Commissioned Financial Adviser",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Commissioned-Financial-Adviser_JR-83073",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83074-1",
+   "title": "Commissioned Financial Adviser (Welkom / Hoopstad)",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Commissioned-Financial-Adviser--Welkom---Hoopstad-_JR-83074-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83075",
+   "title": "Commissioned Financial Adviser (Bloemfontein / Welkom)",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Commissioned-Financial-Adviser--Bloemfontein---Welkom-_JR-83075",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83077",
+   "title": "Commissioned Financial Adviser (Bloemfontein / Welkom / Colesberg)",
+   "location": "Bloemfontein",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Commissioned-Financial-Adviser--Bloemfontein---Welkom---Colesberg-_JR-83077",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83078",
+   "title": "Commissioned Financial Adviser (Aliwal North / Theunissen / Ladybrand / Ficksburg)",
+   "location": "Aliwal North",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Aliwal-North/Commissioned-Financial-Adviser--Aliwal-North---Theunissen---Ladybrand---Ficksburg-_JR-83078",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83087",
+   "title": "Aspiring Financial Adviser (Klerksdorp, Stilfontein, Wolmaranstad, Hartebeesfontein, Orkney, Bothaville)",
+   "location": "Orkney",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Orkney/Aspiring-Financial-Adviser--Klerksdorp--Stilfontein--Wolmaranstad--Hartebeesfontein--Orkney--Bothaville-_JR-83087",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83088-1",
+   "title": "Aspiring Financial Adviser (Klerksdorp)",
+   "location": "Parys",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Parys/Aspiring-Financial-Adviser--Klerksdorp-_JR-83088-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83090",
+   "title": "Aspiring Financial Adviser (Potchefstroom)",
+   "location": "Klerksdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Klerksdorp/Aspiring-Financial-Adviser--Potchefstroom-_JR-83090",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83092",
+   "title": "Aspiring Financial Adviser (Lichtenburg / Sannieshof / Delareyville / Mafikeng)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Sannieshof/Aspiring-Financial-Adviser--Lichtenburg---Sannieshof---Delareyville---Mafikeng-_JR-83092",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83101",
+   "title": "Advancing Financial Adviser (Klerksdorp, Stilfontein, Wolmaranstad, Hartebeesfontein, Orkney, Bothaville)",
+   "location": "Klerksdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Klerksdorp/Advancing-Financial-Adviser--Klerksdorp--Stilfontein--Wolmaranstad--Hartebeesfontein--Orkney--Bothaville-_JR-83101",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83102",
+   "title": "Advancing Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Parys/Advancing-Financial-Adviser_JR-83102",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83104-1",
+   "title": "Advancing Financial Adviser",
+   "location": "Potchefstroom",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Potchefstroom/Advancing-Financial-Adviser_JR-83104-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83105",
+   "title": "Advancing Financial Adviser (Lichtenburg / Sannieshof / Delareyville / Mafikeng / Ottosdal)",
+   "location": "Sannieshof",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Sannieshof/Advancing-Financial-Adviser--Lichtenburg---Sannieshof---Delareyville---Mafikeng---Ottosdal-_JR-83105",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83106",
+   "title": "Commissioned Financial Adviser (Klerksdorp, Stilfontein, Wolmaranstad, Hartebeesfontein, Orkney, Bothaville)",
+   "location": "Klerksdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Klerksdorp/Commissioned-Financial-Adviser--Klerksdorp--Stilfontein--Wolmaranstad--Hartebeesfontein--Orkney--Bothaville-_JR-83106",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83107-1",
+   "title": "Commissioned Financial Adviser",
+   "location": "Potchefstroom",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Potchefstroom/Commissioned-Financial-Adviser_JR-83107-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83109",
+   "title": "Commissioned Financial Adviser",
+   "location": "Potchefstroom",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Potchefstroom/Commissioned-Financial-Adviser_JR-83109",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83110",
+   "title": "Commissioned Financial Adviser (Coligny / Sannieshof)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Sannieshof/Commissioned-Financial-Adviser--Coligny---Sannieshof-_JR-83110",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83111",
+   "title": "Aspiring Financial Adviser (Three Rivers / Vereeniging)",
+   "location": "Vereeniging",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vereeniging/Aspiring-Financial-Adviser--Three-Rivers---Vereeniging-_JR-83111",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83112",
+   "title": "Aspiring Financial Adviser (Vanderbijlpark / Sasolburg / Sebokeng)",
+   "location": "Sasolburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Sasolburg/Aspiring-Financial-Adviser--Vanderbijlpark---Sasolburg---Sebokeng-_JR-83112",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83113",
+   "title": "Aspiring Financial Adviser",
+   "location": "Kroonstad",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kroonstad/Aspiring-Financial-Adviser_JR-83113",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83114",
+   "title": "Aspiring Financial Adviser (Orange Farm / Savanah City / Evaton)",
+   "location": "Evaton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Evaton/Aspiring-Financial-Adviser--Orange-Farm---Savanah-City---Evaton-_JR-83114",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83115",
+   "title": "Aspiring Financial Adviser (Heilbron / Frankfort / Kroonstad / Vanderbijl Park / Three Rivers)",
+   "location": "Frankfort",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Frankfort/Aspiring-Financial-Adviser--Heilbron---Frankfort---Kroonstad---Vanderbijl-Park---Three-Rivers-_JR-83115",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83116",
+   "title": "Aspiring Financial Adviser (Eastern Free-State)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Senekal/Aspiring-Financial-Adviser--Eastern-Free-State-_JR-83116",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83117",
+   "title": "Aspiring Financial Adviser (Orange Farm / Savana City)",
+   "location": "Vanderbijlpark",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vanderbijlpark/Aspiring-Financial-Adviser--Orange-Farm---Savana-City-_JR-83117",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83119",
+   "title": "Aspiring Financial Adviser (Vanderbiljpark / Sasolburg / Sebokeng / Evaton)",
+   "location": "Evaton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Evaton/Aspiring-Financial-Adviser--Vanderbiljpark---Sasolburg---Sebokeng---Evaton-_JR-83119",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83120",
+   "title": "Aspiring Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Phuthaditjhaba/Aspiring-Financial-Adviser_JR-83120",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83121",
+   "title": "Aspiring Financial Adviser (Kestell / Lindley / Reitz)",
+   "location": "Bethlehem",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bethlehem/Aspiring-Financial-Adviser--Kestell---Lindley---Reitz-_JR-83121",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83122",
+   "title": "Aspiring Financial Adviser",
+   "location": "Vanderbijlpark",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vanderbijlpark/Aspiring-Financial-Adviser_JR-83122",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83123",
+   "title": "Advancing Financial Adviser (Three Rivers / Vereeniging)",
+   "location": "Vereeniging",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vereeniging/Advancing-Financial-Adviser--Three-Rivers---Vereeniging-_JR-83123",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83124-1",
+   "title": "Advancing Financial Adviser (Vanderbijlpark / Sasolburg / Sebokeng)",
+   "location": "Sasolburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Sasolburg/Advancing-Financial-Adviser--Vanderbijlpark---Sasolburg---Sebokeng-_JR-83124-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83125",
+   "title": "Advancing Financial Adviser (Kroonstad)",
+   "location": "Kroonstad",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kroonstad/Advancing-Financial-Adviser--Kroonstad-_JR-83125",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83127",
+   "title": "Advancing Financial Adviser (Heilbron / Frankfort)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Frankfort/Advancing-Financial-Adviser--Heilbron---Frankfort-_JR-83127",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83128",
+   "title": "Advancing Financial Adviser (Vanderbiljpark / Sasolburg / Sebokeng / Evaton)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vanderbijlpark/Advancing-Financial-Adviser--Vanderbiljpark---Sasolburg---Sebokeng---Evaton-_JR-83128",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83129",
+   "title": "Advancing Financial Adviser (Bethlehem / Lindley / Reitz)",
+   "location": "Bethlehem",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bethlehem/Advancing-Financial-Adviser--Bethlehem---Lindley---Reitz-_JR-83129",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83131",
+   "title": "Commissioned Financial Adviser (Three Rivers / Vereeniging / Meyerton)",
+   "location": "Vereeniging",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vereeniging/Commissioned-Financial-Adviser--Three-Rivers---Vereeniging---Meyerton-_JR-83131",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83132-1",
+   "title": "Commissioned Financial Adviser (Vanderbijlpark / Sasolburg / Sebokeng)",
+   "location": "Vereeniging",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vereeniging/Commissioned-Financial-Adviser--Vanderbijlpark---Sasolburg---Sebokeng-_JR-83132-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83133",
+   "title": "Commissioned Financial Adviser (Kroonstad)",
+   "location": "Kroonstad",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kroonstad/Commissioned-Financial-Adviser--Kroonstad-_JR-83133",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83134",
+   "title": "Commissioned Financial Adviser (Heilbron / Frankfort / Reitz)",
+   "location": "Vanderbijlpark",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vanderbijlpark/Commissioned-Financial-Adviser--Heilbron---Frankfort---Reitz-_JR-83134",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83135",
+   "title": "Commissioned Financial Adviser (Vanderbiljpark / Sasolburg)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vanderbijlpark/Commissioned-Financial-Adviser--Vanderbiljpark---Sasolburg-_JR-83135",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83136",
+   "title": "Commissioned Financial Adviser (Bethlehem / Qwa-Qwa / Lindley / Reitz)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Qwa-Qwa/Commissioned-Financial-Adviser--Bethlehem---Qwa-Qwa---Lindley---Reitz-_JR-83136",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83137",
+   "title": "Part-time Financial Advisor",
+   "location": "Meyerton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Meyerton/Part-time-Financial-Advisor_JR-83137",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83140",
+   "title": "Advancing Financial Adviser",
+   "location": "Bethlehem",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bethlehem/Advancing-Financial-Adviser_JR-83140",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83141-1",
+   "title": "Commissioned Financial Adviser",
+   "location": "Bethlehem",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bethlehem/Commissioned-Financial-Adviser_JR-83141-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83162",
+   "title": "Commercial Sale Agent-1",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pietermaritzburg/Commercial-Sale-Agent-1_JR-83162",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83165",
+   "title": "Commissioned Financial Adviser",
+   "location": "Malmesbury",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Malmesbury/Commissioned-Financial-Adviser_JR-83165",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83166",
+   "title": "Commissioned Financial Adviser",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Commissioned-Financial-Adviser_JR-83166",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83168",
+   "title": "Commissioned Financial Adviser",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Commissioned-Financial-Adviser_JR-83168",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83172",
+   "title": "Advancing Financial Adviser",
+   "location": "Paarl",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Paarl/Advancing-Financial-Adviser_JR-83172",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83173",
+   "title": "Commissioned Financial Adviser",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Commissioned-Financial-Adviser_JR-83173",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83174",
+   "title": "Advancing Financial Adviser",
+   "location": "Hermanus",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Hermanus/Advancing-Financial-Adviser_JR-83174",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83175",
+   "title": "Advancing Financial Adviser",
+   "location": "Queenstown",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Queenstown/Advancing-Financial-Adviser_JR-83175",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83194",
+   "title": "PFA - Aspiring Financial Advisor",
+   "location": "Witbank",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/PFA---Aspiring-Financial-Advisor_JR-83194",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83201",
+   "title": "Aspiring Financial Adviser",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Groblersdal/Aspiring-Financial-Adviser_JR-83201",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83211",
+   "title": "Commissioned Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Commissioned-Financial-Adviser_JR-83211",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83212",
+   "title": "Commissioned Financial Adviser",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Marble-Hall/Commissioned-Financial-Adviser_JR-83212",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83217",
+   "title": "Commissioned Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Commissioned-Financial-Adviser_JR-83217",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83220",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Witbank",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Advancing-Financial-Adviser-1_JR-83220",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83223",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Witbank",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Advancing-Financial-Adviser-1_JR-83223",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83225",
+   "title": "Advancing Financial Adviser-2",
+   "location": "Witbank",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Advancing-Financial-Adviser-2_JR-83225",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83226",
+   "title": "Advancing Financial Adviser-1",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Groblersdal/Advancing-Financial-Adviser-1_JR-83226",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83227",
+   "title": "Aspiring Financial Adviser",
+   "location": "Witbank",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Witbank/Aspiring-Financial-Adviser_JR-83227",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83230",
+   "title": "Commissioned Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Commissioned-Financial-Adviser_JR-83230",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83232",
+   "title": "Commissioned Financial Adviser-1",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Commissioned-Financial-Adviser-1_JR-83232",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83233",
+   "title": "Aspiring Financial Adviser",
+   "location": "Middelburg - Mpumalanga",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Middelburg---Mpumalanga/Aspiring-Financial-Adviser_JR-83233",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83234-1",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Advancing-Financial-Adviser-1_JR-83234-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83249",
+   "title": "Aspiring Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bushbuckridge/Aspiring-Financial-Adviser_JR-83249",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83251",
+   "title": "Aspiring Financial Adviser (Ermelo/Standerton/Secunda)",
+   "location": "4 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Secunda/Aspiring-Financial-Adviser--Ermelo-Standerton-Secunda-_JR-83251",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83252",
+   "title": "Commissioned Financial Adviser",
+   "location": "Mafikeng",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mafikeng/Commissioned-Financial-Adviser_JR-83252",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83253",
+   "title": "Aspiring Financial Adviser",
+   "location": "Nelspruit",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Aspiring-Financial-Adviser_JR-83253",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83258",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Rustenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Advancing-Financial-Adviser-1_JR-83258",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83276",
+   "title": "Aspiring Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Piet-Retief/Aspiring-Financial-Adviser_JR-83276",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83278",
+   "title": "Aspiring Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nelspruit/Aspiring-Financial-Adviser_JR-83278",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83279",
+   "title": "Aspiring Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Ermelo/Aspiring-Financial-Adviser_JR-83279",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83280",
+   "title": "Aspiring Financial Adviser (Rustenburg / Zeerust)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Aspiring-Financial-Adviser--Rustenburg---Zeerust-_JR-83280",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83282",
+   "title": "Aspiring Financial Adviser (Rustenburg)",
+   "location": "Rustenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Aspiring-Financial-Adviser--Rustenburg-_JR-83282",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83283",
+   "title": "Aspiring Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mafikeng/Aspiring-Financial-Adviser_JR-83283",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83285",
+   "title": "Aspiring Financial Adviser (Rustenburg)",
+   "location": "Rustenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Aspiring-Financial-Adviser--Rustenburg-_JR-83285",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83290-1",
+   "title": "Aspiring Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/Aspiring-Financial-Adviser_JR-83290-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83292",
+   "title": "Aspiring Financial Adviser",
+   "location": "Lebowakgomo",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Lebowakgomo/Aspiring-Financial-Adviser_JR-83292",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83298-1",
+   "title": "Aspiring Financial Adviser (Polokwane, Mokopane, Modimolle)",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Modimolle/Aspiring-Financial-Adviser--Polokwane--Mokopane--Modimolle-_JR-83298-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83314",
+   "title": "Aspiring Financial Adviser-1",
+   "location": "Musina",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Musina/Aspiring-Financial-Adviser-1_JR-83314",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83324",
+   "title": "Aspiring Financial Adviser-1",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Aspiring-Financial-Adviser-1_JR-83324",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83325",
+   "title": "Head: Capital Reporting",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Head--Capital-Reporting_JR-83325",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83326",
+   "title": "Commissioned Financial Adviser-1",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/Commissioned-Financial-Adviser-1_JR-83326",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83327-1",
+   "title": "Aspiring Financial Adviser-1",
+   "location": "Giyani",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Giyani/Aspiring-Financial-Adviser-1_JR-83327-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83330",
+   "title": "Advancing Financial Adviser-2",
+   "location": "Lebowakgomo",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Lebowakgomo/Advancing-Financial-Adviser-2_JR-83330",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83331",
+   "title": "Commissioned Financial Adviser-1",
+   "location": "Louis Trichardt",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Louis-Trichardt/Commissioned-Financial-Adviser-1_JR-83331",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83332",
+   "title": "Aspiring Financial Adviser-1",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Aspiring-Financial-Adviser-1_JR-83332",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83334",
+   "title": "Commissioned Financial Adviser-1",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Commissioned-Financial-Adviser-1_JR-83334",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83335",
+   "title": "Commissioned Financial Adviser-1",
+   "location": "Giyani",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Giyani/Commissioned-Financial-Adviser-1_JR-83335",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83337",
+   "title": "Aspiring Financial Adviser-1",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Aspiring-Financial-Adviser-1_JR-83337",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83338",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Advancing-Financial-Adviser-1_JR-83338",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83343",
+   "title": "Advancing Financial Adviser-3",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Advancing-Financial-Adviser-3_JR-83343",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83344",
+   "title": "Advancing Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Advancing-Financial-Adviser_JR-83344",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83345",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Thohoyandou",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Thohoyandou/Advancing-Financial-Adviser-1_JR-83345",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83357",
+   "title": "Advancing Financial Adviser",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Advancing-Financial-Adviser_JR-83357",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83429",
+   "title": "Advancing Financial Adviser Campaign - Cape",
+   "location": "6 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Advancing-Financial-Adviser-Campaign---Cape_JR-83429",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83430",
+   "title": "Aspiring Financial Adviser",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Aspiring-Financial-Adviser_JR-83430",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83431",
+   "title": "Advancing Financial Adviser Campaign (Free state)",
+   "location": "12 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Advancing-Financial-Adviser-Campaign--Free-state-_JR-83431",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83436",
+   "title": "Aspiring Financial Adviser Campaign (Free State)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vanderbijlpark/Aspiring-Financial-Adviser-Campaign--Free-State-_JR-83436",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83439",
+   "title": "Commissioned Financial Adviser Campaign (Free State)",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vanderbijlpark/Commissioned-Financial-Adviser-Campaign--Free-State-_JR-83439",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83440",
+   "title": "Advancing Financial Adviser PFA Campaign-Northern",
+   "location": "7 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Middelburg---Mpumalanga/Advancing-Financial-Adviser-PFA-Campaign-Northern_JR-83440",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83441",
+   "title": "Commissioned Financial Adviser- PFA Campaign Northern",
+   "location": "6 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Middelburg---Mpumalanga/Commissioned-Financial-Adviser--PFA-Campaign-Northern_JR-83441",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83458",
+   "title": "Advancing Financial Adviser Gauteng - PFA Campaign",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Advancing-Financial-Adviser-Gauteng---PFA-Campaign_JR-83458",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83459",
+   "title": "Commissioned Financial Adviser Gauteng - PFA Campaign",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Commissioned-Financial-Adviser-Gauteng---PFA-Campaign_JR-83459",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83465",
+   "title": "Advancing Financial Adviser KZN - PFA Campaign",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Advancing-Financial-Adviser-KZN---PFA-Campaign_JR-83465",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83466",
+   "title": "Commissioned Financial Adviser KZN - PFA Campaign",
+   "location": "Durban",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Durban/Commissioned-Financial-Adviser-KZN---PFA-Campaign_JR-83466",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83471",
+   "title": "Trust Administrator",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Trust-Administrator_JR-83471",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83500",
+   "title": "Financial Adviser - Short-Term Specialist",
+   "location": "Boksburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Boksburg/Financial-Adviser---Short-Term-Specialist_JR-83500",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83504",
+   "title": "Multiskilled Servicing Consultant- Fixed Term Contract (Cape Town)",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Multiskilled-Servicing-Consultant--Fixed-Term-Contract--Cape-Town-_JR-83504",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83549",
+   "title": "Advancing Financial Adviser",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Advancing-Financial-Adviser_JR-83549",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83550",
+   "title": "Commissioned Financial Adviser",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Commissioned-Financial-Adviser_JR-83550",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83556",
+   "title": "Advancing Financial Adviser",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Advancing-Financial-Adviser_JR-83556",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83557",
+   "title": "Advancing Financial Adviser",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Advancing-Financial-Adviser_JR-83557",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83559",
+   "title": "Advancing Financial Adviser",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Advancing-Financial-Adviser_JR-83559",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83561",
+   "title": "Commissioned Financial Adviser",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Commissioned-Financial-Adviser_JR-83561",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83581",
+   "title": "Information Security Officer",
+   "location": "3 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Information-Security-Officer_JR-83581",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83590",
+   "title": "Advancing Financial Adviser",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Advancing-Financial-Adviser_JR-83590",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83591",
+   "title": "Commissioned Financial Adviser",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Commissioned-Financial-Adviser_JR-83591",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83598",
+   "title": "Commissioned Financial Adviser",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Commissioned-Financial-Adviser_JR-83598",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83599",
+   "title": "Advancing Financial Adviser",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Advancing-Financial-Adviser_JR-83599",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83602",
+   "title": "Advancing Financial Adviser",
+   "location": "Worcester",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Worcester/Advancing-Financial-Adviser_JR-83602",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83604",
+   "title": "Advancing Financial Adviser",
+   "location": "Vredendal",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vredendal/Advancing-Financial-Adviser_JR-83604",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83605",
+   "title": "Advancing Financial Adviser",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vredenburg/Advancing-Financial-Adviser_JR-83605",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83664",
+   "title": "Senior Manager: Brand Communication",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Senior-Manager--Brand-Communication_JR-83664",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83679",
+   "title": "Commissioned Financial Adviser",
+   "location": "Hermanus",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Hermanus/Commissioned-Financial-Adviser_JR-83679",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83684",
+   "title": "Commercial Tied Agent",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Commercial-Tied-Agent_JR-83684",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83688",
+   "title": "OMF Financial Consultant (Polokwane)(Talent Pool)",
+   "location": "Polokwane",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Polokwane/OMF-Financial-Consultant--Polokwane--Talent-Pool-_JR-83688",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83690",
+   "title": "Part-time Financial Advisor",
+   "location": "Meyerton",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Meyerton/Part-time-Financial-Advisor_JR-83690",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83705",
+   "title": "Commercial Sales Agent Tied-1",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Commercial-Sales-Agent-Tied-1_JR-83705",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83786",
+   "title": "Senior Actuarial Specialist",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Senior-Actuarial-Specialist_JR-83786",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83882",
+   "title": "Pay Office Consultant (OMAO)",
+   "location": "Windhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Windhoek/Pay-Office-Consultant--OMAO-_JR-83882",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83884",
+   "title": "Sales Manager – Alternative Channels",
+   "location": "Nairobi",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nairobi/Sales-Manager---Alternative-Channels_JR-83884",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83891",
+   "title": "OMF Financial Consultant (Paarl)",
+   "location": "Paarl",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Paarl/OMF-Financial-Consultant--Paarl-_JR-83891",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83892",
+   "title": "Business Growth and Development Manager",
+   "location": "Nairobi",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nairobi/Business-Growth-and-Development-Manager_JR-83892",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83901",
+   "title": "Part-time Financial Advisor",
+   "location": "Potchefstroom",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Potchefstroom/Part-time-Financial-Advisor_JR-83901",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83910",
+   "title": "Compliance Manager: Payments",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Compliance-Manager--Payments_JR-83910",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83914",
+   "title": "Aspiring Financial Adviser",
+   "location": "Krugersdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Krugersdorp/Aspiring-Financial-Adviser_JR-83914",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83918",
+   "title": "Broker Consultant (Tzaneen)",
+   "location": "Tzaneen",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Tzaneen/Broker-Consultant--Tzaneen-_JR-83918",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83924",
+   "title": "Call Centre Team Team Leader",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Call-Center-Team-Team-Leader_JR-83924",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83938",
+   "title": "Senior Actuarial Specialist",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Senior-Actuarial-Specialist_JR-83938",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83940",
+   "title": "Head of Engineering",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Head-of-Engineering_JR-83940",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83941",
+   "title": "OMF FINANCIAL CONSULTANT (Parow)",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/OMF-FINANCIAL-CONSULTANT--Parow-_JR-83941",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83946",
+   "title": "OMF Financial consultant(OMF Hemingways Mall)",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/OMF-Financial-consultant-OMF-Hemingways-Mall-_JR-83946",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83947",
+   "title": "OMF Client Relations Consultant (Volkrust)",
+   "location": "Volksrust",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Volksrust/OMF-Client-Relations-Consultant--Volkrust-_JR-83947",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83953",
+   "title": "Advancing Financial Adviser",
+   "location": "8 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Advancing-Financial-Adviser_JR-83953",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83954",
+   "title": "Advancing Financial Adviser",
+   "location": "5 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Bloemfontein/Advancing-Financial-Adviser_JR-83954",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83955",
+   "title": "Advancing Financial advisor",
+   "location": "6 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Middelburg---Mpumalanga/Advancing-Financial-advisor_JR-83955",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83956-1",
+   "title": "Data Engineer",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Data-Engineer_JR-83956-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83968",
+   "title": "Junior Data Engineer",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Junior-Data-Engineer_JR-83968",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83975",
+   "title": "OMIG Graduate Programme",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/OMIG-Graduate-Programme_JR-83975",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83976",
+   "title": "Aspiring Financial Adviser",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Aspiring-Financial-Adviser_JR-83976",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83977",
+   "title": "Aspiring Financial Advisor",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Aspiring-Financial-Advisor_JR-83977",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83979",
+   "title": "Aspiring Financial Advisor",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Aspiring-Financial-Advisor_JR-83979",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83980",
+   "title": "Aspiring Financial Advisor",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Aspiring-Financial-Advisor_JR-83980",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83981",
+   "title": "Advancing Financial Adviser",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Advancing-Financial-Adviser_JR-83981",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83984",
+   "title": "Aspiring Financial Advisor",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Aspiring-Financial-Advisor_JR-83984",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83985",
+   "title": "Advancing Financial Advisor",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Advancing-Financial-Advisor_JR-83985",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83987",
+   "title": "Commissioned Financial Adviser",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Commissioned-Financial-Adviser_JR-83987",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83988",
+   "title": "Commissioned Financial Adviser",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Commissioned-Financial-Adviser_JR-83988",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83989",
+   "title": "Commissioned Financial Adviser",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Commissioned-Financial-Adviser_JR-83989",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83990",
+   "title": "Advancing Financial Adviser",
+   "location": "Port Elizabeth",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Port-Elizabeth/Advancing-Financial-Adviser_JR-83990",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83996",
+   "title": "Aspiring Financial Adviser (Sommerset West)",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Aspiring-Financial-Adviser--Sommerset-West-_JR-83996",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-83999",
+   "title": "Aspiring Financial Adviser (Bellville)",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Aspiring-Financial-Adviser--Bellville-_JR-83999",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84000",
+   "title": "Aspiring Financial Adviser",
+   "location": "Paarl",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Paarl/Aspiring-Financial-Adviser_JR-84000",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84001",
+   "title": "Aspiring Financial Adviser (Bellville)",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Aspiring-Financial-Adviser--Bellville-_JR-84001",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84002",
+   "title": "Claims Administrator-1",
+   "location": "Windhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Windhoek/Claims-Administrator-1_JR-84002",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84003",
+   "title": "Aspiring Financial Adviser (Bellville)",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Aspiring-Financial-Adviser--Bellville-_JR-84003",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84004-1",
+   "title": "NARAF Claims Administrator-1",
+   "location": "Windhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Windhoek/NARAF-Claims-Administrator-1_JR-84004-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84005",
+   "title": "Commissioned Financial Adviser",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Commissioned-Financial-Adviser_JR-84005",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84006",
+   "title": "Commissioned Financial Adviser ( Somerset West )",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Commissioned-Financial-Adviser---Somerset-West--_JR-84006",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84007",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Aspiring-Financial-Adviser_JR-84007",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84009",
+   "title": "Team Leader: NARAF Death Claims",
+   "location": "Windhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Windhoek/Team-Leader--NARAF-Death-Claims_JR-84009",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84010",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Aspiring-Financial-Adviser_JR-84010",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84012",
+   "title": "Advancing Financial Adviser",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Advancing-Financial-Adviser_JR-84012",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84013",
+   "title": "Aspiring Financial Advisor",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Aspiring-Financial-Advisor_JR-84013",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84015",
+   "title": "Advancing Financial Adviser",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Advancing-Financial-Adviser_JR-84015",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84016",
+   "title": "Commissioned Financial Adviser",
+   "location": "Cape Town",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/Commissioned-Financial-Adviser_JR-84016",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84017",
+   "title": "Salaried Financial Advisor",
+   "location": "Hazyview",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Hazyview/Salaried-Financial-Advisor_JR-84017",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84020",
+   "title": "Commissioned Financial Adviser",
+   "location": "Krugersdorp",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Krugersdorp/Commissioned-Financial-Adviser_JR-84020",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84024",
+   "title": "Aspiring Financial Adviser",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Aspiring-Financial-Adviser_JR-84024",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84026",
+   "title": "Commissioned Financial Adviser",
+   "location": "Vredendal",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Vredendal/Commissioned-Financial-Adviser_JR-84026",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84027",
+   "title": "Aspiring Financial Adviser",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Aspiring-Financial-Adviser_JR-84027",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84029",
+   "title": "Advancing Financial Adviser",
+   "location": "George",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/George/Advancing-Financial-Adviser_JR-84029",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84030",
+   "title": "Advancing Financial Adviser",
+   "location": "Mossel Bay",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mossel-Bay/Advancing-Financial-Adviser_JR-84030",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84031",
+   "title": "Advancing Financial Adviser",
+   "location": "Knysna",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Knysna/Advancing-Financial-Adviser_JR-84031",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84033",
+   "title": "Part Time Financial Advisor",
+   "location": "Johannesburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Johannesburg/Part-Time-Financial-Advisor_JR-84033",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84035",
+   "title": "Commissioned Financial Adviser",
+   "location": "George",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/George/Commissioned-Financial-Adviser_JR-84035",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84036",
+   "title": "Commissioned Financial Adviser",
+   "location": "Mossel Bay",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Mossel-Bay/Commissioned-Financial-Adviser_JR-84036",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84037",
+   "title": "Advancing Financial Adviser",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Advancing-Financial-Adviser_JR-84037",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84038",
+   "title": "Commissioned Financial Adviser",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Commissioned-Financial-Adviser_JR-84038",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84039",
+   "title": "Commissioned Financial Adviser",
+   "location": "Queenstown",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Queenstown/Commissioned-Financial-Adviser_JR-84039",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84041",
+   "title": "Commissioned Financial Adviser",
+   "location": "East London",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/East-London/Commissioned-Financial-Adviser_JR-84041",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84048",
+   "title": "Senior Actuarial Specialist",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Senior-Actuarial-Specialist_JR-84048",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84050",
+   "title": "Advancing Financial Adviser-1",
+   "location": "Rustenburg",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Rustenburg/Advancing-Financial-Adviser-1_JR-84050",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84058",
+   "title": "Relationship Consultant",
+   "location": "Swakopmund",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Swakopmund/Relationship-Consultant_JR-84058",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84059",
+   "title": "OMF Financial Consultant (OMF Kimberley Kim Park)",
+   "location": "Kimberley",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Kimberley/OMF-Financial-Consultant--OMF-Kimberley-Kim-Park-_JR-84059",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84060",
+   "title": "Client Relationship Manager",
+   "location": "Swakopmund",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Swakopmund/Client-Relationship-Manager_JR-84060",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84061",
+   "title": "Team Leader: Financial Changes",
+   "location": "Windhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Windhoek/Team-Leader--Financial-Changes_JR-84061",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84062",
+   "title": "Client Relationship Manager",
+   "location": "Windhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Windhoek/Client-Relationship-Manager_JR-84062",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84063",
+   "title": "New Business Administrator",
+   "location": "Windhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Windhoek/New-Business-Administrator_JR-84063",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84066",
+   "title": "Chief Operating Officer",
+   "location": "Nairobi",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nairobi/Chief-Operating-Officer_JR-84066",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84073",
+   "title": "Intermediate Quality Data Analyst",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Intermediate-Quality-Data-Analyst_JR-84073",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84074",
+   "title": "Client Relationship Manager",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Client-Relationship-Manager_JR-84074",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84076",
+   "title": "Compliance Officer",
+   "location": "Harare",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Harare/Compliance-Officer_JR-84076",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84078-1",
+   "title": "Senior Specialist Fund Administrator",
+   "location": "Pinelands",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pinelands/Senior-Specialist-Fund-Administrator_JR-84078-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84079",
+   "title": "OM Bank - Junior Campaigns Specialist",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Cape-Town/OM-Bank---Junior-Campaigns-Specialist_JR-84079",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84087",
+   "title": "Students on Attachment - Risk & Insurance",
+   "location": "2 Locations",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Harare/Students-on-Attachment---Risk---Insurance_JR-84087",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84092",
+   "title": "Aspiring Financial Adviser",
+   "location": "Pretoria",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Pretoria/Aspiring-Financial-Adviser_JR-84092",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84094",
+   "title": "Business Development Officer - Corporate Life",
+   "location": "Nairobi",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Nairobi/Business-Development-Officer_JR-84094",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84099",
+   "title": "Senior Actuarial Supervisor",
+   "location": "Windhoek",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Windhoek/Senior-Actuarial-Supervisor_JR-84099",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR-84101",
+   "title": "Contact Centre Manager",
+   "location": "Blantyre",
+   "url": "https://oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers/job/Blantyre/Contact-Centre-Manager_JR-84101",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  }
+ ]
 }

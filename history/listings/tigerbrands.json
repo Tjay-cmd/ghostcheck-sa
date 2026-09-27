@@ -1,4 +1,741 @@
 {
  "employer_id": "tigerbrands",
- "listings": []
+ "listings": [
+  {
+   "ats_job_id": "JR000602",
+   "title": "Import Logistics Controller",
+   "location": "Yaldwyn",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Yaldwyn/Import-Logistics-Controller_JR000602",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR000734",
+   "title": "Palletizer Operator",
+   "location": "Boksburg",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Boksburg/Palletizer-Operator_JR000734",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR000735",
+   "title": "Cooker Operator",
+   "location": "Boksburg",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Boksburg/Cooker-Operator_JR000735",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR000736",
+   "title": "Forklift Driver",
+   "location": "Boksburg",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Boksburg/Forklift-Driver_JR000736",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR000930",
+   "title": "Forklift Driver",
+   "location": "Boksburg",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Boksburg/Forklift-Driver_JR000930",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR000934",
+   "title": "Reliever-2",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-2_JR000934",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR000940",
+   "title": "Reliever-5",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-5_JR000940",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001260",
+   "title": "Shopper Marketing Manager: HPCB GT",
+   "location": "2 Locations",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/GIS1/Shopper-Marketing-Manager--HPCB-GT_JR001260",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001357",
+   "title": "Sales Representative",
+   "location": "Newcastle",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Newcastle/Sales-Representative_JR001357",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001376-1",
+   "title": "Agricultural Advisor",
+   "location": "2 Locations",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Marble-Hall/Agricultural-Advisor_JR001376-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001463",
+   "title": "Depot Controller: Nelspruit",
+   "location": "White River",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/White-River/Depot-Controller--Nelspruit_JR001463",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001550-1",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR001550-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001579-1",
+   "title": "Assistant Operators",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Assistant-Operators_JR001579-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001584-1",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR001584-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001655",
+   "title": "Tiger Brands TOPP Programme",
+   "location": "BRY1",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/BRY1/Tiger-Brands-TOPP-Programme_JR001655",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001807-1",
+   "title": "Labourer",
+   "location": "Marble Hall",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Marble-Hall/Labourer_JR001807-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR001809",
+   "title": "Labourer",
+   "location": "Marble Hall",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Marble-Hall/Labourer_JR001809",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002051",
+   "title": "Maintenance Coordinator",
+   "location": "Pietermaritzburg",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Pietermaritzburg/Maintenance-Coordinator_JR002051",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002140",
+   "title": "Reliever-2",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-2_JR002140",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002506",
+   "title": "Operator KVI",
+   "location": "2 Locations",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Pietermaritzburg/Operator-KVI_JR002506",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002707",
+   "title": "Processing Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Processing-Reliever_JR002707",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002719",
+   "title": "Assistant Operator",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Assistant-Operator_JR002719",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002720",
+   "title": "Assistant Operator",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Assistant-Operator_JR002720",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002721",
+   "title": "Assistant Operator",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Assistant-Operator_JR002721",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002722",
+   "title": "Assistant Operator",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Assistant-Operator_JR002722",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002723",
+   "title": "Assistant Operator",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Assistant-Operator_JR002723",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002725",
+   "title": "Reliever-4",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-4_JR002725",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002727",
+   "title": "Reliever-5",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-5_JR002727",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002728",
+   "title": "Reliever-3",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-3_JR002728",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002729",
+   "title": "Reliever-1",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-1_JR002729",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002791",
+   "title": "Packaging Assistant",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Packaging-Assistant_JR002791",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002814",
+   "title": "Reliever-7",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-7_JR002814",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002894-1",
+   "title": "Millwright",
+   "location": "Musina",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Musina/Millwright_JR002894-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002896",
+   "title": "Reliever-1",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-1_JR002896",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002897",
+   "title": "Reliever-2",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-2_JR002897",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002898",
+   "title": "Reliever-3",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-3_JR002898",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002957",
+   "title": "Reliever-4",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-4_JR002957",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002973",
+   "title": "General Worker",
+   "location": "Mobeni",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Mobeni/General-Worker_JR002973",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002974",
+   "title": "General Worker",
+   "location": "Mobeni",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Mobeni/General-Worker_JR002974",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002976",
+   "title": "General Worker",
+   "location": "Mobeni",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Mobeni/General-Worker_JR002976",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002996",
+   "title": "Reliever-6",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-6_JR002996",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002997",
+   "title": "Reliever-5",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-5_JR002997",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR002998",
+   "title": "Reliever-4",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever-4_JR002998",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003030",
+   "title": "Packaging Assistant",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Packaging-Assistant_JR003030",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003055",
+   "title": "Senior Data Engineer",
+   "location": "BRY1",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/BRY1/Senior-Data-Engineer_JR003055",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003057",
+   "title": "Van Assistant",
+   "location": "Secunda",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Secunda/Van-Assistant_JR003057",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003059",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003059",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003067",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003067",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003069",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003069",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003071",
+   "title": "Processing Reliever-5",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Processing-Reliever-5_JR003071",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003073",
+   "title": "Processing Reliever-2",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Processing-Reliever-2_JR003073",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003081",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003081",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003082",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003082",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003083",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003083",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003085",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003085",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003086",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003086",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003087",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003087",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003088",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003088",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003091",
+   "title": "Assistant Operator",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Assistant-Operator_JR003091",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003092",
+   "title": "Assistant Operators",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Assistant-Operators_JR003092",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003102",
+   "title": "Workplace Experience Student-1",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Workplace-Experience-Student-1_JR003102",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003105",
+   "title": "Packaging Assistant-3",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Packaging-Assistant-3_JR003105",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003106",
+   "title": "Packaging Assistant-2",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Packaging-Assistant-2_JR003106",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003107",
+   "title": "Processing Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Processing-Reliever_JR003107",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003109",
+   "title": "Processing Reliever-6",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Processing-Reliever-6_JR003109",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003110",
+   "title": "Processing Reliever-3",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Processing-Reliever-3_JR003110",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003161-1",
+   "title": "Boiler Operator",
+   "location": "Maitland",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Maitland/Boiler-Operator_JR003161-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003163",
+   "title": "Depot Controller",
+   "location": "Marble Hall",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Marble-Hall/Depot-Controller_JR003163",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003164",
+   "title": "Despatch Supervisor",
+   "location": "Pretoria",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Pretoria/Despatch-Supervisor_JR003164",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003169",
+   "title": "Fitter",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Fitter_JR003169",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003172",
+   "title": "Millwright",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Millwright_JR003172",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003175",
+   "title": "Assistant Operator",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Assistant-Operator_JR003175",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003176",
+   "title": "Processing Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Processing-Reliever_JR003176",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003181-1",
+   "title": "Customer Marketing Analyst (Fixed Term Contract)",
+   "location": "Boksburg",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Boksburg/Customer-Marketing-Analyst--Fixed-Term-Contract-_JR003181-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003191",
+   "title": "Channel Manager: Independents Inland & Massmart",
+   "location": "Isando",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Isando/Channel-Manager--Independents-Inland---Massmart_JR003191",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003202",
+   "title": "Driver Salesman",
+   "location": "Sasolburg",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Sasolburg/Driver-Salesman_JR003202",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003214",
+   "title": "Packaging Assistant",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Packaging-Assistant_JR003214",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003215",
+   "title": "Packaging Assistant",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Packaging-Assistant_JR003215",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003216",
+   "title": "Labeller Operator",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Labeller-Operator_JR003216",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003218",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003218",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003220",
+   "title": "Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Reliever_JR003220",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003222",
+   "title": "Processing Reliever",
+   "location": "Roodekop",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Roodekop/Processing-Reliever_JR003222",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003229",
+   "title": "Group Strategy & Innovation Manager",
+   "location": "Bryanston",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Bryanston/Group-Strategy---Innovation-Manager_JR003229",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003230-1",
+   "title": "Operator Slicer",
+   "location": "Pretoria",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Pretoria/Operator-Slicer_JR003230-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003231",
+   "title": "Operator Basket Washer",
+   "location": "Pretoria",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Pretoria/Operator-Basket-Washer_JR003231",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003243",
+   "title": "Sales & Distribution Manager",
+   "location": "Secunda",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Secunda/Sales---Distribution-Manager_JR003243",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003244",
+   "title": "Distribution Controller",
+   "location": "Germiston",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Germiston/Distribution-Controller_JR003244",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003246",
+   "title": "Sales Representative",
+   "location": "Germiston",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Germiston/Sales-Representative_JR003246",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003248",
+   "title": "Sales Representative",
+   "location": "Germiston",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Germiston/Sales-Representative_JR003248",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003249",
+   "title": "Sales Representative",
+   "location": "Germiston",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Germiston/Sales-Representative_JR003249",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003250-1",
+   "title": "General Worker",
+   "location": "Maitland",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Maitland/General-Worker_JR003250-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR003267",
+   "title": "R&D Manager: Grains (Main Meal Carbs)",
+   "location": "Bedfordview",
+   "url": "https://tigerbrands.wd103.myworkdayjobs.com/TigerBrands/job/Bedfordview/R-D-Manager--Grains--Main-Meal-Carbs-_JR003267",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  }
+ ]
 }

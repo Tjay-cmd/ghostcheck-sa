@@ -1,4 +1,13 @@
 {
  "employer_id": "telkom",
- "listings": []
+ "listings": [
+  {
+   "ats_job_id": "1439567333",
+   "title": "Manager: Facilities Management",
+   "location": "Johannesburg, Gauteng, ZA",
+   "url": "https://jobs.telkom.co.za/job/Johannesburg-Manager-Facilities-Management-Gaut/1439567333/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  }
+ ]
 }

@@ -1,4 +1,413 @@
 {
  "employer_id": "picknpay",
- "listings": []
+ "listings": [
+  {
+   "ats_job_id": "JR101856",
+   "title": "Various Jobs",
+   "location": null,
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Cashier_JR101856",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR102646",
+   "title": "Baker",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Baker_JR102646",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR102652",
+   "title": "Blockman",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Blockman_JR102652",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103022",
+   "title": "Assistant Clothing Manager",
+   "location": null,
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Assistant-Clothing-Manager_JR103022",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103119-1",
+   "title": "Checkout Assistant , Shelfpacker Wine, Shelfpacker Groceries, Shelfpacker General Merchandise, Shelfpacker Perishables, Shelfpacker Clothing , Warehouse/Stockroom Assistant, Service Area Assistant Bak",
+   "location": "Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Western-Cape/Checkout-Assistant---Shelfpacker-Wine--Shelfpacker-Groceries--Shelfpacker-General-Merchandise--Shelfpacker-Perishables--Shelfpacker-Clothing---Warehouse-Stockroom-Assistant--Service-Area-Assistant-Bakery--Service-Area-Assistant-Butchery--Service-Area-Assistant-Deli--Service-Area-Assistant-Fruit---Veg--Service-Area-Assistant-Cheese--Production-Assistant---Blockman_JR103119-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103121",
+   "title": "Checkout Assistant, Shelfpacker Wine, Shelfpacker Groceries, Shelfpacker General Merchandise, Shelfpacker Perishables, Shelfpacker Clothing , Warehouse/Stockroom Assistant, Service Area Assistant Bake",
+   "location": "Northern Region",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Northern-Region/Checkout-Assistant--Shelfpacker-Wine--Shelfpacker-Groceries--Shelfpacker-General-Merchandise--Shelfpacker-Perishables--Shelfpacker-Clothing---Warehouse-Stockroom-Assistant--Service-Area-Assistant-Bakery--Service-Area-Assistant-Butchery--Service-Area-Assistant-Deli--Service-Area-Assistant-Fruit---Veg--Service-Area-Assistant-Cheese--Production-Assistant---Blockman_JR103121",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103122-1",
+   "title": "Floor Salesperson Clothing",
+   "location": "2 Locations",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/KwaZulu/Floor-Salesperson-Clothing_JR103122-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103123-1",
+   "title": "Floor Salesperson Clothing",
+   "location": "2 Locations",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Gauteng/Floor-Salesperson-Clothing_JR103123-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103126-1",
+   "title": "Checkout Assistant , Shelfpacker Wine, Shelfpacker Groceries, Shelfpacker General Merchandise, Shelfpacker Perishables, Shelfpacker Clothing , Warehouse/Stockroom Assistant, Service Area Assistant Bak",
+   "location": "Gauteng",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Gauteng/Checkout-Assistant---Shelfpacker-Wine--Shelfpacker-Groceries--Shelfpacker-General-Merchandise--Shelfpacker-Perishables--Shelfpacker-Clothing---Warehouse-Stockroom-Assistant--Service-Area-Assistant-Bakery--Service-Area-Assistant-Butchery--Service-Area-Assistant-Deli--Service-Area-Assistant-Fruit---Veg--Service-Area-Assistant-Cheese--Production-Assistant---Blockman_JR103126-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103129-1",
+   "title": "Job Posting Title Checkout Assistant , Shelfpacker Wine, Shelfpacker Groceries, Shelfpacker General Merchandise, Shelfpacker Perishables, Shelfpacker Clothing , Warehouse/Stockroom Assistant, Service ",
+   "location": "Free State",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Free-State/Job-Posting-Title-Checkout-Assistant---Shelfpacker-Wine--Shelfpacker-Groceries--Shelfpacker-General-Merchandise--Shelfpacker-Perishables--Shelfpacker-Clothing---Warehouse-Stockroom-Assistant--Service-Area-Assistant-Bakery--Service-Area-Assistant-Butchery--Service-Area-Assistant-Deli--Service-Area-Assistant-Fruit---Veg--Service-Area-Assistant-Cheese--Production-Assistant---Blockman_JR103129-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103130-1",
+   "title": "Checkout Assistant , Shelfpacker Wine, Shelfpacker Groceries, Shelfpacker General Merchandise, Shelfpacker Perishables, Shelfpacker Clothing , Warehouse/Stockroom Assistant, Service Area Assistant Bak",
+   "location": "Eastern Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Eastern-Cape/Checkout-Assistant---Shelfpacker-Wine--Shelfpacker-Groceries--Shelfpacker-General-Merchandise--Shelfpacker-Perishables--Shelfpacker-Clothing---Warehouse-Stockroom-Assistant--Service-Area-Assistant-Bakery--Service-Area-Assistant-Butchery--Service-Area-Assistant-Deli--Service-Area-Assistant-Fruit---Veg--Service-Area-Assistant-Cheese--Production-Assistant---Blockman_JR103130-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103201-1",
+   "title": "Blockman Mastercut Programme",
+   "location": null,
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Blockman-Mastercut-Programme_JR103201-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103416-1",
+   "title": "Learnership Wholesale & Retail Operations (NQF Level 3)",
+   "location": "City of Cape Town",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/City-of-Cape-Town/Learnership-Wholesale---Retail-Operations--NQF-Level-3-_JR103416-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR103682",
+   "title": "Supply Chain Planner",
+   "location": "Kenilworth - Cape Town",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Kenilworth---Cape-Town/Supply-Chain-Planner_JR103682",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR104207",
+   "title": "Planner",
+   "location": "Kenilworth - Cape Town",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Kenilworth---Cape-Town/Planner_JR104207",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR104410-1",
+   "title": "Local Baker, Local Blockman, Local Clerk Cash Office, Local Clerk Inventory , Local Clerk Labels , Local Admin, Local Clerk Receiving , Local Cashier, Local Sales Assistant Frontline, Local Bakers Ass",
+   "location": "Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Western-Cape/Local-Baker--Local-Blockman--Local-Clerk-Cash-Office--Local-Clerk-Inventory---Local-Clerk-Labels---Local-Admin--Local-Clerk-Receiving---Local-Cashier--Local-Sales-Assistant-Frontline--Local-Bakers-Assistant---Local-Production-Assistant--Local-Bakery-General-Assistant---Local-Butchery-Assistant---Local-frontline-General-Assistant--Local-Cook-Food-Preparation--Local-Deli-General-Assistant--Local-Fruit---Veg-General-Assistant---Loc",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR104606-1",
+   "title": "Trainee Manager Stores",
+   "location": "Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Western-Cape/Trainee-Manager-Stores_JR104606-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR104660-2",
+   "title": "Occ.Health Practitioner",
+   "location": "Free State",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Free-State/OccHealth-Practitioner_JR104660-2",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR104788",
+   "title": "Area Manager Clothing",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Area-Manager-Clothing_JR104788",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR104790-1",
+   "title": "Clothing Store Manager",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Clothing-Store-Manager_JR104790-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR104801-1",
+   "title": "Regional Visual Merchandise Manager",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Regional-Visual-Merchandise-Manager_JR104801-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR104813",
+   "title": "Buyer Clothing",
+   "location": "Kenilworth - Cape Town",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Kenilworth---Cape-Town/Buyer-Clothing_JR104813",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR104816-1",
+   "title": "Planner Clothing",
+   "location": null,
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Planner-Clothing_JR104816-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105020-1",
+   "title": "Multi Media Manager",
+   "location": "Promenade - Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Promenade---Western-Cape/Multi-Media-Manager_JR105020-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105022-1",
+   "title": "Sales Associate",
+   "location": "Promenade - Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Promenade---Western-Cape/Sales-Associate_JR105022-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105344-1",
+   "title": "Area Manager - Clothing - 6 Months FTC",
+   "location": "2 Locations",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/KwaZulu/Area-Manager---Clothing---6-Months-FTC_JR105344-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105345",
+   "title": "Regional Manager - 6 Months Fixed Term Contact",
+   "location": "2 Locations",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Gauteng/Regional-Manager---6-Months-Fixed-Term-Contact_JR105345",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105407-1",
+   "title": "Manager General Merchandise",
+   "location": "Midlands Mall - KwaZulu-Natal",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Midlands-Mall---KwaZulu-Natal/Manager-General-Merchandise_JR105407-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105419",
+   "title": "Blockman",
+   "location": "Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Western-Cape/Blockman_JR105419",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105420-1",
+   "title": "Baker",
+   "location": "Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Western-Cape/Baker_JR105420-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105489-2",
+   "title": "Accountant",
+   "location": "Kensington - Gauteng",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Kensington---Gauteng/Accountant_JR105489-2",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105600-1",
+   "title": "Checkout Assistant , Shelfpacker Wine, Shelfpacker Groceries, Shelfpacker General Merchandise, Shelfpacker Perishables, Shelfpacker Clothing , Warehouse/Stockroom Assistant, Service Area Assistant Bak",
+   "location": "Gauteng",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Gauteng/Checkout-Assistant---Shelfpacker-Wine--Shelfpacker-Groceries--Shelfpacker-General-Merchandise--Shelfpacker-Perishables--Shelfpacker-Clothing---Warehouse-Stockroom-Assistant--Service-Area-Assistant-Bakery--Service-Area-Assistant-Butchery--Service-Area-Assistant-Deli--Service-Area-Assistant-Fruit---Veg--Service-Area-Assistant-Cheese--Production-Assistant---Blockman_JR105600-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105772-1",
+   "title": "Supervisor Deli",
+   "location": "Diep River 3 Arts - Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Diep-River-3-Arts---Western-Cape/Supervisor-Deli_JR105772-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105783",
+   "title": "Manager Deli",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Manager-Deli_JR105783",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105784",
+   "title": "Baker",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Baker_JR105784",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105785",
+   "title": "Fruit & Veg",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Fruit---Veg_JR105785",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105786",
+   "title": "Sushi Assistant/ Chef",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Sushi-Assistant--Chef_JR105786",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105787",
+   "title": "Multimedia Sales Associate",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Multimedia-Sales-Associate_JR105787",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105788",
+   "title": "Blockman/Butchery",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/Blockman-Butchery_JR105788",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105826",
+   "title": "UIF Skills Programme- Pick n Pay Hypermarkets",
+   "location": "South Africa",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/South-Africa/UIF-Skills-Programme--Pick-n-Pay-Hypermarkets_JR105826",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105844",
+   "title": "Butchery Manager",
+   "location": "Moffet - Eastern Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Moffet---Eastern-Cape/Butchery-Manager_JR105844",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105862",
+   "title": "Buyers Clerk",
+   "location": null,
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Buyers-Clerk_JR105862",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105901",
+   "title": "Butchery Assistant Manager",
+   "location": "Northern Region",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Northern-Region/Butchery-Assistant-Manager_JR105901",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105915-1",
+   "title": "Bakers Assistant",
+   "location": "Gauteng",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Gauteng/Bakers-Assistant_JR105915-1",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105997",
+   "title": "Butchery Manager",
+   "location": "Northern Region",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Northern-Region/Butchery-Manager_JR105997",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR105999",
+   "title": "Assistant Butchery Manager",
+   "location": "Northern Region",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Northern-Region/Assistant-Butchery-Manager_JR105999",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR106004",
+   "title": "Manager Liquor Store",
+   "location": "Menlyn Mall - Gauteng",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Menlyn-Mall---Gauteng/Manager-Liquor-Store_JR106004",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR106006",
+   "title": "Digital Campaign Manager",
+   "location": "Kenilworth - Cape Town",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Kenilworth---Cape-Town/Digital-Campaign-Manager_JR106006",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR106008",
+   "title": "Sales Associate",
+   "location": "Brackenfell - Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Brackenfell---Western-Cape/Sales-Associate_JR106008",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR106014",
+   "title": "Trainee Manager Stores",
+   "location": "Langehoven Park - Mangaung",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Langehoven-Park---Mangaung/Trainee-Manager-Stores_JR106014",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "JR106017",
+   "title": "Manager Deli",
+   "location": "Vangate Mall - Western Cape",
+   "url": "https://picknpay.wd3.myworkdayjobs.com/PNP_Careers/job/Vangate-Mall---Western-Cape/Manager-Deli_JR106017",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  }
+ ]
 }

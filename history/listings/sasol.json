@@ -1,4 +1,437 @@
 {
  "employer_id": "sasol",
- "listings": []
+ "listings": [
+  {
+   "ats_job_id": "1178061901",
+   "title": "Instrumentation Engineer",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Instrumentation-Engineer/1178061901/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1189130201",
+   "title": "Outside Machinist East Plant",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Outside-Machinist-East-Plant/1189130201/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1191368301",
+   "title": "Electrical Engineer",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Electrical-Engineer/1191368301/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1279650801",
+   "title": "Unit Manager Production Alumina",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Unit-Manager-Production-Alumina/1279650801/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1289816101",
+   "title": "Elektroniker für Automatisierungstechnik",
+   "location": "Marl, Germany",
+   "url": "https://jobs.sasol.com/job/Marl-Elektroniker-f%C3%BCr-Automatisierungstechnik/1289816101/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1386606433",
+   "title": "Electrical Reliability Specialist",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Electrical-Reliability-Specialist/1386606433/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1390381433",
+   "title": "EMSR-Handwerkerin/ Handwerker",
+   "location": "Brunsbüttel, Germany",
+   "url": "https://jobs.sasol.com/job/Brunsb%C3%BCttel-EMSR-Handwerkerin-Handwerker/1390381433/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1395668033",
+   "title": "Manager, Sales & Marketing Technology",
+   "location": "Houston, United States",
+   "url": "https://jobs.sasol.com/job/Houston-Manager%2C-Sales-&-Marketing-Technology/1395668033/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1398695733",
+   "title": "Environmental Fate Specialist / Regulatory Ecotoxicologist",
+   "location": "Marl, Germany",
+   "url": "https://jobs.sasol.com/job/Marl-Environmental-Fate-Specialist-Regulatory-Ecotoxicologist/1398695733/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1399280333",
+   "title": "Elektroniker (m/w/d) für Automatisierungstechnik",
+   "location": "Marl, Germany",
+   "url": "https://jobs.sasol.com/job/Marl-Elektroniker-%28mwd%29-f%C3%BCr-Automatisierungstechnik/1399280333/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1405904933",
+   "title": "Process Safety Specialist",
+   "location": "Marl, Germany",
+   "url": "https://jobs.sasol.com/job/Marl-Process-Safety-Specialist/1405904933/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1414264633",
+   "title": "Process Safety Specialist (m/w/d)",
+   "location": "Brunsbüttel, Germany",
+   "url": "https://jobs.sasol.com/job/Brunsb%C3%BCttel-Process-Safety-Specialist-%28mwd%29/1414264633/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1416107233",
+   "title": "Ausbildung zum Elektroniker für Automatisierungstechnik (m/w/d) - Start: September 2027",
+   "location": "Brunsbüttel, Germany",
+   "url": "https://jobs.sasol.com/job/Brunsb%C3%BCttel-Ausbildung-zum-Elektroniker-f%C3%BCr-Automatisierungstechnik-%28mwd%29-Start-September-2027/1416107233/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1416109333",
+   "title": "Ausbildung zum Chemielaboranten (m/w/d) - Start: September 2027",
+   "location": "Brunsbüttel, Germany",
+   "url": "https://jobs.sasol.com/job/Brunsb%C3%BCttel-Ausbildung-zum-Chemielaboranten-%28mwd%29-Start-September-2027/1416109333/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1416110033",
+   "title": "Ausbildung zum Chemikanten (m/w/d) - Start: September 2027",
+   "location": "Brunsbüttel, Germany",
+   "url": "https://jobs.sasol.com/job/Brunsb%C3%BCttel-Ausbildung-zum-Chemikanten-%28mwd%29-Start-September-2027/1416110033/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1416112333",
+   "title": "Ausbildung Industriekauffrau/ Industriekaufmann - Start: September 2027",
+   "location": "Brunsbüttel, Germany",
+   "url": "https://jobs.sasol.com/job/Brunsb%C3%BCttel-Ausbildung-Industriekauffrau-Industriekaufmann-Start-September-2027/1416112333/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1416112833",
+   "title": "Ausbildung zum Industriemechaniker (m/w/d) - Start: September 2027",
+   "location": "Brunsbüttel, Germany",
+   "url": "https://jobs.sasol.com/job/Brunsb%C3%BCttel-Ausbildung-zum-Industriemechaniker-%28mwd%29-Start-September-2027/1416112833/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1418006633",
+   "title": "Research Chemist",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Research-Chemist/1418006633/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1419787533",
+   "title": "Specialist Systems & Assurance (m/w/d)",
+   "location": "Marl, Germany",
+   "url": "https://jobs.sasol.com/job/Marl-Specialist-Systems-&-Assurance-%28mwd%29/1419787533/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1424078833",
+   "title": "Unit Manager Production LAB",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Unit-Manager-Production-LAB/1424078833/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1428495533",
+   "title": "Technology Manager, Comonomers",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Technology-Manager%2C-Comonomers/1428495533/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1431155033",
+   "title": "Production Foreman",
+   "location": "Secunda, South Africa",
+   "url": "https://jobs.sasol.com/job/Secunda-Production-Foreman/1431155033/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1431829233",
+   "title": "Ausbildung Industriekauffrau/ Industriekaufmann - Start: September 2027",
+   "location": "Hamburg, Germany",
+   "url": "https://jobs.sasol.com/job/Hamburg-Ausbildung-Industriekauffrau-Industriekaufmann-Start-September-2027/1431829233/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1432625133",
+   "title": "Process Control Engineer",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Process-Control-Engineer/1432625133/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1436590033",
+   "title": "Fachkraft für Erdgasanlagen und AwSV-Projektleitung",
+   "location": "Brunsbüttel, Germany",
+   "url": "https://jobs.sasol.com/job/Brunsb%C3%BCttel-Fachkraft-f%C3%BCr-Erdgasanlagen-und-AwSV-Projektleitung/1436590033/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1436746133",
+   "title": "Maintenance & Engineering Planning Assistant",
+   "location": "Durban, South Africa",
+   "url": "https://jobs.sasol.com/job/Durban-Maintenance-&-Engineering-Planning-Assistant/1436746133/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1436933533",
+   "title": "Senior Manager Rail, Electrical & Instrumentation",
+   "location": "Secunda",
+   "url": "https://jobs.sasol.com/job/Secunda-Senior-Manager-Rail%2C-Electrical-&-Instrumentation/1436933533/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1436999633",
+   "title": "Toxicologist (m/f/d)",
+   "location": "Marl",
+   "url": "https://jobs.sasol.com/job/Marl-Toxicologist-%28mfd%29/1436999633/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1437093033",
+   "title": "IM Delivery Specialist Finance",
+   "location": "Hamburg, Germany",
+   "url": "https://jobs.sasol.com/job/Hamburg-IM-Delivery-Specialist-Finance/1437093033/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1437176833",
+   "title": "Geohydrologist",
+   "location": "Secunda",
+   "url": "https://jobs.sasol.com/job/Secunda-Geohydrologist/1437176833/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1437180333",
+   "title": "Foreman",
+   "location": "Secunda, South Africa",
+   "url": "https://jobs.sasol.com/job/Secunda-Foreman/1437180333/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1437322133",
+   "title": "VP LVC Energy",
+   "location": "Secunda, South Africa",
+   "url": "https://jobs.sasol.com/job/Secunda-VP-LVC-Energy/1437322133/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1437522733",
+   "title": "Technician I Process",
+   "location": "Secunda, South Africa",
+   "url": "https://jobs.sasol.com/job/Secunda-Technician-I-Process/1437522733/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1437572233",
+   "title": "Administrator Vetting",
+   "location": "Secunda, South Africa",
+   "url": "https://jobs.sasol.com/job/Secunda-Administrator-Vetting/1437572233/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1437620833",
+   "title": "Shift Supervisor",
+   "location": "Tucson, United States",
+   "url": "https://jobs.sasol.com/job/Tucson-Shift-Supervisor/1437620833/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1437734633",
+   "title": "Technician/Senior Technician Instruments & Controls",
+   "location": "Sasolburg",
+   "url": "https://jobs.sasol.com/job/Sasolburg-TechnicianSenior-Technician-Instruments-&-Controls/1437734633/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1437743033",
+   "title": "Material Controller Gr 1 x2",
+   "location": "Sasolburg",
+   "url": "https://jobs.sasol.com/job/Sasolburg-Material-Controller-Gr-1-x2/1437743033/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1438011633",
+   "title": "Senior Specialist HR People Analytics (m/f/d) - Fixed-Term (12 Months)",
+   "location": "Hamburg, Germany",
+   "url": "https://jobs.sasol.com/job/Hamburg-Senior-Specialist-HR-People-Analytics-%28mfd%29-Fixed-Term-%2812-Months%29/1438011633/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1438022933",
+   "title": "Storeman x2",
+   "location": "Sasolburg",
+   "url": "https://jobs.sasol.com/job/Sasolburg-Storeman-x2/1438022933/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1438038533",
+   "title": "Lead Process Engineer - Hydrocracker Division",
+   "location": "Sasolburg",
+   "url": "https://jobs.sasol.com/job/Sasolburg-Lead-Process-Engineer-Hydrocracker-Division/1438038533/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1438088833",
+   "title": "Lead Process Engineer - CDU/FCC Division",
+   "location": "Sasolburg",
+   "url": "https://jobs.sasol.com/job/Sasolburg-Lead-Process-Engineer-CDUFCC-Division/1438088833/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1438112033",
+   "title": "Vice President Artificial Intelligence, Data and Digital Innovation",
+   "location": "Sandton, South Africa",
+   "url": "https://jobs.sasol.com/job/Sandton-Vice-President-Artificial-Intelligence%2C-Data-and-Digital-Innovation/1438112033/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1439348133",
+   "title": "Well Services & Integrity Artisan",
+   "location": "Inhambane",
+   "url": "https://jobs.sasol.com/job/Inhambane-Well-Services-&-Integrity-Artisan/1439348133/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1439434533",
+   "title": "Electrical Foreman x2",
+   "location": "Secunda, South Africa",
+   "url": "https://jobs.sasol.com/job/Secunda-Electrical-Foreman-x2/1439434533/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1439575033",
+   "title": "Operational Excellence Program Manager",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Operational-Excellence-Program-Manager/1439575033/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1439679233",
+   "title": "Plant Processor",
+   "location": "Tucson, United States",
+   "url": "https://jobs.sasol.com/job/Tucson-Plant-Processor/1439679233/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1439906633",
+   "title": "Customer Service Representative (m/f/d) - Fixed-Term (24 Months)",
+   "location": "Marl, Germany",
+   "url": "https://jobs.sasol.com/job/Marl-Customer-Service-Representative-%28mfd%29-Fixed-Term-%2824-Months%29/1439906633/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1440063833",
+   "title": "Key Accounts Manager",
+   "location": "Sandton",
+   "url": "https://jobs.sasol.com/job/Sandton-Key-Accounts-Manager/1440063833/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1440190433",
+   "title": "Manager Sales Industrial Southern Europe",
+   "location": "Milan",
+   "url": "https://jobs.sasol.com/job/Milan-Manager-Sales-Industrial-Southern-Europe/1440190433/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1440201633",
+   "title": "Senior Artisan/Artisan Instrumentation Mechanician",
+   "location": "Sasolburg",
+   "url": "https://jobs.sasol.com/job/Sasolburg-Senior-ArtisanArtisan-Instrumentation-Mechanician/1440201633/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1440601733",
+   "title": "Artisan Gr 2 Turbine Fitter",
+   "location": "Secunda, South Africa",
+   "url": "https://jobs.sasol.com/job/Secunda-Artisan-Gr-2-Turbine-Fitter/1440601733/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1441155133",
+   "title": "Fixed Equipment Inspector",
+   "location": "Lake Charles, United States",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-Fixed-Equipment-Inspector/1441155133/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1441424833",
+   "title": "Data Scientist - Integrated Power Analytics",
+   "location": "Sandton",
+   "url": "https://jobs.sasol.com/job/Sandton-Data-Scientist-Integrated-Power-Analytics/1441424833/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  },
+  {
+   "ats_job_id": "1441584833",
+   "title": "Junior Chemical Plant Operator (Jnr CPO)",
+   "location": "Secunda, South Africa",
+   "url": "https://jobs.sasol.com/job/Secunda-Junior-Chemical-Plant-Operator-%28Jnr-CPO%29/1441584833/",
+   "first_seen": "2026-09-27",
+   "last_seen": "2026-09-27"
+  }
+ ]
 }
