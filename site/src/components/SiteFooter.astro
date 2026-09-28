@@ -1,0 +1,108 @@
+---
+/**
+ * Site Footer - footnote, links, build time
+ */
+
+import { getSiteConfig } from '@/lib/rules';
+import { formatDateTime } from '@/lib/format';
+import { getSiteData } from '@/lib/data';
+
+const config = getSiteConfig();
+const site = getSiteData();
+const buildTime = site.build_time;
+const showOverview = config.FEATURE_OVERVIEW;
+const isSoft = config.SITE_PHASE === 'soft';
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <p class="footer-note">
+        Ages count from our first sighting.{' '}
+        <a href="/about/#how-age-is-measured">How we count days</a>
+      </p>
+      
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/about/#corrections">Corrections</a>
+        <span class="footer-separator">·</span>
+        <a href="/about/#privacy">Privacy (POPIA)</a>
+        {showOverview && (
+          <>
+            <span class="footer-separator">·</span>
+            <a href="/overview/">Overview</a>
+          </>
+        )}
+      </nav>
+      
+      <p class="footer-meta">
+        <span class="footer-build-time">
+          Data last checked {buildTime ? formatDateTime(buildTime) : 'unknown'}
+        </span>
+      </p>
+      
+      {isSoft && (
+        <p class="footer-soft-note">
+          <strong>Test version:</strong> we're still collecting data, so many figures aren't available yet. Tell us what's confusing at{' '}
+          <a href={`mailto:${config.CORRECTIONS_EMAIL}`}>{config.CORRECTIONS_EMAIL}</a>.
+        </p>
+      )}
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--c-surface);
+    border-top: 1px solid var(--c-border-subtle);
+    padding: var(--s-6) 0;
+    margin-top: var(--s-8);
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+  }
+
+  .footer-note,
+  .footer-meta,
+  .footer-soft-note {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin: 0;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+  }
+
+  .footer-nav a {
+    color: var(--c-text-muted);
+  }
+
+  .footer-separator {
+    color: var(--c-border);
+  }
+
+  .footer-soft-note {
+    padding: var(--s-3);
+    background: var(--banner-info-bg);
+    color: var(--banner-info-text);
+    border-radius: 4px;
+  }
+
+  .footer-soft-note strong {
+    font-weight: 600;
+  }
+
+  .footer-soft-note a {
+    color: var(--banner-info-text);
+    text-decoration: underline;
+  }
+</style>

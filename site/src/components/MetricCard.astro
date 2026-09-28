@@ -1,0 +1,113 @@
+---
+/**
+ * Metric card component for employer metrics
+ */
+
+import Icon from './Icon.astro';
+import type { Metric } from '@/lib/data';
+import { formatPercentage } from '@/lib/format';
+
+interface Props {
+  label: string;
+  metric: Metric;
+  note?: string;
+  class?: string;
+}
+
+const {
+  label,
+  metric,
+  note,
+  class: className = '',
+} = Astro.props;
+
+const formatValue = (m: Metric): string => {
+  if (!m.available || m.value === null) return '—';
+  
+  if (m.unit === 'count') {
+    return m.value.toString();
+  }
+  
+  if (m.unit === 'days') {
+    return `${m.value}+ days`;
+  }
+  
+  if (m.unit === 'percent' && m.numerator !== null && m.denominator !== null) {
+    return formatPercentage(m.value, m.numerator, m.denominator, m.window_label);
+  }
+  
+  return m.value.toString();
+};
+
+const value = formatValue(metric);
+const isUnavailable = !metric.available || metric.value === null;
+---
+
+<div class:list={['metric-card', { 'metric-unavailable': isUnavailable }, className]}>
+  <div class="metric-value tabular">{value}</div>
+  <div class="metric-label">{label}</div>
+  {metric.unit === 'percent' && metric.available && metric.value !== null && metric.numerator !== null && (
+    <div class="metric-basis">
+      {metric.numerator} of {metric.denominator}
+      {metric.window_label && `, ${metric.window_label}`}
+    </div>
+  )}
+  {note && (
+    <div class="metric-note">
+      <Icon name="info" size={14} />
+      <span>{note}</span>
+    </div>
+  )}
+</div>
+
+<style>
+  .metric-card {
+    padding: var(--s-4);
+    background: var(--c-surface);
+    border-radius: 8px;
+    border: 1px solid var(--c-border-subtle);
+  }
+
+  .metric-value {
+    font-size: var(--fs-stat);
+    line-height: var(--lh-stat);
+    font-weight: 700;
+    margin-bottom: var(--s-1);
+  }
+
+  .metric-label {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-1);
+  }
+
+  .metric-basis {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .metric-note {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--s-2);
+    margin-top: var(--s-3);
+    padding: var(--s-2);
+    background: var(--banner-info-bg);
+    color: var(--banner-info-text);
+    border-radius: 4px;
+    font-size: var(--fs-xs);
+    line-height: var(--lh-xs);
+  }
+
+  .metric-note svg {
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .metric-unavailable .metric-value {
+    color: var(--c-text-muted);
+  }
+</style>

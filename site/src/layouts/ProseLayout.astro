@@ -1,0 +1,84 @@
+---
+/**
+ * Prose Layout - for About page with TOC
+ */
+
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="prose-layout">
+    <div class="container">
+      <div class="prose-grid">
+        <aside class="prose-toc-rail" aria-label="Table of contents">
+          <nav class="prose-toc">
+            <slot name="toc" />
+          </nav>
+        </aside>
+        
+        <article class="prose">
+          <slot />
+        </article>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .prose-layout {
+    padding: var(--s-6) 0;
+  }
+
+  .prose-grid {
+    display: grid;
+    gap: var(--s-6);
+  }
+
+  .prose-toc-rail {
+    display: none;
+  }
+
+  .prose-toc {
+    position: sticky;
+    top: var(--s-4);
+  }
+
+  .prose-toc :global(ul) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .prose-toc :global(li) {
+    margin-bottom: var(--s-2);
+  }
+
+  .prose-toc :global(a) {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    text-decoration: none;
+  }
+
+  .prose-toc :global(a:hover) {
+    color: var(--c-primary);
+  }
+
+  @media (min-width: 1024px) {
+    .prose-grid {
+      grid-template-columns: 220px 1fr;
+      gap: var(--s-8);
+    }
+
+    .prose-toc-rail {
+      display: block;
+    }
+  }
+</style>

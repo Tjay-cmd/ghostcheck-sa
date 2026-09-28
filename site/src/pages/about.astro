@@ -1,0 +1,234 @@
+---
+/**
+ * About & Methodology page
+ */
+
+import ProseLayout from '@/layouts/ProseLayout.astro';
+import AgeBadge from '@/components/AgeBadge.astro';
+import RepostBadge from '@/components/RepostBadge.astro';
+import Banner from '@/components/Banner.astro';
+import { getSiteConfig } from '@/lib/rules';
+import { getLegendCopy, getClosureMethodCopy } from '@/lib/format';
+import { getCorrectionsLog, getSiteData } from '@/lib/data';
+import { formatDate } from '@/lib/format';
+
+const config = getSiteConfig();
+const legend = getLegendCopy();
+const closureMethod = getClosureMethodCopy();
+const corrections = getCorrectionsLog();
+const site = getSiteData();
+
+const mailtoLink = `mailto:${config.CORRECTIONS_EMAIL}?subject=${encodeURIComponent('Correction request: [Employer]')}&body=${encodeURIComponent(`GhostCheck page:\nOriginal listing link:\nWhat's wrong:\nDoes this involve personal information? (yes/no):\nYour name and role (optional):`)}`;
+---
+
+<ProseLayout title="About GhostCheck SA" description="How we measure listing age and track employers">
+  <Fragment slot="toc">
+    <h2 class="toc-title">On this page</h2>
+    <ul>
+      <li><a href="#how-age-is-measured">How we measure age</a></li>
+      <li><a href="#badges">What the badges mean</a></li>
+      <li><a href="#reposts">Reposts and reopened listings</a></li>
+      <li><a href="#unknowns">What we don't know</a></li>
+      <li><a href="#privacy">Privacy and POPIA</a></li>
+      <li><a href="#corrections">Corrections</a></li>
+      <li><a href="#corrections-log">Corrections log</a></li>
+    </ul>
+  </Fragment>
+
+  <h1>About GhostCheck SA</h1>
+
+  <h2 id="how-age-is-measured">How we measure age</h2>
+  <p>
+    Every day, GhostCheck visits the public careers pages of the employers we track and notes which listings are there. The first day our check finds a listing is its <em>first seen</em> date. The last day we find it is its <em>last seen</em> date. <em>Days seen</em> is the time between them.
+  </p>
+  <p>
+    We can't see when an employer actually published a listing, so every age is a minimum, which is why we write "34+ days". If a listing was already up on the day we started tracking an employer, we show "Up since at least {site?.tracking_started_on ? formatDate(site.tracking_started_on) : 'date'}" instead, because its real age could be much higher.
+  </p>
+  <p>{closureMethod}</p>
+
+  <h2 id="badges">What the badges mean</h2>
+  <div class="badge-legend">
+    <div class="legend-item">
+      <AgeBadge ageState="fresh" daysSeen={5} openBeforeTracking={false} trackedSince={null} lastSeen="2027-02-03" variant="compact" />
+      <p>{legend.new}</p>
+    </div>
+    
+    <div class="legend-item">
+      <AgeBadge ageState="seen" daysSeen={34} openBeforeTracking={false} trackedSince={null} lastSeen="2027-02-03" variant="compact" />
+      <p>{legend.seen}</p>
+    </div>
+    
+    <div class="legend-item">
+      <AgeBadge ageState="long_open" daysSeen={112} openBeforeTracking={false} trackedSince={null} lastSeen="2027-02-03" variant="compact" />
+      <p>{legend.longOpen}</p>
+    </div>
+    
+    <div class="legend-item">
+      <RepostBadge repostCount={2} chainFirstSeen="2026-10-05" variant="compact" />
+      <p>{legend.reposted}</p>
+    </div>
+    
+    <div class="legend-item">
+      <AgeBadge ageState="closed" daysSeen={35} openBeforeTracking={false} trackedSince={null} lastSeen="2027-01-05" variant="compact" />
+      <p>{legend.closed}</p>
+    </div>
+  </div>
+
+  <h2 id="reposts">Reposts and reopened listings</h2>
+  <p>
+    If the same job (same job ID) disappears and later comes back, we treat it as the same listing that was temporarily down. We note the gap, and it doesn't count as a repost.
+  </p>
+  <p>
+    A <em>repost</em> is when a new job ID appears at the same employer with the same job title and the same location. We don't use fuzzy matching, so slightly different titles are treated as different jobs. Employers repost for many ordinary reasons, such as new intakes, budget cycles, system changes or hard-to-fill roles. A repost doesn't mean a role was never filled or never existed.
+  </p>
+
+  <h2 id="unknowns">What we don't know</h2>
+  <ul>
+    <li>When a job was first posted</li>
+    <li>Whether a role was filled</li>
+    <li>Why a listing stays up</li>
+  </ul>
+  <p>Our numbers describe what we saw, not why.</p>
+
+  <h3>Why the name</h3>
+  <p>
+    "GhostCheck" refers to a common experience among students: applying and never hearing back. It isn't a finding about any employer.
+  </p>
+
+  <h2 id="privacy">Privacy and POPIA</h2>
+  {!config.POPIA_REVIEWED && (
+    <Banner type="info" class="draft-label">
+      <p><strong>Draft, pending review</strong></p>
+    </Banner>
+  )}
+  <p>
+    We only collect facts from public job listings: job title, location, the link to the posting, and the dates our check saw it. We never collect or store names, email addresses or phone numbers of recruiters or staff, or full job descriptions.
+  </p>
+  <p>
+    There are no accounts and no advertising. We use Cloudflare Web Analytics to count visits. It doesn't use cookies and doesn't identify you, and we don't use any other tracking.
+  </p>
+  <p>
+    Employers are organisations, and POPIA also protects information about organisations. We limit ourselves to information they've made public for recruitment, and we republish only what's needed to show how long listings have been up. If you think something here contains personal information, email us and we'll remove it straight away while we check.
+  </p>
+
+  <h2 id="corrections">Corrections</h2>
+  <p>
+    If you represent an employer, or you've spotted a mistake, email <a href={mailtoLink}><strong>{config.CORRECTIONS_EMAIL}</strong></a> with the employer name, the GhostCheck page link, the original listing link, and what's wrong.
+  </p>
+  <ul>
+    <li>We reply within 5 working days.</li>
+    <li>While we review a request, the listing stays up, <strong>unless</strong> the request says it contains personal information. Then we remove it immediately and check afterwards.</li>
+    <li>If we got something wrong (for example, two listings wrongly linked as a repost, or a wrong location), we fix it and record it in the corrections log below.</li>
+    <li>We don't remove an employer from GhostCheck entirely by default. If you'd like to request that, email us and we'll review it case by case.</li>
+  </ul>
+
+  <h2 id="corrections-log">Corrections log</h2>
+  {!corrections || !corrections.corrections || corrections.corrections.length === 0 ? (
+    <p>No corrections yet.</p>
+  ) : (
+    <div class="corrections-list">
+      {corrections.corrections.map((correction) => (
+        <div class="correction-item">
+          <div class="correction-date">{formatDate(correction.date)}</div>
+          <div class="correction-employer">{correction.employer}</div>
+          <div class="correction-summary">{correction.summary}</div>
+        </div>
+      ))}
+    </div>
+  )}
+
+  <hr />
+
+  <div class="data-stats">
+    {site && site.tracking_started_on && site.last_successful_run_at ? (
+      <p>
+        Data last checked {formatDate(site.last_successful_run_at.split('T')[0])} · Tracking since {formatDate(site.tracking_started_on)} · {site.counts?.employers_tracked || 0} tracked employers
+      </p>
+    ) : (
+      <p>Our first daily check hasn't completed yet.</p>
+    )}
+  </div>
+</ProseLayout>
+
+<style>
+  .toc-title {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    font-weight: 600;
+    margin-bottom: var(--s-3);
+  }
+
+  .badge-legend {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-4);
+    margin: var(--s-5) 0;
+  }
+
+  .legend-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+  }
+
+  .legend-item p {
+    margin: 0;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+  }
+
+  .draft-label {
+    margin-bottom: var(--s-4);
+  }
+
+  .corrections-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-4);
+    margin: var(--s-5) 0;
+  }
+
+  .correction-item {
+    padding: var(--s-3);
+    background: var(--c-surface);
+    border-radius: 8px;
+  }
+
+  .correction-date {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-1);
+  }
+
+  .correction-employer {
+    font-weight: 600;
+    margin-bottom: var(--s-1);
+  }
+
+  .correction-summary {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+  }
+
+  .data-stats {
+    padding: var(--s-4);
+    background: var(--c-surface);
+    border-radius: 8px;
+    margin-top: var(--s-6);
+  }
+
+  .data-stats p {
+    margin: 0;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--c-border-subtle);
+    margin: var(--s-7) 0;
+  }
+</style>
