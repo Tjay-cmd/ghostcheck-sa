@@ -2,12 +2,28 @@
  "employer_id": "telkom",
  "listings": [
   {
+   "ats_job_id": "1382081833",
+   "title": "Specialist: BDM",
+   "location": "Centurion, Gauteng, ZA",
+   "url": "https://jobs.telkom.co.za/job/Centurion-Specialist-BDM-Gaut/1382081833/",
+   "first_seen": "2026-09-28",
+   "last_seen": "2026-09-28"
+  },
+  {
    "ats_job_id": "1439567333",
    "title": "Manager: Facilities Management",
    "location": "Johannesburg, Gauteng, ZA",
    "url": "https://jobs.telkom.co.za/job/Johannesburg-Manager-Facilities-Management-Gaut/1439567333/",
    "first_seen": "2026-09-27",
-   "last_seen": "2026-09-27"
+   "last_seen": "2026-09-28"
+  },
+  {
+   "ats_job_id": "1441818333",
+   "title": "Specialist: BDM",
+   "location": "Cape Town, Western Cape, ZA",
+   "url": "https://jobs.telkom.co.za/job/Cape-Town-Specialist-BDM-West/1441818333/",
+   "first_seen": "2026-09-28",
+   "last_seen": "2026-09-28"
   }
  ]
 }
