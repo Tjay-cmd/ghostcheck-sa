@@ -1,0 +1,59 @@
+---
+import Base from "../layouts/Base.astro";
+import { load } from "../lib/data";
+import { fmtDate } from "../lib/format";
+
+const { corrections, config } = load();
+const entries = corrections.entries;
+---
+<Base title="Corrections log" current="corrections">
+  <section class="wrap corr">
+    <p class="kicker">Corrections</p>
+    <h1 class="display corr-h">Every fix, <em>in public.</em></h1>
+    <p class="lede corr-lede">
+      When we get something wrong, we fix it and log it here. We never publish who asked, and never repeat the
+      text that was removed.
+    </p>
+
+    {entries.length === 0 ? (
+      <div class="none">
+        <p class="none-big">No corrections yet.</p>
+        <p>Spotted a mistake? Email <a href={`mailto:${config.CORRECTIONS_EMAIL}`}>{config.CORRECTIONS_EMAIL}</a>.</p>
+      </div>
+    ) : (
+      <ol class="log">
+        {entries.map((e) => (
+          <li id={e.correction_id} class="entry">
+            <p class="e-date mono">{fmtDate(e.date)}</p>
+            <div>
+              <p class="e-sum">{e.summary}</p>
+              <p class="e-meta mono">
+                <a href={`/employers/${e.employer_slug}/`}>{e.employer}</a> <span aria-hidden="true">·</span> {e.correction_id}
+              </p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    )}
+    <p class="ask">
+      To report an error or a personal-data problem: <a href={`mailto:${config.CORRECTIONS_EMAIL}`}>{config.CORRECTIONS_EMAIL}</a>.
+      <a href="/method/#privacy">How we handle personal data</a>.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .corr { padding-top: clamp(40px, 6vw, 80px); }
+  .corr-h { margin: 16px 0 28px; max-width: 14ch; }
+  .corr-lede { color: var(--ink-2); max-width: 34ch; margin-bottom: clamp(40px, 6vw, 72px); }
+  .log { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+  .entry { display: grid; gap: 8px 32px; padding: 24px 0; border-bottom: 1px solid var(--rule); scroll-margin-top: 24px; }
+  .entry:target { background: linear-gradient(90deg, var(--mark), transparent 80%); }
+  @media (min-width: 720px) { .entry { grid-template-columns: 160px 1fr; } }
+  .e-date { font-size: 12px; color: var(--ink-3); margin: 6px 0 0; }
+  .e-sum { font-size: 22px; line-height: 1.35; margin: 0 0 10px; max-width: 50ch; letter-spacing: -0.01em; }
+  .e-meta { font-size: 11px; color: var(--ink-3); margin: 0; }
+  .none { padding: 56px 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
+  .none-big { font-size: clamp(40px, 6vw, 72px); font-style: italic; letter-spacing: -0.03em; font-weight: 300; margin-bottom: 12px; }
+  .ask { margin-top: 40px; color: var(--ink-2); font-size: 17px; }
+</style>

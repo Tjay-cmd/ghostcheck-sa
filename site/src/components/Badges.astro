@@ -1,0 +1,22 @@
+---
+import { AGE_LABEL } from "../lib/format";
+import type { Summary } from "../lib/data";
+
+interface Props {
+  s: Pick<Summary, "age_state" | "reposted" | "repost_count" | "open_before_tracking">;
+}
+const { s } = Astro.props;
+---
+<span class="badges">
+  <span class="badge" data-state={s.age_state}>{AGE_LABEL[s.age_state]}</span>
+  {s.reposted && (
+    <span class="badge" data-state="repost">
+      Reposted{s.repost_count > 1 ? ` ×${s.repost_count}` : ""}
+    </span>
+  )}
+  {s.open_before_tracking && s.age_state !== "closed" && (
+    <span class="badge" data-state="before" title="Already up when tracking began, so its real age is longer">
+      Before tracking
+    </span>
+  )}
+</span>

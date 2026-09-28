@@ -1,0 +1,38 @@
+---
+import Ruler from "./Ruler.astro";
+import Badges from "./Badges.astro";
+import { fmtDate, n } from "../lib/format";
+import type { Summary } from "../lib/data";
+
+interface Props {
+  s: Summary;
+  showEmployer?: boolean;
+}
+const { s, showEmployer = false } = Astro.props;
+const href = `/employers/${s.employer_slug}/${s.listing_id}/`;
+const closed = s.status === "closed";
+---
+<li
+  class="row"
+  data-title={s.title.toLowerCase()}
+  data-loc={(s.location ?? "").toLowerCase()}
+  data-state={s.age_state}
+  data-reposted={s.reposted ? "1" : "0"}
+>
+  <a class="row-link" href={href}><span class="visually-hidden">{s.title}</span></a>
+  <h3 class="row-title">{s.title}</h3>
+  <Ruler days={s.days_seen} closed={closed} before={s.open_before_tracking} />
+  <div class="row-side">
+    <span class="row-days">
+      {s.open_before_tracking && <span class="ge" title="At least: it was up before tracking began">≥</span>}<b>{n(s.days_seen)}</b> {s.days_seen === 1 ? "day" : "days"}
+    </span>
+  </div>
+  <div class="row-meta">
+    {showEmployer && <span>{s.employer_name}</span>}
+    {showEmployer && <span class="sep">/</span>}
+    <span>{s.location ?? "Location not given"}</span>
+    <span class="sep">/</span>
+    <span>{closed ? `Closed ${fmtDate(s.closed_on)}` : `First seen ${fmtDate(s.first_seen)}`}</span>
+    <Badges s={s} />
+  </div>
+</li>

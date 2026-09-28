@@ -1,0 +1,45 @@
+---
+import { load } from "../lib/data";
+
+interface Props {
+  days: number;
+  closed?: boolean;
+  before?: boolean;
+  size?: "mini" | "full";
+  label?: string;
+}
+
+const { days, closed = false, before = false, size = "mini", label } = Astro.props;
+const { rules } = load();
+const FRESH = rules.FRESH_MAX_DAYS;
+const LONG = rules.LONG_OPEN_MIN_DAYS;
+const SCALE = Math.ceil((LONG * 1.32) / 10) * 10;
+const over = days > SCALE;
+const pct = (d: number) => `${(Math.min(d, SCALE) / SCALE) * 100}%`;
+const aria = label ?? `${days} ${days === 1 ? "day" : "days"} seen${before ? ", up before tracking began" : ""}${closed ? ", now closed" : ""}`;
+---
+<div
+  class:list={["ruler", `ruler-${size}`, { closed, before, over }]}
+  style={`--x:${pct(days)};--wk:${(7 / SCALE) * 100}%`}
+  role="img"
+  aria-label={aria}
+>
+  <div class="track">
+    <span class="zone zone-fresh" style={`width:${pct(FRESH)}`}></span>
+    <span class="zone zone-long" style={`left:${pct(LONG)}`}></span>
+    <span class="tick tick-major" style={`left:${pct(FRESH)}`}></span>
+    <span class="tick tick-major tick-long" style={`left:${pct(LONG)}`}></span>
+    <span class="fill"></span>
+    <span class="needle"></span>
+    {before && <span class="before-mark" aria-hidden="true">‹</span>}
+    {over && <span class="over-mark" aria-hidden="true">›</span>}
+  </div>
+  {size === "full" && (
+    <div class="labels" aria-hidden="true">
+      <span style="left:0">0</span>
+      <span style={`left:${pct(FRESH)}`}>{FRESH}<i>new ends</i></span>
+      <span style={`left:${pct(LONG)}`}>{LONG}<i>long open</i></span>
+      <span style="left:100%">{SCALE}+</span>
+    </div>
+  )}
+</div>

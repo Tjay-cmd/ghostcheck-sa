@@ -1,0 +1,111 @@
+.ruler { position: relative; width: 100%; }
+  .ruler .track { position: relative; height: 22px; }
+  .ruler-full .track { height: 56px; }
+
+  .ruler .track::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    border-bottom: 1px solid var(--ink-3);
+  }
+
+  .ruler .zone { position: absolute; bottom: 0; top: 30%; }
+  .ruler .zone-fresh { left: 0; background: var(--fresh-wash); }
+  .ruler .zone-long { right: 0; background: var(--long-wash); }
+
+  .ruler .track::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 22%;
+    opacity: 0.55;
+    background: repeating-linear-gradient(90deg, transparent 0 calc(var(--wk) - 1px), var(--ink-3) calc(var(--wk) - 1px) var(--wk));
+  }
+  .ruler .tick { position: absolute; bottom: 0; width: 1px; }
+  .ruler .tick-major { height: 70%; background: var(--fresh); }
+  .ruler .tick-long { background: var(--long); }
+
+  .ruler .fill {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 3px;
+    width: var(--x);
+    background: var(--ink);
+    transform-origin: left;
+    animation: ruler-grow 1s var(--ease) both;
+  }
+  .ruler .needle {
+    position: absolute;
+    left: var(--x);
+    bottom: -4px;
+    width: 9px;
+    height: 9px;
+    margin-left: -4.5px;
+    border-radius: 50%;
+    background: var(--ink);
+    box-shadow: 0 0 0 3px var(--paper);
+    animation: ruler-appear 0.4s 0.7s var(--ease) both;
+  }
+  .ruler-full .needle {
+    width: 15px;
+    height: 15px;
+    margin-left: -7.5px;
+    bottom: -7px;
+    animation: ruler-slide 1.2s var(--ease) both;
+  }
+  .ruler-full .needle::before {
+    content: "";
+    position: absolute;
+    left: 6.5px;
+    bottom: 14px;
+    width: 2px;
+    height: 44px;
+    background: var(--ink);
+  }
+  .ruler-full .fill { height: 4px; bottom: -2px; animation-duration: 1.2s; }
+
+  .ruler.closed .fill { background: var(--closed); }
+  .ruler.closed .needle { background: var(--paper); border: 2px solid var(--closed); }
+  .ruler.closed.ruler-full .needle::before { background: var(--closed); }
+
+  .ruler .before-mark, .ruler .over-mark {
+    position: absolute;
+    bottom: -8px;
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--ink-3);
+  }
+  .ruler .before-mark { left: -11px; }
+  .ruler .over-mark { right: -12px; color: var(--long); }
+  .ruler-full .before-mark { font-size: 20px; left: -16px; bottom: -12px; }
+
+  .ruler .labels {
+    position: relative;
+    height: 36px;
+    margin-top: 10px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-3);
+  }
+  .ruler .labels span {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .ruler .labels span:first-child { transform: none; align-items: flex-start; }
+  .ruler .labels span:last-child { transform: translateX(-100%); align-items: flex-end; }
+  .ruler .labels i { font-style: normal; font-size: 9.5px; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 3px; opacity: 0.8; }
+
+  @keyframes ruler-grow { from { transform: scaleX(0); } }
+  @keyframes ruler-appear { from { opacity: 0; transform: scale(0.2); } }
+  @keyframes ruler-slide { from { left: 0; } }
+
+  @supports (animation-timeline: view()) {
+    .ruler-mini .fill { animation: ruler-grow linear both; animation-timeline: view(); animation-range: entry 0% entry 90%; }
+    .ruler-mini .needle { animation: ruler-appear linear both; animation-timeline: view(); animation-range: entry 60% entry 100%; }
+  }

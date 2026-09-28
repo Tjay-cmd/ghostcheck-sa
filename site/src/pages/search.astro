@@ -1,0 +1,234 @@
+---
+import Base from "../layouts/Base.astro";
+import SearchField from "../components/SearchField.astro";
+import { load, searchIndexFile } from "../lib/data";
+import { n } from "../lib/format";
+
+const { site, rules, employers } = load();
+const indexUrl = `/data/${searchIndexFile()}`;
+const scale = Math.ceil((rules.LONG_OPEN_MIN_DAYS * 1.32) / 10) * 10;
+const withData = employers.filter((e) => e.active && e.has_data);
+---
+<Base title="Search open listings" current="search">
+  <section class="wrap srch">
+    <p class="kicker">Search</p>
+    <h1 class="display srch-h">Find a listing, <em>see its age.</em></h1>
+    <div class="srch-field">
+      <SearchField size="page" placeholder="Job title, place or keyword" />
+    </div>
+
+    <div
+      class="controls"
+      data-search
+      data-index={indexUrl}
+      data-fresh={rules.FRESH_MAX_DAYS}
+      data-long={rules.LONG_OPEN_MIN_DAYS}
+      data-scale={scale}
+    >
+      <div class="chips" role="group" aria-label="Filter by age">
+        <button type="button" class="chip" data-f="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-f="fresh" aria-pressed="false">New</button>
+        <button type="button" class="chip" data-f="seen" aria-pressed="false">Seen</button>
+        <button type="button" class="chip" data-f="long_open" aria-pressed="false">Long open</button>
+        <button type="button" class="chip" data-f="repost" aria-pressed="false">Reposted</button>
+      </div>
+      <div class="selects">
+        <label class="sel">
+          <span class="kicker">Employer</span>
+          <select data-emp>
+            <option value="">All {withData.length}</option>
+            {withData.map((e) => <option value={e.slug}>{e.name}</option>)}
+          </select>
+        </label>
+        <label class="sel">
+          <span class="kicker">Order</span>
+          <select data-sort>
+            <option value="new">Newest first</option>
+            <option value="old">Longest seen first</option>
+            <option value="az">Title A–Z</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <p class="summary" aria-live="polite" data-summary>
+      <span class="summary-n mono">{n(site.counts.open_listings)}</span>
+      <span class="summary-t">open listings across {withData.length} employers</span>
+    </p>
+
+    <ul class="rows" data-results></ul>
+    <div class="empty" data-empty hidden>
+      <p class="empty-big">Nothing matches.</p>
+      <p>Try fewer words, or a place instead of a title. We only index listings that are open right now.</p>
+    </div>
+    <button class="btn btn-ghost more" type="button" data-more hidden>Show more</button>
+
+    <noscript>
+      <p class="noscript">Search needs JavaScript. You can still <a href="/employers/">browse every employer's open listings</a>.</p>
+    </noscript>
+  </section>
+</Base>
+
+<script>
+  type Row = [string, number, string, string | null, string, number, string, 0 | 1, 0 | 1, number];
+  type Index = { employers: [string, string][]; rows: Row[] };
+
+  const root = document.querySelector<HTMLElement>("[data-search]")!;
+  const input = document.querySelector<HTMLInputElement>("[data-search-input]")!;
+  const form = input.form!;
+  const list = document.querySelector<HTMLUListElement>("[data-results]")!;
+  const empty = document.querySelector<HTMLElement>("[data-empty]")!;
+  const more = document.querySelector<HTMLButtonElement>("[data-more]")!;
+  const summary = document.querySelector<HTMLElement>("[data-summary]")!;
+  const chips = [...root.querySelectorAll<HTMLButtonElement>("[data-f]")];
+  const emp = root.querySelector<HTMLSelectElement>("[data-emp]")!;
+  const sort = root.querySelector<HTMLSelectElement>("[data-sort]")!;
+  const FRESH = +root.dataset.fresh!;
+  const LONG = +root.dataset.long!;
+  const SCALE = +root.dataset.scale!;
+  const PAGE = 50;
+  const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const LABEL: Record<string, string> = { fresh: "New", seen: "Seen", long_open: "Long open" };
+
+  let data: Index | null = null;
+  let filter = "all";
+  let limit = PAGE;
+
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+  const num = (x: number) => String(x).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  const date = (d: string) => { const [y, m, day] = d.split("-").map(Number); return `${day} ${MONTHS[m - 1]} ${y}`; };
+  const pct = (d: number) => `${(Math.min(d, SCALE) / SCALE) * 100}%`;
+
+  function highlight(text: string, terms: string[]) {
+    let out = esc(text);
+    for (const t of terms) {
+      if (!t) continue;
+      const re = new RegExp(`(${esc(t).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi");
+      out = out.replace(re, "<mark>$1</mark>");
+    }
+    return out;
+  }
+
+  function ruler(days: number, before: boolean) {
+    return `<div class="ruler ruler-mini${before ? " before" : ""}${days > SCALE ? " over" : ""}" style="--x:${pct(days)};--wk:${(7 / SCALE) * 100}%" role="img" aria-label="${days} days seen">
+      <div class="track"><span class="zone zone-fresh" style="width:${pct(FRESH)}"></span><span class="zone zone-long" style="left:${pct(LONG)}"></span>
+      <span class="tick tick-major" style="left:${pct(FRESH)}"></span><span class="tick tick-major tick-long" style="left:${pct(LONG)}"></span>
+      <span class="fill"></span><span class="needle"></span>${before ? '<span class="before-mark" aria-hidden="true">‹</span>' : ""}${days > SCALE ? '<span class="over-mark" aria-hidden="true">›</span>' : ""}</div></div>`;
+  }
+
+  function row(r: Row, terms: string[]) {
+    const [id, ei, title, loc, first, days, state, obt, rep, repN] = r;
+    const [slug, name] = data!.employers[ei];
+    return `<li class="row">
+      <a class="row-link" href="/employers/${slug}/${id}/"><span class="visually-hidden">${esc(title)}</span></a>
+      <h3 class="row-title">${highlight(title, terms)}</h3>
+      ${ruler(days, !!obt)}
+      <div class="row-side"><span class="row-days">${obt ? '<span class="ge">≥</span>' : ""}<b>${num(days)}</b> ${days === 1 ? "day" : "days"}</span></div>
+      <div class="row-meta"><span>${esc(name)}</span><span class="sep">/</span><span>${loc ? highlight(loc, terms) : "Location not given"}</span><span class="sep">/</span><span>First seen ${date(first)}</span>
+        <span class="badges"><span class="badge" data-state="${state}">${LABEL[state]}</span>${rep ? `<span class="badge" data-state="repost">Reposted${repN > 1 ? ` ×${repN}` : ""}</span>` : ""}${obt ? '<span class="badge" data-state="before">Before tracking</span>' : ""}</span>
+      </div></li>`;
+  }
+
+  function render() {
+    if (!data) return;
+    const q = input.value.trim().toLowerCase();
+    const terms = q.split(/\s+/).filter(Boolean);
+    const e = emp.value;
+    const ei = e ? data.employers.findIndex(([s]) => s === e) : -1;
+    let hits = data.rows.filter((r) => {
+      if (ei >= 0 && r[1] !== ei) return false;
+      if (filter === "repost" ? !r[8] : filter !== "all" && r[6] !== filter) return false;
+      if (!terms.length) return true;
+      const hay = `${r[2]} ${r[3] ?? ""} ${data!.employers[r[1]][1]}`.toLowerCase();
+      return terms.every((t) => hay.includes(t));
+    });
+    if (sort.value === "old") hits = [...hits].sort((a, b) => b[5] - a[5]);
+    else if (sort.value === "az") hits = [...hits].sort((a, b) => a[2].localeCompare(b[2]));
+
+    list.innerHTML = hits.slice(0, limit).map((r) => row(r, terms)).join("");
+    empty.hidden = hits.length > 0;
+    more.hidden = hits.length <= limit;
+    more.textContent = `Show ${Math.min(PAGE, hits.length - limit)} more`;
+    const noun = hits.length === 1 ? "listing" : "listings";
+    summary.innerHTML = terms.length
+      ? `<span class="summary-n mono">${num(hits.length)}</span><span class="summary-t">open ${noun} match “${esc(input.value.trim())}”</span>`
+      : `<span class="summary-n mono">${num(hits.length)}</span><span class="summary-t">open ${noun}${e ? ` at ${esc(data.employers[ei][1])}` : ""}</span>`;
+
+    const url = new URL(location.href);
+    q ? url.searchParams.set("q", input.value.trim()) : url.searchParams.delete("q");
+    history.replaceState(null, "", url);
+  }
+
+  let timer = 0;
+  input.addEventListener("input", () => { clearTimeout(timer); timer = window.setTimeout(() => { limit = PAGE; render(); }, 90); });
+  form.addEventListener("submit", (ev) => { ev.preventDefault(); limit = PAGE; render(); });
+  emp.addEventListener("change", () => { limit = PAGE; render(); });
+  sort.addEventListener("change", () => { limit = PAGE; render(); });
+  more.addEventListener("click", () => { limit += PAGE; render(); });
+  for (const c of chips)
+    c.addEventListener("click", () => {
+      filter = c.dataset.f!;
+      chips.forEach((x) => x.setAttribute("aria-pressed", String(x === c)));
+      limit = PAGE;
+      render();
+    });
+
+  const initial = new URLSearchParams(location.search).get("q");
+  if (initial) input.value = initial;
+
+  fetch(root.dataset.index!)
+    .then((r) => r.json())
+    .then((j: Index) => { data = j; render(); })
+    .catch(() => {
+      summary.innerHTML = `<span class="summary-t">The search index didn't load. <a href="/employers/">Browse employers instead</a>.</span>`;
+    });
+</script>
+
+<style>
+  .srch { padding-top: clamp(40px, 6vw, 80px); }
+  .srch-h { margin: 16px 0 clamp(32px, 5vw, 56px); max-width: 16ch; }
+  .srch-field { max-width: 980px; }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px 32px;
+    margin-top: 28px;
+  }
+  .selects { display: flex; gap: 20px; flex-wrap: wrap; }
+  .sel { display: grid; gap: 6px; }
+  .sel select {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink);
+    background: transparent;
+    border: 1px solid var(--rule);
+    border-radius: 0;
+    padding: 9px 30px 8px 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%);
+    background-position: calc(100% - 15px) 55%, calc(100% - 10px) 55%;
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .sel select:hover { border-color: var(--ink); }
+  .sel select option { background: var(--paper); color: var(--ink); }
+
+  .summary {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: clamp(48px, 7vw, 80px) 0 20px;
+  }
+  .summary :global(.summary-n) { font-size: clamp(40px, 5vw, 64px); letter-spacing: -0.06em; font-weight: 300; line-height: 0.9; }
+  .summary :global(.summary-t) { font-size: 20px; color: var(--ink-2); }
+  .empty { padding: 48px 0; border-bottom: 1px solid var(--rule); }
+  .empty-big { font-size: 40px; font-style: italic; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .empty p:last-child { color: var(--ink-2); max-width: 50ch; }
+  .more { margin-top: 28px; }
+  .noscript { margin-top: 32px; font-size: 18px; }
+</style>

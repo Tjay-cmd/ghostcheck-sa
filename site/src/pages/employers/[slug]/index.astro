@@ -1,0 +1,135 @@
+---
+import Base from "../../../layouts/Base.astro";
+import MetricCell from "../../../components/MetricCell.astro";
+import CheckBanner from "../../../components/CheckBanner.astro";
+import ListFilter from "../../../components/ListFilter.astro";
+import ListingRow from "../../../components/ListingRow.astro";
+import { load, type Employer } from "../../../lib/data";
+import { fmtDate, fmtTime, n } from "../../../lib/format";
+
+export function getStaticPaths() {
+  return load().employers.map((e) => ({ params: { slug: e.slug }, props: { e } }));
+}
+
+const { e } = Astro.props as { e: Employer };
+const { rules } = load();
+const m = e.metrics;
+const ATS = { workday: "Workday", successfactors: "SAP SuccessFactors", other: "Own careers site" } as Record<string, string>;
+const host = new URL(e.source_url).host;
+---
+<Base title={e.name} description={`Open job listings at ${e.name} and how long they've been up, checked daily.`} current="employers">
+  <article class="wrap emp">
+    <nav class="crumbs mono" aria-label="Breadcrumb"><a href="/employers/">Employers</a> <span aria-hidden="true">/</span> {e.sector}</nav>
+
+    <header class="emp-head">
+      <div>
+        <h1 class="display emp-name">{e.name}</h1>
+        <p class="emp-sub mono">{e.sector} <span aria-hidden="true">·</span> {ATS[e.ats_type] ?? e.ats_type}</p>
+        <a class="btn" href={e.source_url} rel="noopener" target="_blank">
+          Official careers site <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <p class="host mono">{host}</p>
+      </div>
+      <dl class="record">
+        <div><dt class="kicker">Tracked since</dt><dd>{fmtDate(e.tracked_since)}</dd></div>
+        <div><dt class="kicker">Days tracked</dt><dd class="mono">{e.tracked_days === null ? "—" : n(e.tracked_days)}</dd></div>
+        <div>
+          <dt class="kicker">Last successful check</dt>
+          <dd>{e.last_successful_check_at ? `${fmtDate(e.last_successful_check_at)}, ${fmtTime(e.last_successful_check_at)}` : "—"}</dd>
+        </div>
+        <div><dt class="kicker">Listings ever seen</dt><dd class="mono">{n(e.total_listings_seen)}</dd></div>
+      </dl>
+    </header>
+
+    <CheckBanner e={e} name={e.name} />
+
+    {e.has_data && (
+      <section class="figures" aria-label="Figures">
+        <MetricCell m={m.open_count} label="Open now" hint="Listings on the site at the last check." />
+        <MetricCell m={m.median_days_seen} label="Median age" hint="Half of open listings have been seen for longer than this." />
+        <MetricCell m={m.share_open_90} label={`Open ${rules.LONG_OPEN_MIN_DAYS}+ days`} hint="Share of open listings that are long open." />
+        <MetricCell m={m.repost_rate} label="Reposts" hint="Listings first seen in the window that were reposts." />
+      </section>
+    )}
+    {m.long_open_possible_from && (
+      <p class="early mono">
+        No listing here can be “long open” before {fmtDate(m.long_open_possible_from)}: we haven't been watching for {rules.LONG_OPEN_MIN_DAYS} days yet.
+      </p>
+    )}
+
+    {e.has_data && (
+      <section class="list-sec" data-filter-scope aria-labelledby="open-h">
+        <div class="list-head">
+          <h2 id="open-h" class="sec-h">Open listings <span class="mono count">{n(e.listings.open.length)}</span></h2>
+          <p class="muted">Newest first. Tap a listing for its full history.</p>
+        </div>
+        {e.listings.open.length ? (
+          <>
+            <ListFilter items={e.listings.open} noun="listings" />
+            <ul class="rows">
+              {e.listings.open.map((s) => <ListingRow s={s} />)}
+            </ul>
+            <button class="btn btn-ghost more" type="button" data-lf-more hidden>Show more</button>
+          </>
+        ) : (
+          <p class="empty">No open listings at the last successful check.</p>
+        )}
+      </section>
+    )}
+
+    {e.listings.recently_closed.length > 0 && (
+      <section class="list-sec" aria-labelledby="closed-h">
+        <div class="list-head">
+          <h2 id="closed-h" class="sec-h">Recently closed <span class="mono count">{n(e.listings.recently_closed.length)}</span></h2>
+          <p class="muted">Gone from the site in the last {rules.RECENTLY_CLOSED_WINDOW_DAYS} days.</p>
+        </div>
+        <ul class="rows">
+          {e.listings.recently_closed.map((s) => <ListingRow s={s} />)}
+        </ul>
+      </section>
+    )}
+  </article>
+</Base>
+
+<style>
+  .emp { padding-top: 40px; }
+  .crumbs { font-size: 11px; color: var(--ink-3); margin-bottom: 28px; letter-spacing: 0.03em; }
+  .emp-head {
+    display: grid;
+    gap: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--ink);
+  }
+  @media (min-width: 1000px) { .emp-head { grid-template-columns: 1fr 360px; align-items: end; } }
+  .emp-name { max-width: 14ch; animation: rise 0.9s var(--ease) both; }
+  .emp-sub { font-size: 12px; color: var(--ink-3); margin: 20px 0 28px; letter-spacing: 0.03em; }
+  .host { font-size: 10.5px; color: var(--ink-3); margin: 10px 0 0; }
+  .record { margin: 0; display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--rule); }
+  .record div { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .record div:nth-child(odd) { padding-right: 16px; }
+  .record dd { margin: 6px 0 0; font-size: 19px; }
+  .record dd.mono { font-size: 22px; letter-spacing: -0.04em; }
+
+  .figures {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (min-width: 640px) { .figures { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1000px) {
+    .figures { grid-template-columns: repeat(4, 1fr); }
+    .figures > :global(*) + :global(*) { border-left: 1px solid var(--rule); padding-left: 24px; }
+  }
+  .early { font-size: 11px; color: var(--ink-3); margin: 14px 0 0; }
+
+  .list-sec { margin-top: clamp(56px, 8vw, 96px); }
+  .list-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: 24px; }
+  .list-head p { margin: 0; font-size: 16px; }
+  .sec-h { font-size: clamp(32px, 4vw, 48px); letter-spacing: -0.025em; }
+  .count { font-size: 0.4em; vertical-align: super; color: var(--ink-3); letter-spacing: 0; }
+  .more { margin-top: 28px; }
+  .empty { color: var(--ink-3); font-style: italic; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } }
+</style>

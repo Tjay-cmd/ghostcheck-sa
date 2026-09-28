@@ -1,0 +1,89 @@
+---
+// Only built when config/site.json FEATURE_OVERVIEW is true (F5).
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../layouts/Base.astro";
+import { load, type Metric } from "../lib/data";
+import { fmtDate, n } from "../lib/format";
+
+export function getStaticPaths() {
+  return load().config.FEATURE_OVERVIEW ? [{ params: { overview: "overview" } }] : [];
+}
+
+type Row = { slug: string; name: string; sector: string; tracked_since: string; open_count: number;
+  median_days_seen: Metric; share_open_90: Metric; repost_rate: Metric };
+type Pending = { slug: string; name: string; sector: string; tracked_since: string | null; open_count: number | null;
+  eligible_from: string | null; reason: string };
+const ov = JSON.parse(
+  fs.readFileSync(path.resolve(process.cwd(), "..", process.env.GHOSTCHECK_DATA ?? "data", "overview.json"), "utf-8"),
+) as { data_date: string | null; employers: Row[]; not_yet_eligible: Pending[]; earliest_eligible_from: string | null };
+const { rules } = load();
+const cell = (m: Metric, suffix = "") => (m.value === null ? "—" : `${n(m.value)}${suffix}`);
+const REASON: Record<string, string> = {
+  tracked_days: `Tracked under ${rules.OVERVIEW_MIN_TRACKED_DAYS} days`,
+  open_listings: `Fewer than ${rules.OVERVIEW_MIN_OPEN_LISTINGS} open listings`,
+  tracked_days_and_open_listings: "Too new, too few listings",
+  no_data: "Not checked yet",
+};
+---
+<Base title="Overview" current="overview">
+  <section class="wrap ov">
+    <p class="kicker">Overview · data to {fmtDate(ov.data_date)}</p>
+    <h1 class="display ov-h">Employers <em>side by side.</em></h1>
+    <p class="lede ov-lede">
+      Only employers we've tracked for {rules.OVERVIEW_MIN_TRACKED_DAYS}+ days with at least {rules.OVERVIEW_MIN_OPEN_LISTINGS} open listings.
+      Ordered by share open {rules.LONG_OPEN_MIN_DAYS}+ days, then name. This is an order, not a ranking.
+    </p>
+
+    {ov.employers.length === 0 ? (
+      <p class="none">Collecting data{ov.earliest_eligible_from ? `: first figures from ${fmtDate(ov.earliest_eligible_from)}` : ""}.</p>
+    ) : (
+      <table class="ov-t">
+        <thead>
+          <tr><th>Employer</th><th>Open</th><th>Median days</th><th>Open {rules.LONG_OPEN_MIN_DAYS}+ days</th><th>Reposts</th></tr>
+        </thead>
+        <tbody>
+          {ov.employers.map((r) => (
+            <tr>
+              <td><a href={`/employers/${r.slug}/`}>{r.name}</a><span class="mono sec">{r.sector}</span></td>
+              <td class="mono">{n(r.open_count)}</td>
+              <td class="mono">{cell(r.median_days_seen)}</td>
+              <td class="mono">{cell(r.share_open_90, "%")}</td>
+              <td class="mono">{cell(r.repost_rate, "%")}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+
+    {ov.not_yet_eligible.length > 0 && (
+      <section class="pending">
+        <h2 class="kicker">Not in the overview yet</h2>
+        <ul>
+          {ov.not_yet_eligible.map((p) => (
+            <li>
+              <a href={`/employers/${p.slug}/`}>{p.name}</a>
+              <span class="mono">{REASON[p.reason]}{p.eligible_from ? ` · from ${fmtDate(p.eligible_from)}` : ""}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </section>
+</Base>
+
+<style>
+  .ov { padding-top: clamp(40px, 6vw, 80px); }
+  .ov-h { margin: 16px 0 24px; max-width: 14ch; }
+  .ov-lede { color: var(--ink-2); max-width: 44ch; margin-bottom: 48px; font-size: 22px; }
+  .ov-t { width: 100%; border-collapse: collapse; border-top: 1px solid var(--ink); }
+  .ov-t th { text-align: left; font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); font-weight: 400; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--rule); }
+  .ov-t td { padding: 16px 12px 16px 0; border-bottom: 1px solid var(--rule); font-size: 22px; }
+  .ov-t td.mono { font-size: 18px; }
+  .sec { display: block; font-size: 10.5px; color: var(--ink-3); margin-top: 4px; }
+  .pending { margin-top: 56px; }
+  .pending ul { list-style: none; padding: 0; margin: 12px 0 0; border-top: 1px solid var(--rule); }
+  .pending li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .pending .mono { font-size: 11px; color: var(--ink-3); }
+  .none { font-size: 28px; font-style: italic; }
+</style>

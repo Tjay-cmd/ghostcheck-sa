@@ -34,7 +34,7 @@ contract/                      Data contract documentation and validation
 pipeline/                      M1 pipeline: history/ -> data/ (listing IDs, closures, reposts, metrics)
   ghostcheck_pipeline/           Pipeline package
   tests/                         Pytest test suite
-site/                          Placeholder for Astro frontend (to be built)
+site/                          Astro static site built from data/ (see site/README.md)
 ```
 
 ## Milestone 0 (M0) Risk Spike
@@ -142,7 +142,7 @@ cd contract && python validate.py ..
 After the M0 spike validates the approach:
 
 1. ~~**M1:** Full pipeline with listing ID generation, closure detection, repost chains, employer metrics~~ — built, see `pipeline/`
-2. **Static site:** Astro frontend in `site/` reading from `config/` and `data/`
+2. ~~**Static site:** Astro frontend in `site/` reading from `config/` and `data/`~~ — built, see `site/`
 3. **Public launch:** Search UI, employer pages, overview dashboard
 
 ## License

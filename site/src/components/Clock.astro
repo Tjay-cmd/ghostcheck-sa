@@ -1,0 +1,195 @@
+---
+// Tracking timeline: where today sits between tracking start and the dates
+// the pipeline has already computed for when figures become possible.
+import { load } from "../lib/data";
+import { daysBetween, fmtDate, fmtShort } from "../lib/format";
+
+const { site, employers, rules } = load();
+const start = site.tracking_started_on!;
+const today = site.data_date!;
+
+// Only a milestone while no employer has figures yet; after that it's per-employer news.
+const anyFigures = employers.some((e) => e.metrics.median_days_seen.available);
+const metricsFrom = anyFigures
+  ? undefined
+  : employers
+      .map((e) => e.metrics.median_days_seen.available_from)
+      .filter((d): d is string => !!d)
+      .sort()[0];
+
+type Stone = { date: string; title: string; body: string };
+const stones: Stone[] = [
+  { date: start, title: "Tracking starts", body: "First successful check. Anything already up counts from here, as a lower bound." },
+];
+if (metricsFrom)
+  stones.push({
+    date: metricsFrom,
+    title: "Employer figures",
+    body: `Median age and shares open after ${rules.EMPLOYER_METRICS_MIN_TRACKED_DAYS} days of tracking.`,
+  });
+if (site.earliest_long_open_possible_on)
+  stones.push({
+    date: site.earliest_long_open_possible_on,
+    title: "First “long open”",
+    body: `The earliest a listing can have been seen for ${rules.LONG_OPEN_MIN_DAYS} days.`,
+  });
+
+stones.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+const last = stones[stones.length - 1].date > today ? stones[stones.length - 1].date : today;
+const span = Math.max(daysBetween(start, last), 1);
+const total = Math.round(span * 1.08);
+const pos = (d: string) => `${(daysBetween(start, d) / total) * 100}%`;
+const elapsed = daysBetween(start, today);
+const nextStone = stones.find((s) => s.date > today);
+const toNext = nextStone ? daysBetween(today, nextStone.date) : 0;
+const weeks = Array.from({ length: Math.floor(total / 7) }, (_, i) => (i + 1) * 7);
+---
+<div class="clock">
+  <div class="clock-read">
+    <div>
+      <p class="kicker">Days of tracking</p>
+      <p class="big mono">{String(elapsed).padStart(3, "0")}</p>
+    </div>
+    {nextStone && (
+      <div>
+        <p class="kicker">Until {nextStone.title.toLowerCase()}</p>
+        <p class="big mono">{String(toNext).padStart(3, "0")}</p>
+      </div>
+    )}
+    <p class="clock-note">
+      We can only vouch for what we've seen. A listing that was already up on {fmtDate(start)} has
+      been up <em>at least</em> that long, so every age on this site is a floor, not a ceiling.
+    </p>
+  </div>
+
+  <div class="line" style={`--today:${pos(today)}`} role="img"
+       aria-label={`Tracking began ${fmtDate(start)}. Today is day ${elapsed}.`}>
+    <div class="line-track">
+      {weeks.map((w) => <span class="wk" style={`left:${(w / total) * 100}%`}></span>)}
+      <span class="line-done"></span>
+      <span class:list={["line-today", { late: elapsed / total > 0.5 }]}><span class="mono">Today · {fmtShort(today)}</span></span>
+    </div>
+    <ol class="stones">
+      {stones.map((s, i) => (
+        <li class:list={["stone", { reached: s.date <= today, flip: i % 2 === 1 }]} style={`--at:${pos(s.date)}`}>
+          <span class="stone-date mono">{fmtDate(s.date)}</span>
+          <span class="stone-title">{s.title}</span>
+          <span class="stone-body">{s.body}</span>
+        </li>
+      ))}
+    </ol>
+  </div>
+</div>
+
+<style>
+  .clock { display: grid; gap: 48px; }
+  .clock-read {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, auto));
+    justify-content: start;
+    gap: 24px 56px;
+    align-items: end;
+  }
+  .big {
+    margin: 6px 0 0;
+    font-size: clamp(56px, 9vw, 120px);
+    line-height: 0.85;
+    font-weight: 300;
+    letter-spacing: -0.06em;
+  }
+  .clock-note { grid-column: 1 / -1; max-width: 52ch; color: var(--ink-2); font-size: 18px; margin: 0; }
+  @media (min-width: 1000px) {
+    .clock-read { grid-template-columns: auto auto 1fr; }
+    .clock-note { grid-column: 3; justify-self: end; }
+  }
+
+  .line { position: relative; padding: 0 0 8px; }
+  .line-track {
+    position: relative;
+    height: 64px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .wk { position: absolute; bottom: 0; width: 1px; height: 8px; background: var(--ink-3); opacity: 0.5; }
+  .line-done {
+    position: absolute;
+    left: 0; bottom: -2px;
+    height: 5px;
+    width: max(var(--today), 6px);
+    background: var(--ink);
+    transform-origin: left;
+    animation: grow 1.4s var(--ease) both;
+  }
+  .line-today {
+    position: absolute;
+    left: var(--today);
+    bottom: -8px;
+    width: 15px; height: 15px;
+    margin-left: -7.5px;
+    border-radius: 50%;
+    background: var(--long);
+    box-shadow: 0 0 0 4px var(--paper);
+  }
+  .line-today::after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: 1px solid var(--long);
+    animation: ring 2.4s var(--ease) infinite;
+  }
+  .line-today span {
+    position: absolute;
+    bottom: 26px;
+    left: 0;
+    white-space: nowrap;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--long);
+  }
+  .line-today.late span { left: auto; right: 0; }
+
+  .stones { list-style: none; margin: 0; padding: 0; position: relative; }
+  .stone {
+    position: relative;
+    display: grid;
+    gap: 4px;
+    padding: 18px 0 18px 20px;
+    border-left: 1px solid var(--rule);
+    margin-left: 0;
+  }
+  .stone::before {
+    content: "";
+    position: absolute;
+    left: -5px; top: 22px;
+    width: 9px; height: 9px;
+    background: var(--paper);
+    border: 1.5px solid var(--ink);
+    transform: rotate(45deg);
+  }
+  .stone.reached::before { background: var(--ink); }
+  .stone-date { font-size: 11px; color: var(--ink-3); letter-spacing: 0.03em; }
+  .stone-title { font-size: 24px; letter-spacing: -0.015em; line-height: 1.1; }
+  .stone-body { color: var(--ink-2); font-size: 16px; max-width: 30ch; line-height: 1.4; }
+
+  @media (min-width: 900px) {
+    .stones { height: 190px; }
+    .stone {
+      position: absolute;
+      top: 0;
+      left: var(--at);
+      width: 250px;
+      padding: 28px 0 0 16px;
+      border-left: 1px solid var(--ink);
+    }
+    .stone::before { left: -5px; top: -5px; }
+    .stone:last-child { transform: translateX(-100%); border-left: 0; border-right: 1px solid var(--ink); padding: 28px 16px 0 0; text-align: right; }
+    .stone:last-child::before { left: auto; right: -5px; }
+    .stone:last-child .stone-body { margin-left: auto; }
+    .stone.flip:not(:last-child) { padding-top: 96px; }
+    .stone.flip:not(:last-child)::before { top: -5px; }
+  }
+
+  @keyframes grow { from { transform: scaleX(0); } }
+  @keyframes ring { from { transform: scale(0.5); opacity: 1; } to { transform: scale(1.6); opacity: 0; } }
+</style>

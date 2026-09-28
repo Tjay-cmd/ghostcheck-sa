@@ -1,0 +1,107 @@
+---
+// Client-side filter over the .row items that follow it inside [data-filter-scope].
+import type { Summary } from "../lib/data";
+import { n } from "../lib/format";
+
+interface Props { items: Summary[]; noun: string }
+const { items, noun } = Astro.props;
+const count = (f: (s: Summary) => boolean) => items.filter(f).length;
+const chips = [
+  { key: "all", label: "All", c: items.length },
+  { key: "fresh", label: "New", c: count((s) => s.age_state === "fresh") },
+  { key: "seen", label: "Seen", c: count((s) => s.age_state === "seen") },
+  { key: "long_open", label: "Long open", c: count((s) => s.age_state === "long_open") },
+  { key: "repost", label: "Reposted", c: count((s) => s.reposted) },
+].filter((c) => c.key === "all" || c.c > 0);
+---
+<div class="lf" data-list-filter data-noun={noun}>
+  <label class="lf-search">
+    <span class="visually-hidden">Filter {noun}</span>
+    <input type="search" placeholder={`Filter ${n(items.length)} ${noun} by title or place`} data-lf-q autocomplete="off" />
+  </label>
+  {chips.length > 1 && (
+    <div class="chips" role="group" aria-label="Filter by age">
+      {chips.map((c, i) => (
+        <button type="button" class="chip" data-lf-state={c.key} aria-pressed={i === 0 ? "true" : "false"}>
+          {c.label}<span class="count">{n(c.c)}</span>
+        </button>
+      ))}
+    </div>
+  )}
+  <p class="lf-status mono" aria-live="polite" data-lf-status></p>
+</div>
+
+<script>
+  const PAGE = 60;
+  for (const root of document.querySelectorAll<HTMLElement>("[data-list-filter]")) {
+    const scope = root.closest("[data-filter-scope]")!;
+    const rows = [...scope.querySelectorAll<HTMLElement>(".row")];
+    const q = root.querySelector<HTMLInputElement>("[data-lf-q]")!;
+    const chips = [...root.querySelectorAll<HTMLButtonElement>("[data-lf-state]")];
+    const status = root.querySelector<HTMLElement>("[data-lf-status]")!;
+    const more = scope.querySelector<HTMLButtonElement>("[data-lf-more]");
+    const noun = root.dataset.noun;
+    let state = "all";
+    let limit = PAGE;
+
+    const apply = () => {
+      const terms = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      let shown = 0;
+      let matched = 0;
+      for (const r of rows) {
+        const hay = `${r.dataset.title} ${r.dataset.loc}`;
+        const ok =
+          terms.every((t) => hay.includes(t)) &&
+          (state === "all" || (state === "repost" ? r.dataset.reposted === "1" : r.dataset.state === state));
+        if (ok) matched++;
+        const vis = ok && shown < limit;
+        if (vis) shown++;
+        r.hidden = !vis;
+      }
+      status.textContent =
+        matched === rows.length && !terms.length
+          ? `${rows.length} ${noun}`
+          : `${matched} of ${rows.length} ${noun}`;
+      if (more) {
+        more.hidden = matched <= shown;
+        more.textContent = `Show ${Math.min(PAGE, matched - shown)} more`;
+      }
+    };
+
+    q.addEventListener("input", () => { limit = PAGE; apply(); });
+    for (const c of chips)
+      c.addEventListener("click", () => {
+        state = c.dataset.lfState!;
+        chips.forEach((x) => x.setAttribute("aria-pressed", String(x === c)));
+        limit = PAGE;
+        apply();
+      });
+    more?.addEventListener("click", () => { limit += PAGE; apply(); });
+    apply();
+  }
+</script>
+
+<style>
+  .lf {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 900px) {
+    .lf { grid-template-columns: minmax(280px, 420px) 1fr auto; align-items: center; }
+  }
+  .lf-search input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 20px;
+    padding: 8px 0;
+    outline: none;
+  }
+  .lf-search input::placeholder { color: var(--ink-3); font-style: italic; }
+  .lf-search input:focus { border-bottom-color: var(--long); }
+  .lf-status { margin: 0; font-size: 11px; color: var(--ink-3); }
+</style>

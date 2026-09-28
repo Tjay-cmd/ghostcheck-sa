@@ -1,0 +1,225 @@
+---
+import Base from "../layouts/Base.astro";
+import Ruler from "../components/Ruler.astro";
+import { load } from "../lib/data";
+import { fmtDate } from "../lib/format";
+
+const { rules, config, site } = load();
+const R = rules;
+const toc = [
+  ["what", "What this is"],
+  ["checks", "How we check"],
+  ["words", "The words we use"],
+  ["numbers", "The numbers behind them"],
+  ["figures", "Employer figures"],
+  ["isnt", "What an age doesn't say"],
+  ["privacy", "Privacy (POPIA)"],
+  ["corrections", "Corrections"],
+];
+const thresholds: [keyof typeof R, string][] = [
+  ["FRESH_MAX_DAYS", "Longest a listing can be seen and still count as new"],
+  ["LONG_OPEN_MIN_DAYS", "Days seen before a listing counts as long open"],
+  ["CLOSE_AFTER_MISSED_SUCCESSFUL_CHECKS", "Successful checks in a row a listing must be missing from to count as closed"],
+  ["REPOST_WINDOW_DAYS", "Days after a close within which a same title and location counts as a repost"],
+  ["REPOST_RATE_WINDOW_DAYS", "Window, in days, for an employer's repost figure"],
+  ["EMPLOYER_METRICS_MIN_TRACKED_DAYS", "Days of tracking before an employer's figures are shown"],
+  ["EMPLOYER_METRICS_MIN_LISTINGS_SEEN", "Listings seen before an employer's figures are shown"],
+  ["OVERVIEW_MIN_TRACKED_DAYS", "Days of tracking before an employer appears in the overview"],
+  ["OVERVIEW_MIN_OPEN_LISTINGS", "Open listings needed to appear in the overview"],
+  ["STALE_BUILD_HOURS", "Hours after the last successful check before we warn that data may be stale"],
+  ["FAILED_STREAK_WARNING_RUNS", "Failed checks in a row before an employer gets a stronger warning"],
+  ["RECENTLY_CLOSED_WINDOW_DAYS", "Days a closed listing stays in an employer's recently closed list"],
+];
+---
+<Base title="Method" description="How GhostCheck SA checks career sites, what the words mean, and what we store." current="method">
+  <article class="wrap method">
+    <header class="m-head">
+      <p class="kicker">Method</p>
+      <h1 class="display">How this <em>works.</em></h1>
+      <p class="lede">
+        One idea, done carefully: note the first and last day a job listing is visible on an employer's own
+        career site, and say nothing we can't back up.
+      </p>
+    </header>
+
+    <div class="m-grid">
+      <nav class="toc" aria-label="On this page">
+        <p class="kicker">On this page</p>
+        <ol>
+          {toc.map(([id, label], i) => (
+            <li><a href={`#${id}`}><span class="mono">{String(i + 1).padStart(2, "0")}</span>{label}</a></li>
+          ))}
+        </ol>
+      </nav>
+
+      <div class="prose m-body">
+        <section id="what">
+          <h2>What this is</h2>
+          <p>
+            GhostCheck SA is a public record of how long job listings stay up on the career sites of large South African
+            employers. We started watching on <strong>{fmtDate(site.tracking_started_on)}</strong>.
+          </p>
+          <p>
+            It is not a job board. We link to every posting on the employer's own site, and that's where you apply.
+          </p>
+        </section>
+
+        <section id="checks">
+          <h2>How we check</h2>
+          <p>
+            Every morning at about 06:17 SAST we load each employer's public job search, the same pages anyone can open,
+            at a slow pace (roughly one request every second and a half), with a browser signature that says who we are.
+          </p>
+          <p>Every check ends one of three ways:</p>
+          <ul class="outcomes">
+            <li><span class="mono ok">ok</span> We got the full list of listings.</li>
+            <li><span class="mono warn">blocked</span> The site refused us, for example with a bot challenge.</li>
+            <li><span class="mono warn">error</span> Something else broke: a timeout, or a page we couldn't read.</li>
+          </ul>
+          <p>
+            <strong>Only an ok check changes anything.</strong> A blocked or failed morning never closes a listing and never moves a date.
+            When that happens we say so on the employer's page.
+          </p>
+        </section>
+
+        <section id="words">
+          <h2>The words we use</h2>
+          <dl class="gloss">
+            <div><dt>First seen</dt><dd>The first successful check a listing appeared on.</dd></div>
+            <div><dt>Last seen</dt><dd>The most recent successful check it appeared on.</dd></div>
+            <div><dt>Days seen</dt><dd>Last seen minus first seen, in whole days, including any time it was briefly gone.</dd></div>
+            <div><dt>Before tracking</dt><dd>Already up on our first check of that employer. Its real age is longer than we can show, so we write “≥” and never call it new.</dd></div>
+            <div><dt><span class="badge" data-state="fresh">New</span></dt><dd>Seen for {R.FRESH_MAX_DAYS} days or fewer, and first spotted after we started watching.</dd></div>
+            <div><dt><span class="badge" data-state="seen">Seen</span></dt><dd>Open, past new, under {R.LONG_OPEN_MIN_DAYS} days.</dd></div>
+            <div><dt><span class="badge" data-state="long_open">Long open</span></dt><dd>Seen for {R.LONG_OPEN_MIN_DAYS} days or more.</dd></div>
+            <div><dt><span class="badge" data-state="closed">Closed</span></dt><dd>Missing from {R.CLOSE_AFTER_MISSED_SUCCESSFUL_CHECKS} successful checks in a row. The closed date is the second of those checks.</dd></div>
+            <div><dt>Reopened</dt><dd>The same job ID came back after closing. It keeps its history; that's not a repost.</dd></div>
+            <div><dt><span class="badge" data-state="repost">Reposted</span></dt><dd>The same title and location came back under a <em>new</em> job ID, within {R.REPOST_WINDOW_DAYS} days of the earlier one closing (or while it was still up). Chains can run several listings deep.</dd></div>
+          </dl>
+          <figure class="fig">
+            <Ruler days={104} size="full" label="Example ruler at 104 days" />
+            <figcaption class="mono">
+              Every listing has a ruler like this. Green shading is the new window, amber is long open, the needle is days seen.
+              A “‹” at the start means the listing was up before tracking began.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section id="numbers">
+          <h2>The numbers behind them</h2>
+          <p>Every threshold lives in one file in the project, <code>config/rules.json</code>. These are its current values.</p>
+          <table class="rules">
+            <tbody>
+              {thresholds.map(([k, label]) => (
+                <tr>
+                  <td class="rule-v mono">{R[k]}</td>
+                  <td>{label}<span class="rule-k mono">{k}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+
+        <section id="figures">
+          <h2>Employer figures</h2>
+          <p>
+            Each employer page shows four figures: listings open now, the median days seen of open listings, the share of
+            open listings that are long open, and the share of recent listings that were reposts.
+          </p>
+          <p>
+            The last three stay blank until we've tracked the employer for {R.EMPLOYER_METRICS_MIN_TRACKED_DAYS} days and
+            seen at least {R.EMPLOYER_METRICS_MIN_LISTINGS_SEEN} listings. A blank is never shown as zero. Percentages
+            are rounded half up, and we always show the counts behind them.
+          </p>
+        </section>
+
+        <section id="isnt">
+          <h2>What an age doesn't say</h2>
+          <p>
+            A long-open listing is a fact about a web page, not a judgement about an employer. Some roles are always
+            recruiting. Some listings collect CVs for future intakes. Some employers leave postings up while they
+            interview. We show the dates; you decide what they mean for you.
+          </p>
+          <p>
+            We also can't see listings that were posted and removed between two checks, or jobs advertised only on
+            other sites.
+          </p>
+        </section>
+
+        <section id="privacy">
+          <h2>
+            Privacy (POPIA)
+            {!config.POPIA_REVIEWED && <span class="draft mono">Draft, pending review</span>}
+          </h2>
+          <p>For each listing we store exactly six things:</p>
+          <ul class="kept mono">
+            <li>job ID</li><li>title</li><li>location</li><li>link</li><li>first seen</li><li>last seen</li>
+          </ul>
+          <p>
+            We never store job descriptions, salaries, or the names, emails or phone numbers of recruiters or anyone
+            else. This is enforced in code: any other field is dropped before it's written.
+          </p>
+          <p>
+            If a job title itself contains a person's name, tell us and we'll hide that listing everywhere on the site,
+            straight away, while we review the request.
+          </p>
+        </section>
+
+        <section id="corrections">
+          <h2>Corrections</h2>
+          <p>
+            If something here is wrong, email <a href={`mailto:${config.CORRECTIONS_EMAIL}`}>{config.CORRECTIONS_EMAIL}</a>.
+            Every upheld correction is listed in the <a href="/corrections/">public corrections log</a>, without the
+            name of whoever asked.
+          </p>
+        </section>
+      </div>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .method { padding-top: clamp(40px, 6vw, 80px); }
+  .m-head { display: grid; gap: 20px; padding-bottom: 48px; border-bottom: 1px solid var(--ink); }
+  .m-head .lede { color: var(--ink-2); max-width: 34ch; }
+  .m-grid { display: grid; gap: 40px; margin-top: 48px; }
+  @media (min-width: 1000px) {
+    .m-grid { grid-template-columns: 260px minmax(0, 1fr); gap: 80px; }
+    .toc { position: sticky; top: 24px; align-self: start; }
+  }
+  .toc ol { list-style: none; margin: 14px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+  .toc li { border-bottom: 1px solid var(--rule); }
+  .toc a { display: flex; gap: 14px; padding: 10px 0; text-decoration: none; font-size: 17px; transition: padding 0.3s var(--ease); }
+  .toc a:hover { padding-left: 6px; }
+  .toc .mono { font-size: 10px; color: var(--ink-3); padding-top: 5px; }
+
+  .m-body section { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid var(--rule); scroll-margin-top: 24px; }
+  .m-body section:last-child { border-bottom: 0; }
+  .m-body h2 { font-size: clamp(30px, 3.6vw, 44px); letter-spacing: -0.025em; margin-bottom: 20px; color: var(--ink); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .m-body p, .m-body li, .m-body dd { font-size: 19px; }
+  .m-body code { font-size: 14px; background: var(--paper-2); padding: 2px 6px; }
+
+  .outcomes { list-style: none; padding: 0; margin: 0 0 1em; display: grid; gap: 10px; }
+  .outcomes .mono { display: inline-block; min-width: 88px; font-size: 12px; }
+  .ok { color: var(--fresh); }
+  .warn { color: var(--long); }
+
+  .gloss { margin: 0; border-top: 1px solid var(--ink); }
+  .gloss div { display: grid; gap: 6px; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  @media (min-width: 720px) { .gloss div { grid-template-columns: 200px 1fr; gap: 24px; } }
+  .gloss dt { font-size: 19px; color: var(--ink); }
+  .gloss dt .badge { font-size: 11.5px; }
+  .gloss dd { margin: 0; color: var(--ink-2); }
+
+  .fig { margin: 40px 0 0; padding: 32px 28px 20px; background: var(--paper-2); }
+  .fig figcaption { font-size: 11px; line-height: 1.6; color: var(--ink-3); margin-top: 8px; max-width: 70ch; }
+
+  .rules { width: 100%; border-collapse: collapse; border-top: 1px solid var(--ink); }
+  .rules td { padding: 14px 0; border-bottom: 1px solid var(--rule); vertical-align: top; color: var(--ink-2); font-size: 17px; }
+  .rule-v { width: 72px; font-size: 26px !important; letter-spacing: -0.05em; color: var(--ink) !important; font-weight: 300; }
+  .rule-k { display: block; font-size: 9.5px; color: var(--ink-3); margin-top: 4px; letter-spacing: 0.04em; overflow-wrap: anywhere; }
+
+  .draft { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 9px 4px; border: 1px solid var(--long); color: var(--long); border-radius: 999px; }
+  .kept { list-style: none; padding: 0; margin: 0 0 1em; display: flex; flex-wrap: wrap; gap: 8px; }
+  .kept li { font-size: 12px !important; padding: 7px 12px 6px; border: 1px solid var(--ink); color: var(--ink) !important; }
+</style>

@@ -1,0 +1,22 @@
+---
+import Base from "../layouts/Base.astro";
+import Ruler from "../components/Ruler.astro";
+---
+<Base title="Not found" noindex>
+  <section class="wrap nf">
+    <p class="kicker">404</p>
+    <h1 class="display">This page <em>isn't here.</em></h1>
+    <p class="lede">
+      It may have been a listing that was removed on request, or a link that never existed. Listings that close
+      keep their pages, so a closed job shouldn't land you here.
+    </p>
+    <div class="nf-ruler"><Ruler days={0} closed label="An empty ruler" /></div>
+    <p><a class="btn" href="/search/">Search open listings <span class="arrow" aria-hidden="true">→</span></a></p>
+  </section>
+</Base>
+
+<style>
+  .nf { padding-top: clamp(56px, 9vw, 120px); display: grid; gap: 28px; }
+  .nf .lede { color: var(--ink-2); max-width: 36ch; }
+  .nf-ruler { max-width: 420px; opacity: 0.6; }
+</style>

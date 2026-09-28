@@ -1,33 +1,35 @@
-# GhostCheck SA Frontend
+# GhostCheck SA: static site
 
-This directory will contain the Astro static site for GhostCheck SA.
+Astro site built from the data contract (`../contract/CONTRACT.md`). It reads
+`../data/` and `../config/` at build time and displays precomputed state only:
+it never re-derives ages, closures or metrics (F1).
 
-## Planned Structure
+```bash
+npm install
+npm run build                                 # real data from ../data  -> dist/
+GHOSTCHECK_DATA=data/_samples npm run build   # fictional samples: every state (reposts, closed, gated metrics, failed checks)
+npm run preview
+```
 
-The frontend will:
-- Read from `../config/` for employer registry, rules, and site flags
-- Read from `../data/` for employer summaries, listings, and search index
-- Generate static pages for search, employer profiles, and listing details
-- Build to a deployable static site (e.g., Vercel, Netlify, GitHub Pages)
+## Pages
 
-## Data Contract
+| Route | Source |
+|---|---|
+| `/` | `data/site.json`, employer files |
+| `/search/` | `data/search-index.json`, published as `/data/search-index.{hash}.json` (F8) |
+| `/employers/` and `/employers/{slug}/` | `data/employers/*.json` |
+| `/employers/{slug}/{listing_id}/` | `data/listings/*.json` (closed listings get `noindex`) |
+| `/overview/` | `data/overview.json`, only built when `FEATURE_OVERVIEW` is true (F5) |
+| `/method/`, `/corrections/` | `config/rules.json`, `config/site.json`, `data/corrections-log.json` |
 
-The frontend builds against the data contract defined in `../contract/`:
-- Field names and structure are locked (v1)
-- All sample files validate against JSON Schema 2020-12
-- Cross-file consistency rules are enforced by `../contract/validate.py`
+## Design
 
-## Development
+An editorial "data desk" look: warm newsprint with a night edition, Newsreader
+(serif, self-hosted) for text and Martian Mono for figures. The signature
+element is the **days-seen ruler** on every listing: a 0–130 day scale with the
+new window (`FRESH_MAX_DAYS`) and long-open zone (`LONG_OPEN_MIN_DAYS`) shaded,
+a needle at `days_seen`, and a `‹` when the listing was up before tracking began.
+All threshold values come from `config/rules.json`.
 
-To be implemented in a future phase after M0 validation.
-
-Planned features:
-- Search UI with filters (sector, location, age state)
-- Employer profile pages with metrics and open listings
-- Listing detail pages with history and repost chains
-- Overview dashboard comparing employers
-- Responsive design, dark mode, accessibility
-
-## License
-
-To be determined.
+Works at phone width, in light and dark mode, and respects
+`prefers-reduced-motion`.

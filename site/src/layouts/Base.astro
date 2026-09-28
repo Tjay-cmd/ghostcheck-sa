@@ -1,0 +1,337 @@
+---
+import "../styles/global.css";
+import Mark from "../components/Mark.astro";
+import { load } from "../lib/data";
+import { fmtDate, fmtTime } from "../lib/format";
+
+interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+  current?: "home" | "search" | "employers" | "method" | "corrections" | "overview";
+}
+
+const { title, description, noindex = false, current } = Astro.props;
+const { site, config, rules } = load();
+const pageTitle = current === "home" ? title : `${title} · GhostCheck SA`;
+const desc =
+  description ??
+  "How long job listings stay up on South African employers' own career sites, checked every morning.";
+
+const nav = [
+  { key: "search", href: "/search/", label: "Search" },
+  { key: "employers", href: "/employers/", label: "Employers" },
+  ...(config.FEATURE_OVERVIEW ? [{ key: "overview", href: "/overview/", label: "Overview" }] : []),
+  { key: "method", href: "/method/", label: "Method" },
+  { key: "corrections", href: "/corrections/", label: "Corrections" },
+];
+const mailto = `mailto:${config.CORRECTIONS_EMAIL}`;
+---
+<!doctype html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={desc} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f2ede3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#12110e" media="(prefers-color-scheme: dark)" />
+    <script is:inline>
+      try {
+        const t = localStorage.getItem("gc-theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip visually-hidden" href="#main">Skip to content</a>
+
+    <header class="masthead">
+      <div class="strip wrap">
+        <span class="strip-item">
+          <span class="live-dot" aria-hidden="true"></span>
+          Johannesburg <span class="mono" data-clock>—</span>
+        </span>
+        <span class="strip-item hide-sm">Data to {fmtDate(site.data_date)}</span>
+        <span class="strip-item">
+          Last checked {fmtDate(site.last_successful_run_at)} · {fmtTime(site.last_successful_run_at)}
+        </span>
+        <span class="strip-item hide-sm" data-next-check>Next check ≈ 06:17</span>
+        {config.SITE_PHASE === "soft" && <span class="strip-item pill">Test version</span>}
+      </div>
+      <div class="bar wrap">
+        <a class="wordmark" href="/" aria-label="GhostCheck SA, home">
+          <Mark size={34} />
+          <span class="wm-text">GhostCheck<sup class="mono">SA</sup></span>
+        </a>
+        <nav aria-label="Main">
+          <ul>
+            {nav.map((item) => (
+              <li>
+                <a href={item.href} aria-current={current === item.key ? "page" : undefined}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <button class="theme" type="button" data-theme-toggle aria-label="Switch colour theme">
+          <span class="theme-icon" aria-hidden="true"></span>
+          <span class="theme-label mono">Night</span>
+        </button>
+      </div>
+      <div class="wrap"><hr class="rule-double" /></div>
+    </header>
+
+    <div class="stale wrap" data-stale hidden={!site.stale.stale_at_build}>
+      <p>
+        <strong>These figures may be out of date.</strong>
+        The last successful check was on {fmtDate(site.last_successful_run_at)} at {fmtTime(site.last_successful_run_at)}.
+        Listings may have closed since then.
+      </p>
+    </div>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <hr class="rule-ink" />
+        <div class="foot-grid">
+          <div class="foot-about">
+            <p class="foot-lede">
+              A public record of how long job listings stay up on South African employers' own career
+              sites. Every age here is a <em>lower bound</em>: we only know what we have seen.
+            </p>
+            {config.SITE_PHASE === "soft" && (
+              <p class="foot-note mono">Test version. Figures and wording may change before public launch.</p>
+            )}
+          </div>
+          <div>
+            <p class="kicker">Read</p>
+            <ul class="foot-list">
+              <li><a href="/method/">How this works</a></li>
+              <li><a href="/method/#privacy">Privacy (POPIA)</a></li>
+              <li><a href="/corrections/">Corrections log</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="kicker">Something wrong?</p>
+            <ul class="foot-list">
+              <li><a href={mailto}>{config.CORRECTIONS_EMAIL}</a></li>
+              <li class="muted">We fix errors and remove personal data on request.</li>
+            </ul>
+          </div>
+          <div>
+            <p class="kicker">This build</p>
+            <ul class="foot-list mono small">
+              <li>Built {fmtDate(site.build_time)} · {fmtTime(site.build_time)} SAST</li>
+              <li>Data to {fmtDate(site.data_date)}</li>
+              <li>Closed after {rules.CLOSE_AFTER_MISSED_SUCCESSFUL_CHECKS} missed checks</li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-giant" aria-hidden="true">GhostCheck</div>
+      </div>
+    </footer>
+
+    <script is:inline define:vars={{ staleAfter: site.stale.stale_after }}>
+      (function () {
+        var root = document.documentElement;
+        var btn = document.querySelector("[data-theme-toggle]");
+        var label = btn.querySelector(".theme-label");
+        function isDark() {
+          var t = root.dataset.theme;
+          if (t) return t === "dark";
+          return window.matchMedia("(prefers-color-scheme: dark)").matches;
+        }
+        function sync() { label.textContent = isDark() ? "Day" : "Night"; }
+        sync();
+        btn.addEventListener("click", function () {
+          var next = isDark() ? "light" : "dark";
+          root.dataset.theme = next;
+          try { localStorage.setItem("gc-theme", next); } catch (e) {}
+          sync();
+        });
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", sync);
+
+        var clock = document.querySelector("[data-clock]");
+        var next = document.querySelector("[data-next-check]");
+        var fmt = new Intl.DateTimeFormat("en-ZA", {
+          timeZone: "Africa/Johannesburg", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
+        });
+        function tick() {
+          var now = new Date();
+          clock.textContent = fmt.format(now) + " SAST";
+          // Next scheduled run: 04:17 UTC daily (06:17 SAST).
+          var t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 4, 17));
+          if (t <= now) t = new Date(t.getTime() + 86400000);
+          var mins = Math.round((t - now) / 60000);
+          if (next) next.textContent = "Next check ≈ 06:17 · in " + Math.floor(mins / 60) + "h " + (mins % 60) + "m";
+        }
+        tick();
+        setInterval(tick, 1000);
+
+        if (staleAfter && Date.now() > Date.parse(staleAfter)) {
+          var s = document.querySelector("[data-stale]");
+          if (s) s.hidden = false;
+        }
+      })();
+    </script>
+  </body>
+</html>
+
+<style>
+  .skip:focus {
+    position: fixed !important;
+    top: 12px; left: 12px;
+    width: auto; height: auto; clip: auto;
+    z-index: 200;
+    background: var(--ink); color: var(--paper);
+    padding: 10px 14px;
+    font-family: var(--mono); font-size: 12px;
+  }
+
+  .strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.03em;
+    color: var(--ink-3);
+    border-bottom: 1px solid var(--rule);
+  }
+  .strip-item { display: inline-flex; align-items: center; gap: 7px; }
+  .strip-item:last-child { margin-left: auto; }
+  .live-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--fresh);
+    box-shadow: 0 0 0 0 var(--fresh);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--fresh) 60%, transparent); }
+    70%, 100% { box-shadow: 0 0 0 7px transparent; }
+  }
+  .pill {
+    padding: 3px 8px 2px;
+    border: 1px solid var(--ink-3);
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 9.5px;
+  }
+
+  .bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 14px 24px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+  }
+  .wordmark {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .wm-text {
+    font-size: 34px;
+    line-height: 0.8;
+    letter-spacing: -0.035em;
+    font-weight: 450;
+  }
+  .wm-text sup {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    vertical-align: top;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+    color: var(--ink-3);
+  }
+
+  nav { grid-column: 1 / -1; grid-row: 2; overflow-x: auto; }
+  nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; }
+  nav a {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: var(--ink-2);
+    padding: 6px 0;
+    background: linear-gradient(var(--ink), var(--ink)) no-repeat left bottom / 0 1px;
+    transition: background-size 0.35s var(--ease), color 0.2s;
+    white-space: nowrap;
+  }
+  nav a:hover, nav a[aria-current="page"] { color: var(--ink); background-size: 100% 1px; }
+
+  .theme {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: none;
+    border: 1px solid var(--rule);
+    color: var(--ink-2);
+    border-radius: 999px;
+    padding: 7px 13px 7px 9px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .theme:hover { border-color: var(--ink); color: var(--ink); }
+  .theme-icon {
+    width: 14px; height: 14px; border-radius: 50%;
+    border: 1.5px solid currentColor;
+    background: linear-gradient(90deg, currentColor 50%, transparent 50%);
+    transition: transform 0.5s var(--ease);
+  }
+  :global(:root[data-theme="dark"]) .theme-icon { transform: rotate(180deg); }
+
+  @media (min-width: 820px) {
+    .bar { grid-template-columns: auto 1fr auto; }
+    nav { grid-column: 2; grid-row: 1; justify-self: end; }
+  }
+
+  .stale {
+    margin-top: 16px;
+  }
+  .stale p {
+    margin: 0;
+    padding: 14px 18px;
+    background: var(--long-wash);
+    border-left: 3px solid var(--long);
+    font-size: 16px;
+  }
+
+  .footer { margin-top: clamp(64px, 10vw, 140px); padding-bottom: 24px; overflow: hidden; }
+  .foot-grid {
+    display: grid;
+    gap: 32px;
+    padding: 40px 0 24px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) { .foot-grid { grid-template-columns: 2fr 1fr 1.3fr 1.3fr; } }
+  .foot-lede { font-size: 22px; line-height: 1.3; max-width: 26ch; letter-spacing: -0.01em; }
+  .foot-note { font-size: 11px; color: var(--ink-3); }
+  .foot-list { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; font-size: 16px; }
+  .foot-list.small { font-size: 11px; color: var(--ink-3); }
+  .foot-giant {
+    font-size: clamp(64px, 19.5vw, 280px);
+    line-height: 0.78;
+    letter-spacing: -0.06em;
+    font-weight: 300;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--rule);
+    margin: 24px 0 0 -0.04em;
+    white-space: nowrap;
+    user-select: none;
+  }
+</style>

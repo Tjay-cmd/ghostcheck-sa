@@ -1,0 +1,60 @@
+---
+import Base from "../../layouts/Base.astro";
+import EmployerBoard from "../../components/EmployerBoard.astro";
+import { load } from "../../lib/data";
+import { n, plural } from "../../lib/format";
+
+const { employers, site } = load();
+const active = employers.filter((e) => e.active);
+const inactive = employers.filter((e) => !e.active);
+const sectors = [...new Set(active.map((e) => e.sector))].sort();
+---
+<Base title="Employers" current="employers">
+  <section class="wrap page">
+    <p class="kicker">Employers</p>
+    <h1 class="display page-h">{plural(active.length, "employer")}, <em>{n(site.counts.open_listings)} open listings.</em></h1>
+    <p class="lede page-lede">
+      Each one is checked on its own career site every morning. We read only what's public, at a polite pace, and
+      identify ourselves when we do.
+    </p>
+
+    {sectors.map((sector) => {
+      const group = active.filter((e) => e.sector === sector);
+      return (
+        <section class="sector" aria-label={sector}>
+          <h2 class="sector-h">
+            <span>{sector}</span>
+            <span class="mono sector-n">{group.length}</span>
+          </h2>
+          <EmployerBoard employers={group} />
+        </section>
+      );
+    })}
+
+    {inactive.length > 0 && (
+      <section class="sector" aria-label="No longer tracked">
+        <h2 class="sector-h"><span>No longer tracked</span></h2>
+        <EmployerBoard employers={inactive} />
+      </section>
+    )}
+  </section>
+</Base>
+
+<style>
+  .page { padding-top: clamp(40px, 6vw, 80px); }
+  .page-h { margin: 16px 0 28px; max-width: 15ch; }
+  .page-lede { color: var(--ink-2); max-width: 36ch; margin-bottom: clamp(48px, 7vw, 88px); }
+  .sector { margin-top: 56px; }
+  .sector-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 15px;
+    font-family: var(--mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    margin-bottom: 12px;
+  }
+  .sector-n { color: var(--ink-3); }
+</style>

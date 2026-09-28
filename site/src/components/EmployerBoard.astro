@@ -1,0 +1,125 @@
+---
+import type { Employer } from "../lib/data";
+import { fmtShort, n } from "../lib/format";
+
+interface Props { employers: Employer[] }
+const { employers } = Astro.props;
+const max = Math.max(1, ...employers.map((e) => e.metrics.open_count.value ?? 0));
+const ATS = { workday: "Workday", successfactors: "SuccessFactors", other: "Own site" } as Record<string, string>;
+
+function status(e: Employer) {
+  switch (e.check_status) {
+    case "ok": return { cls: "ok", text: `Checked ${fmtShort(e.last_run?.date)}` };
+    case "last_run_failed": return { cls: "warn", text: `Last check ${e.last_run?.status}` };
+    case "failed_streak": return { cls: "warn", text: `${e.consecutive_failed_runs} checks failed` };
+    default: return { cls: "none", text: "Not checked yet" };
+  }
+}
+---
+<div class="board" role="table" aria-label="Employers">
+  <div class="b-head" role="row">
+    <span role="columnheader">Employer</span>
+    <span role="columnheader" class="c-sector">Sector</span>
+    <span role="columnheader" class="c-open">Open listings</span>
+    <span role="columnheader" class="c-status">Status</span>
+  </div>
+  {employers.map((e, i) => {
+    const open = e.metrics.open_count.value;
+    const st = status(e);
+    return (
+      <a class="b-row" role="row" href={`/employers/${e.slug}/`} style={`--i:${i}`}>
+        <span role="cell" class="c-name">
+          <span class="name">{e.name}</span>
+          <span class="ats mono">{ATS[e.ats_type] ?? e.ats_type}</span>
+        </span>
+        <span role="cell" class="c-sector mono">{e.sector}</span>
+        <span role="cell" class="c-open">
+          <span class="count mono">{open === null ? "—" : n(open)}</span>
+          <span class="bar" aria-hidden="true">
+            <span style={`width:${((open ?? 0) / max) * 100}%`}></span>
+          </span>
+        </span>
+        <span role="cell" class:list={["c-status", "mono", st.cls]}>
+          <span class="dot" aria-hidden="true"></span>{st.text}
+        </span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+    );
+  })}
+</div>
+
+<style>
+  .board { border-top: 1px solid var(--ink); }
+  .b-head, .b-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px 24px;
+    align-items: center;
+  }
+  .b-head {
+    padding: 10px 0;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    border-bottom: 1px solid var(--rule);
+  }
+  .b-head .c-sector, .b-head .c-status { display: none; }
+  .b-row {
+    position: relative;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: inherit;
+    isolation: isolate;
+  }
+  .b-row::before {
+    content: "";
+    position: absolute;
+    inset: 0 calc(-1 * var(--gutter));
+    background: var(--ink);
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.35s var(--ease);
+  }
+  .b-row:hover::before, .b-row:focus-visible::before { transform: scaleY(1); }
+  .b-row:hover, .b-row:focus-visible { color: var(--paper); }
+  .b-row:hover .bar span, .b-row:focus-visible .bar span { background: var(--paper); }
+  .b-row:hover .ats, .b-row:hover .c-sector, .b-row:hover .c-status { color: color-mix(in srgb, var(--paper) 70%, transparent); }
+  .b-row:focus-visible { outline: none; }
+
+  .c-name { display: flex; flex-direction: column; gap: 4px; }
+  .name { font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.02em; line-height: 1.05; }
+  .ats { font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.04em; }
+  .c-sector { display: none; font-size: 11px; color: var(--ink-3); }
+  .c-open { display: flex; align-items: center; gap: 14px; justify-content: flex-end; }
+  .count { font-size: 22px; font-weight: 400; letter-spacing: -0.04em; }
+  .bar { display: none; }
+  .c-status { grid-column: 1 / -1; font-size: 11px; display: flex; align-items: center; gap: 8px; color: var(--ink-3); }
+  .dot { width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid currentColor; }
+  .ok .dot { background: var(--fresh); border-color: var(--fresh); }
+  .warn { color: var(--long); }
+  .warn .dot { background: var(--long); border-color: var(--long); border-radius: 0; transform: rotate(45deg); }
+  .go { display: none; font-family: var(--mono); transition: transform 0.3s var(--ease); }
+  .b-row:hover .go { transform: translateX(6px); }
+
+  @media (min-width: 900px) {
+    .b-head, .b-row { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1.4fr) 150px 24px; }
+    .b-head .c-sector, .b-head .c-status { display: block; }
+    .c-sector { display: block; }
+    .c-open { justify-content: flex-start; }
+    .count { min-width: 3.4ch; text-align: right; }
+    .bar { display: block; flex: 1; height: 3px; background: var(--rule); position: relative; }
+    .bar span {
+      position: absolute; left: 0; top: -2px; bottom: -2px;
+      background: var(--ink);
+      transform-origin: left;
+      animation: grow 1s calc(var(--i) * 60ms + 0.2s) var(--ease) both;
+    }
+    .c-status { grid-column: auto; }
+    .go { display: block; }
+  }
+  @keyframes grow { from { transform: scaleX(0); } }
+</style>

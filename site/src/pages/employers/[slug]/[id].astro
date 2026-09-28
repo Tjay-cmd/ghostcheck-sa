@@ -1,0 +1,295 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Ruler from "../../../components/Ruler.astro";
+import Badges from "../../../components/Badges.astro";
+import ListingRow from "../../../components/ListingRow.astro";
+import CheckBanner from "../../../components/CheckBanner.astro";
+import { listing, listingIds, load, type Listing } from "../../../lib/data";
+import { fmtDate, fmtDateLong, n, plural } from "../../../lib/format";
+
+export function getStaticPaths() {
+  return listingIds().map((id) => {
+    const l = listing(id);
+    return { params: { slug: l.employer_slug, id }, props: { l } };
+  });
+}
+
+const { l } = Astro.props as { l: Listing };
+const { rules } = load();
+const closed = l.status === "closed";
+const empHref = `/employers/${l.employer_slug}/`;
+
+type Ev = { date: string; label: string; note?: string; kind: string };
+const events: Ev[] = [{ date: l.first_seen, label: l.open_before_tracking ? "First seen, already up when tracking began" : "First seen", kind: "start" }];
+for (const g of l.gaps) {
+  events.push({ date: g.closed_on, label: "Gone from the site", kind: "gap" });
+  events.push({ date: g.reopened_on, label: "Back, same job ID", note: "A reopen, not a repost", kind: "back" });
+}
+if (l.last_seen !== l.first_seen || !closed)
+  events.push({ date: l.last_seen, label: closed ? "Last seen" : "Still up at the last check", kind: closed ? "last" : "now" });
+if (closed)
+  events.push({
+    date: l.closed_on!,
+    label: "Counted as closed",
+    note: `Missing from ${rules.CLOSE_AFTER_MISSED_SUCCESSFUL_CHECKS} successful checks in a row`,
+    kind: "closed",
+  });
+events.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+
+const gapText = (d: number) =>
+  d === 0 ? "posted while the earlier one was still up" : `posted ${plural(d, "day")} after the earlier one closed`;
+---
+<Base
+  title={`${l.title}, ${l.employer_name}`}
+  description={`${l.title}${l.location ? ` in ${l.location}` : ""} at ${l.employer_name}: first seen ${fmtDate(l.first_seen)}.`}
+  noindex={closed}
+  current="employers"
+>
+  <article class="wrap lst">
+    <nav class="crumbs mono" aria-label="Breadcrumb">
+      <a href="/employers/">Employers</a> <span aria-hidden="true">/</span> <a href={empHref}>{l.employer_name}</a>
+    </nav>
+
+    <CheckBanner e={l.employer} name={l.employer_name} />
+
+    <header class="lst-head">
+      <Badges s={l} />
+      <h1 class="lst-title">{l.title}</h1>
+      <p class="lst-sub">
+        {l.location ?? <span class="muted">Location not given</span>}
+        <span class="sep" aria-hidden="true">—</span>
+        <a href={empHref}>{l.employer_name}</a>
+      </p>
+    </header>
+
+    <div class="lst-grid">
+      <div class="lst-main">
+        <section class="age" aria-label="Age">
+          <div class="age-read">
+            <p class="age-num">
+              {l.open_before_tracking && <span class="ge" aria-label="at least">≥</span>}{n(l.days_seen)}
+            </p>
+            <p class="age-words">
+              {l.days_seen === 1 ? "day" : "days"} between the first and last time we saw it
+              {l.open_before_tracking && <><br /><em>Up since at least {fmtDateLong(l.first_seen)}.</em> It was already on the site when tracking began, so its real age is longer.</>}
+            </p>
+          </div>
+          <Ruler days={l.days_seen} closed={closed} before={l.open_before_tracking} size="full" />
+        </section>
+
+        <section class="block" aria-labelledby="hist-h">
+          <h2 class="kicker" id="hist-h">History of this listing</h2>
+          <ol class="events">
+            {events.map((ev) => (
+              <li class:list={["ev", `ev-${ev.kind}`]}>
+                <span class="ev-date mono">{fmtDate(ev.date)}</span>
+                <span class="ev-label">{ev.label}{ev.note && <span class="ev-note">{ev.note}</span>}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        {l.chain.length > 0 && (
+          <section class="block" aria-labelledby="chain-h">
+            <h2 class="kicker" id="chain-h">Reposted {l.repost_count === 1 ? "once" : `${l.repost_count} times`}, first seen {fmtDate(l.chain_first_seen)}</h2>
+            <p class="block-note">Same title and location, new job ID. Listed newest to oldest.</p>
+            <ol class="chain">
+              <li class="link current">
+                <span class="node" aria-hidden="true"></span>
+                <div>
+                  <p class="link-title">This listing</p>
+                  <p class="link-meta mono">{fmtDate(l.first_seen)} → {closed ? fmtDate(l.last_seen) : "now"} · {plural(l.days_seen, "day")}</p>
+                </div>
+              </li>
+              {l.chain.map((c) => (
+                <>
+                  <li class="gap mono" aria-hidden="false">↻ {gapText(c.gap_days)}</li>
+                  <li class="link">
+                    <span class="node" aria-hidden="true"></span>
+                    <div>
+                      <p class="link-title"><a href={`/employers/${l.employer_slug}/${c.listing_id}/`}>{c.title}</a></p>
+                      <p class="link-meta mono">
+                        {fmtDate(c.first_seen)} → {fmtDate(c.last_seen)} · {plural(c.days_seen, "day")} · {c.status === "closed" ? `closed ${fmtDate(c.closed_on)}` : "still open"}
+                      </p>
+                    </div>
+                  </li>
+                </>
+              ))}
+            </ol>
+          </section>
+        )}
+
+        {l.later_reposts.length > 0 && (
+          <aside class="later">
+            <p>
+              A similar listing was posted later, on {fmtDate(l.later_reposts[0].first_seen)}.
+              {" "}<a href={`/employers/${l.employer_slug}/${l.later_reposts[0].listing_id}/`}>See the newer listing →</a>
+            </p>
+            {l.later_reposts.length > 1 && <p class="mono small">{l.later_reposts.length} later listings in all.</p>}
+          </aside>
+        )}
+
+        {l.correction_ids.length > 0 && (
+          <aside class="corr">
+            <p>
+              Part of this listing was corrected on request:
+              {l.correction_ids.map((id, i) => (
+                <>{i ? ", " : " "}<a class="mono" href={`/corrections/#${id}`}>{id}</a></>
+              ))}.
+            </p>
+          </aside>
+        )}
+      </div>
+
+      <aside class="apply">
+        <div class="apply-card">
+          <p class="kicker">Apply with the employer</p>
+          <a class="btn apply-btn" href={l.url} rel="noopener nofollow" target="_blank">
+            {closed ? "View the old posting" : "View the posting"} <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="apply-note">Opens the employer's own posting on <span class="mono">{l.apply_domain}</span>.{closed && " It may no longer load."}</p>
+          <dl class="facts">
+            <div><dt>First seen</dt><dd class="mono">{fmtDate(l.first_seen)}</dd></div>
+            <div><dt>Last seen</dt><dd class="mono">{fmtDate(l.last_seen)}</dd></div>
+            <div><dt>Status</dt><dd class="mono">{closed ? `Closed ${fmtDate(l.closed_on)}` : "Open"}</dd></div>
+            <div><dt>Job ID</dt><dd class="mono">{l.ats_job_id}</dd></div>
+          </dl>
+          <p class="privacy">We keep only the title, place, link and dates. No descriptions, salaries or names.</p>
+        </div>
+      </aside>
+    </div>
+
+    {l.more_at_employer.length > 0 && (
+      <section class="more-sec" aria-labelledby="more-h">
+        <div class="more-head">
+          <h2 id="more-h" class="more-h">More at {l.employer_name}</h2>
+          <a class="mono small" href={empHref}>See all {n(l.employer.open_count)} open →</a>
+        </div>
+        <ul class="rows">
+          {l.more_at_employer.map((s) => <ListingRow s={s} />)}
+        </ul>
+      </section>
+    )}
+  </article>
+</Base>
+
+<style>
+  .lst { padding-top: 40px; }
+  .crumbs { font-size: 11px; color: var(--ink-3); margin-bottom: 28px; letter-spacing: 0.03em; }
+  .lst-head { display: grid; gap: 20px; padding-bottom: 36px; border-bottom: 1px solid var(--ink); }
+  .lst-title {
+    font-size: clamp(38px, 6.2vw, 84px);
+    line-height: 1;
+    letter-spacing: -0.035em;
+    font-weight: 340;
+    max-width: 20ch;
+    text-wrap: balance;
+    animation: rise 0.9s var(--ease) both;
+  }
+  .lst-sub { font-size: 22px; margin: 0; color: var(--ink-2); }
+  .sep { margin: 0 10px; color: var(--rule); }
+
+  .lst-grid { display: grid; gap: 48px; margin-top: 40px; }
+  @media (min-width: 1000px) {
+    .lst-grid { grid-template-columns: minmax(0, 1fr) 340px; gap: 72px; }
+    .apply { position: sticky; top: 24px; align-self: start; }
+  }
+
+  .age-read { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 8px 28px; margin-bottom: 36px; }
+  .age-num {
+    margin: 0;
+    font-size: clamp(120px, 17vw, 220px);
+    line-height: 0.72;
+    letter-spacing: -0.07em;
+    font-weight: 280;
+    font-style: italic;
+  }
+  .age-num .ge { font-size: 0.45em; color: var(--ink-3); font-style: normal; margin-right: 0.08em; vertical-align: 0.25em; }
+  .age-words { margin: 0; max-width: 34ch; color: var(--ink-2); font-size: 18px; }
+  .age-words em { color: var(--ink); }
+
+  .block { margin-top: 64px; }
+  .block > .kicker { margin: 0 0 18px; padding-bottom: 12px; border-bottom: 1px solid var(--rule); }
+  .block-note { color: var(--ink-3); font-size: 16px; margin: -6px 0 20px; }
+
+  .events { list-style: none; margin: 0; padding: 0; }
+  .ev {
+    display: grid;
+    grid-template-columns: 112px 1fr;
+    gap: 16px;
+    padding: 12px 0;
+    position: relative;
+  }
+  .ev-date { font-size: 11px; color: var(--ink-3); padding-top: 5px; }
+  .ev-label { font-size: 19px; position: relative; padding-left: 26px; }
+  .ev-label::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 9px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+  .ev:not(:last-child) .ev-label::after {
+    content: "";
+    position: absolute;
+    left: 4px; top: 22px;
+    height: calc(100% + 6px);
+    border-left: 1px solid var(--rule);
+  }
+  .ev-gap .ev-label::before { background: var(--paper); border: 1.5px dashed var(--closed); }
+  .ev-closed .ev-label::before { background: var(--paper); border: 2px solid var(--closed); }
+  .ev-now .ev-label::before { background: var(--fresh); box-shadow: 0 0 0 4px var(--fresh-wash); }
+  .ev-note { display: block; font-size: 14px; color: var(--ink-3); font-style: italic; }
+
+  .chain { list-style: none; margin: 0; padding: 0; position: relative; }
+  .chain::before {
+    content: "";
+    position: absolute;
+    left: 7px; top: 12px; bottom: 30px;
+    border-left: 2px solid var(--repost);
+    opacity: 0.35;
+  }
+  .link { display: grid; grid-template-columns: 16px 1fr; gap: 20px; position: relative; }
+  .node {
+    width: 16px; height: 16px; margin-top: 6px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--repost);
+    position: relative;
+  }
+  .current .node { background: var(--repost); }
+  .link-title { font-size: 22px; margin: 0; letter-spacing: -0.01em; }
+  .link-meta { font-size: 11px; color: var(--ink-3); margin: 4px 0 0; }
+  .gap { font-size: 11px; color: var(--repost); padding: 14px 0 14px 36px; letter-spacing: 0.02em; }
+
+  .later, .corr {
+    margin-top: 40px;
+    padding: 18px 20px;
+    border: 1px solid var(--rule);
+    font-size: 17px;
+  }
+  .later p, .corr p { margin: 0; }
+  .later { border-left: 3px solid var(--repost); }
+  .small { font-size: 11px; color: var(--ink-3); margin-top: 6px !important; }
+
+  .apply-card {
+    padding: 28px;
+    background: var(--paper-2);
+    border: 1px solid var(--ink);
+    box-shadow: 7px 7px 0 -1px var(--paper), 7px 7px 0 0 var(--ink);
+  }
+  .apply-btn { width: 100%; justify-content: space-between; margin-top: 16px; }
+  .apply-note { font-size: 15px; color: var(--ink-2); margin: 14px 0 20px; }
+  .apply-note .mono { font-size: 12px; }
+  .facts { margin: 0; border-top: 1px solid var(--rule); }
+  .facts div { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  .facts dt { font-size: 15px; color: var(--ink-3); }
+  .facts dd { margin: 0; font-size: 12px; text-align: right; overflow-wrap: anywhere; }
+  .privacy { margin: 16px 0 0; font-size: 13px; color: var(--ink-3); font-style: italic; line-height: 1.4; }
+
+  .more-sec { margin-top: clamp(64px, 9vw, 120px); }
+  .more-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+  .more-h { font-size: clamp(28px, 3.4vw, 40px); letter-spacing: -0.02em; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } }
+</style>

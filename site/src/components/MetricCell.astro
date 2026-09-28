@@ -1,0 +1,62 @@
+---
+import type { Metric } from "../lib/data";
+import { load } from "../lib/data";
+import { fmtDate, n } from "../lib/format";
+
+interface Props { m: Metric; label: string; hint: string }
+const { m, label, hint } = Astro.props;
+const { rules } = load();
+
+let unavailable = "";
+if (!m.available) {
+  if (m.unavailable_reason === "gate")
+    unavailable = m.available_from
+      ? `Expected from ${fmtDate(m.available_from)}, once we've tracked this employer for ${rules.EMPLOYER_METRICS_MIN_TRACKED_DAYS} days.`
+      : `Needs ${rules.EMPLOYER_METRICS_MIN_TRACKED_DAYS} days of tracking and ${rules.EMPLOYER_METRICS_MIN_LISTINGS_SEEN} listings seen.`;
+  else if (m.unavailable_reason === "no_open") unavailable = "No open listings to measure right now.";
+  else unavailable = "No successful check yet.";
+}
+const pctWidth = m.unit === "percent" && m.value !== null ? m.value : 0;
+---
+<div class:list={["metric", { off: !m.available }]}>
+  <p class="kicker">{label}</p>
+  <p class="value mono">
+    {m.value === null ? (
+      <span class="dash" aria-label="Not available yet">—</span>
+    ) : (
+      <>
+        {n(m.value)}<span class="unit">{m.unit === "percent" ? "%" : m.unit === "days" ? (m.value === 1 ? " day" : " days") : ""}</span>
+      </>
+    )}
+  </p>
+  {m.unit === "percent" && m.available && (
+    <div class="pbar" aria-hidden="true"><span style={`width:${pctWidth}%`}></span></div>
+  )}
+  <p class="hint">
+    {m.available ? (
+      <>
+        {hint}
+        {m.numerator !== null && m.denominator !== null && <span class="mono frac"> {n(m.numerator)} of {n(m.denominator)}</span>}
+        {m.window_label && <span class="mono frac">, {m.window_label}</span>}
+      </>
+    ) : unavailable}
+  </p>
+</div>
+
+<style>
+  .metric { display: grid; gap: 10px; align-content: start; padding: 24px 0; }
+  .value {
+    margin: 0;
+    font-size: clamp(44px, 5vw, 68px);
+    line-height: 0.9;
+    font-weight: 300;
+    letter-spacing: -0.06em;
+  }
+  .unit { font-size: 0.38em; letter-spacing: 0; margin-left: 4px; color: var(--ink-2); }
+  .dash { color: var(--rule); }
+  .hint { margin: 0; font-size: 15px; line-height: 1.4; color: var(--ink-2); max-width: 28ch; }
+  .off .hint { color: var(--ink-3); font-style: italic; }
+  .frac { font-size: 11px; font-style: normal; color: var(--ink-3); }
+  .pbar { height: 3px; background: var(--rule); position: relative; }
+  .pbar span { position: absolute; inset: 0 auto 0 0; background: var(--long); }
+</style>

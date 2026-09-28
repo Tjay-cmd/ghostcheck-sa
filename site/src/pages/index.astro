@@ -1,0 +1,229 @@
+---
+import Base from "../layouts/Base.astro";
+import SearchField from "../components/SearchField.astro";
+import SectionHead from "../components/SectionHead.astro";
+import Clock from "../components/Clock.astro";
+import Ruler from "../components/Ruler.astro";
+import ListingRow from "../components/ListingRow.astro";
+import EmployerBoard from "../components/EmployerBoard.astro";
+import { load } from "../lib/data";
+import { fmtDate, n, plural } from "../lib/format";
+
+const { site, rules, employers } = load();
+const c = site.counts;
+const active = employers.filter((e) => e.active);
+const withData = active.filter((e) => e.has_data);
+
+// Interleave employers so the front page isn't one company's list.
+const queues = withData.map((e) => [...e.listings.open]);
+const latest = [];
+while (latest.length < 8 && queues.some((q) => q.length)) {
+  for (const q of queues) if (q.length && latest.length < 8) latest.push(q.shift()!);
+}
+latest.sort((a, b) => (a.first_seen < b.first_seen ? 1 : a.first_seen > b.first_seen ? -1 : 0));
+
+const segs = [
+  { key: "fresh", label: "New", count: c.fresh },
+  { key: "seen", label: "Seen", count: c.seen },
+  { key: "long_open", label: "Long open", count: c.long_open },
+];
+---
+<Base title="GhostCheck SA — how long job listings stay up" current="home">
+  <section class="hero wrap">
+    <p class="kicker hero-kicker reveal">
+      Edition of {fmtDate(site.data_date)} <span aria-hidden="true">·</span> {plural(c.employers_with_data, "employer")} <span aria-hidden="true">·</span> checked every morning
+    </p>
+
+    <h1 class="hero-h">
+      <span class="hero-num reveal" style="--d:.05s">{n(c.open_listings)}</span>
+      <span class="hero-words reveal" style="--d:.18s">
+        job listings are <em>open</em> right now on the career sites of {plural(c.employers_tracked, "South African employer")}.
+        We note the day each one appears, and the day it goes.
+      </span>
+    </h1>
+
+    <div class="hero-search reveal" style="--d:.3s">
+      <SearchField placeholder="Try “graduate” or “Sandton”" />
+    </div>
+
+    <div class="spectrum reveal" style="--d:.42s" aria-label="Open listings by age">
+      <div class="spectrum-bar" role="img"
+           aria-label={segs.map((s) => `${s.count} ${s.label.toLowerCase()}`).join(", ")}>
+        {segs.filter((s) => s.count).map((s) => (
+          <span class:list={["seg", `seg-${s.key}`]} style={`flex:${s.count}`}></span>
+        ))}
+      </div>
+      <dl class="spectrum-legend">
+        {segs.map((s) => (
+          <div>
+            <dt><span class="badge" data-state={s.key}>{s.label}</span></dt>
+            <dd class="mono">{n(s.count)}</dd>
+          </div>
+        ))}
+        <div>
+          <dt><span class="badge" data-state="repost">Reposted</span></dt>
+          <dd class="mono">{n(c.reposted_open)}</dd>
+        </div>
+        <div>
+          <dt><span class="badge" data-state="before">Before tracking</span></dt>
+          <dd class="mono">{n(c.open_before_tracking_open)}</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  {site.tracking_started_on && site.data_date && (
+    <section class="section wrap" aria-labelledby="clock-h">
+      <SectionHead no="01" title="The clock is running" id="clock-h">
+        Ages need time to mean anything. Here's what the record can say today, and when it can say more.
+      </SectionHead>
+      <Clock />
+    </section>
+  )}
+
+  <section class="section wrap" aria-labelledby="emp-h">
+    <SectionHead no="02" title="Who we watch" id="emp-h">
+      {plural(c.employers_tracked, "employer")}, read straight from their own career sites, once a day.
+    </SectionHead>
+    <EmployerBoard employers={active} />
+    <p class="more"><a class="btn btn-ghost" href="/employers/">All employers <span class="arrow" aria-hidden="true">↗</span></a></p>
+  </section>
+
+  <section class="section wrap" aria-labelledby="read-h">
+    <SectionHead no="03" title="How to read an age" id="read-h">
+      Four words, counted in days between the first and last time a listing was seen.
+    </SectionHead>
+    <div class="legend">
+      <article class="legend-item">
+        <Ruler days={5} label="Example: 5 days" />
+        <h3><span class="badge" data-state="fresh">New</span></h3>
+        <p>Seen for {rules.FRESH_MAX_DAYS} days or fewer, and first spotted <em>after</em> we started watching the employer.</p>
+      </article>
+      <article class="legend-item">
+        <Ruler days={42} label="Example: 42 days" />
+        <h3><span class="badge" data-state="seen">Seen</span></h3>
+        <p>Open, older than new, but under {rules.LONG_OPEN_MIN_DAYS} days. Most listings live here.</p>
+      </article>
+      <article class="legend-item">
+        <Ruler days={118} label="Example: 118 days" />
+        <h3><span class="badge" data-state="long_open">Long open</span></h3>
+        <p>Seen on the site for {rules.LONG_OPEN_MIN_DAYS} days or more. Not a verdict: some roles are always hiring.</p>
+      </article>
+      <article class="legend-item">
+        <div class="repost-glyph" aria-hidden="true">
+          <span></span><i>↻</i><span></span>
+        </div>
+        <h3><span class="badge" data-state="repost">Reposted</span></h3>
+        <p>The same title and location came back under a new job ID within {rules.REPOST_WINDOW_DAYS} days of the last one closing.</p>
+      </article>
+    </div>
+    <p class="legend-foot">
+      A listing counts as <strong>closed</strong> once it's missing from {rules.CLOSE_AFTER_MISSED_SUCCESSFUL_CHECKS} successful checks in a row.
+      A failed or blocked check never closes anything. <a href="/method/">Read the full method</a>.
+    </p>
+  </section>
+
+  {latest.length > 0 && (
+    <section class="section wrap" aria-labelledby="latest-h">
+      <SectionHead no="04" title="On the board" id="latest-h">
+        A handful of open listings, one employer at a time. <a href="/search/">Search all {n(c.open_listings)}</a>.
+      </SectionHead>
+      <ul class="rows">
+        {latest.map((s) => <ListingRow s={s} showEmployer />)}
+      </ul>
+    </section>
+  )}
+</Base>
+
+<style>
+  .hero { padding-top: clamp(40px, 7vw, 96px); padding-bottom: clamp(24px, 4vw, 48px); }
+  .hero-kicker { margin: 0 0 28px; }
+  .hero-h {
+    display: grid;
+    gap: 20px;
+    align-items: end;
+    margin-bottom: clamp(32px, 5vw, 64px);
+  }
+  .hero-num {
+    display: block;
+    font-size: clamp(112px, 24vw, 340px);
+    line-height: 0.74;
+    letter-spacing: -0.065em;
+    font-weight: 280;
+    font-style: italic;
+    font-feature-settings: "lnum", "tnum" 0;
+    margin-left: -0.05em;
+  }
+  .hero-words {
+    display: block;
+    font-size: clamp(24px, 2.9vw, 38px);
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    font-weight: 340;
+    max-width: 22ch;
+    padding-bottom: 0.3em;
+  }
+  .hero-words em { font-weight: 450; }
+  @media (min-width: 1000px) {
+    .hero-h { grid-template-columns: auto 1fr; gap: 48px; }
+  }
+  .hero-search { max-width: 860px; }
+
+  .spectrum { margin-top: clamp(40px, 6vw, 72px); }
+  .spectrum-bar {
+    display: flex;
+    gap: 3px;
+    height: 14px;
+    overflow: hidden;
+  }
+  .seg { display: block; min-width: 3px; transform-origin: left; animation: grow 1.2s 0.5s var(--ease) both; }
+  .seg-fresh { background: var(--fresh); }
+  .seg-seen {
+    background: repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 5px);
+  }
+  .seg-long_open { background: var(--long); }
+  .spectrum-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 36px;
+    margin: 16px 0 0;
+  }
+  .spectrum-legend div { display: flex; align-items: baseline; gap: 10px; }
+  .spectrum-legend dd { margin: 0; font-size: 14px; }
+
+  .reveal { animation: rise 0.9s var(--d, 0s) var(--ease) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
+  @keyframes grow { from { transform: scaleX(0); } }
+
+  .more { margin: 32px 0 0; }
+
+  .legend {
+    display: grid;
+    gap: 40px 32px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 640px) { .legend { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1100px) { .legend { grid-template-columns: repeat(4, 1fr); } }
+  .legend-item { display: grid; gap: 14px; align-content: start; }
+  .legend-item h3 { margin-top: 10px; }
+  .legend-item .badge { font-size: 12px; }
+  .legend-item p { margin: 0; color: var(--ink-2); font-size: 17px; }
+  .repost-glyph {
+    height: 22px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    color: var(--repost);
+  }
+  .repost-glyph span { flex: 1; height: 3px; background: var(--closed); }
+  .repost-glyph span:last-child { background: var(--ink); }
+  .repost-glyph i { font-style: normal; font-family: var(--mono); line-height: 1; transform: translateY(5px); }
+  .legend-foot {
+    margin: 48px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-2);
+    font-size: 17px;
+    max-width: 70ch;
+  }
+</style>

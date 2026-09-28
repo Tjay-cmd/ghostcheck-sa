@@ -1,0 +1,48 @@
+---
+import type { Employer } from "../lib/data";
+import { load } from "../lib/data";
+import { fmtDate, fmtTime } from "../lib/format";
+
+interface Props {
+  e: Pick<Employer, "check_status" | "last_run" | "last_successful_check_at" | "consecutive_failed_runs" | "active">;
+  name: string;
+}
+const { e, name } = Astro.props;
+const { rules } = load();
+const what = e.last_run?.status === "blocked" ? "was blocked by the site" : "failed";
+---
+{!e.active && (
+  <div class="banner neutral">
+    <strong>No longer tracked.</strong> We've stopped checking {name}. What's below is the record up to the last check.
+  </div>
+)}
+{e.check_status === "no_data" && (
+  <div class="banner neutral">
+    <strong>Not checked yet.</strong> We've added {name} but haven't completed a successful check. Listings appear after the first one.
+  </div>
+)}
+{e.check_status === "last_run_failed" && (
+  <div class="banner warn">
+    <strong>The latest check {what}</strong> ({fmtDate(e.last_run?.date)}). Figures are from the last successful check on
+    {" "}{fmtDate(e.last_successful_check_at)} at {fmtTime(e.last_successful_check_at)}. Nothing is marked closed on a failed check.
+  </div>
+)}
+{e.check_status === "failed_streak" && (
+  <div class="banner warn strong">
+    <strong>{e.consecutive_failed_runs} checks in a row have failed</strong> (at least {rules.FAILED_STREAK_WARNING_RUNS}).
+    The last successful check was on {fmtDate(e.last_successful_check_at)}, so these listings may be out of date.
+  </div>
+)}
+
+<style>
+  .banner {
+    margin: 0 0 32px;
+    padding: 16px 20px;
+    font-size: 17px;
+    line-height: 1.45;
+    border-left: 3px solid var(--ink-3);
+    background: var(--paper-2);
+  }
+  .warn { border-color: var(--long); background: var(--long-wash); }
+  .strong { border-left-width: 6px; }
+</style>
