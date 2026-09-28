@@ -31,6 +31,9 @@ contract/                      Data contract documentation and validation
   CONTRACT.md                    Complete field specification
   validate.py                    Schema and consistency validator
   schemas/*.schema.json          JSON Schema 2020-12 definitions
+pipeline/                      M1 pipeline: history/ -> data/ (listing IDs, closures, reposts, metrics)
+  ghostcheck_pipeline/           Pipeline package
+  tests/                         Pytest test suite
 site/                          Placeholder for Astro frontend (to be built)
 ```
 
@@ -116,11 +119,29 @@ Tests cover:
 - Storage layer (POPIA field whitelist, date handling, upsert logic)
 - End-to-end run (multi-employer, error isolation, runlog)
 
+## Milestone 1 (M1) Pipeline
+
+`pipeline/` turns `history/` (M0's raw scrape output) into the `data/` contract:
+listing ID generation, closure detection, repost-chain detection, employer
+metrics and overview eligibility. See `pipeline/README.md` for how it works
+and its known limitations.
+
+```bash
+pip install -r pipeline/requirements.txt
+python -m ghostcheck_pipeline.build --repo-root .   # run from pipeline/
+```
+
+Validate the result:
+
+```bash
+cd contract && python validate.py ..
+```
+
 ## Future Phases
 
 After the M0 spike validates the approach:
 
-1. **M1:** Full pipeline with listing ID generation, closure detection, repost chains, employer metrics
+1. ~~**M1:** Full pipeline with listing ID generation, closure detection, repost chains, employer metrics~~ — built, see `pipeline/`
 2. **Static site:** Astro frontend in `site/` reading from `config/` and `data/`
 3. **Public launch:** Search UI, employer pages, overview dashboard
 

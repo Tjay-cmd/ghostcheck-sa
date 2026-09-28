@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-28T09:39:11+02:00",
+  "data_date": "2026-09-27",
+  "default_sort": "share_open_90_desc",
+  "employers": [],
+  "not_yet_eligible": [
+    {
+      "slug": "absa",
+      "name": "Absa Group",
+      "sector": "Banking & Finance",
+      "tracked_since": "2026-09-27",
+      "open_count": 57,
+      "eligible_from": "2026-12-27",
+      "reason": "tracked_days"
+    },
+    {
+      "slug": "discovery",
+      "name": "Discovery",
+      "sector": "Banking & Finance",
+      "tracked_since": "2026-09-27",
+      "open_count": 62,
+      "eligible_from": "2026-12-27",
+      "reason": "tracked_days"
+    },
+    {
+      "slug": "firstrand",
+      "name": "FirstRand (FNB, RMB, WesBank)",
+      "sector": "Banking & Finance",
+      "tracked_since": "2026-09-27",
+      "open_count": 144,
+      "eligible_from": "2026-12-27",
+      "reason": "tracked_days"
+    },
+    {
+      "slug": "goldfields",
+      "name": "Gold Fields",
+      "sector": "Mining & Energy",
+      "tracked_since": "2026-09-27",
+      "open_count": 46,
+      "eligible_from": "2026-12-27",
+      "reason": "tracked_days"
+    },
+    {
+      "slug": "nedbank",
+      "name": "Nedbank",
+      "sector": "Banking & Finance",
+      "tracked_since": "2026-09-27",
+      "open_count": 58,
+      "eligible_from": "2026-12-27",
+      "reason": "tracked_days"
+    },
+    {
+      "slug": "oldmutual",
+      "name": "Old Mutual",
+      "sector": "Banking & Finance",
+      "tracked_since": "2026-09-27",
+      "open_count": 574,
+      "eligible_from": "2026-12-27",
+      "reason": "tracked_days"
+    },
+    {
+      "slug": "picknpay",
+      "name": "Pick n Pay",
+      "sector": "Retail & FMCG",
+      "tracked_since": "2026-09-27",
+      "open_count": 51,
+      "eligible_from": "2026-12-27",
+      "reason": "tracked_days"
+    },
+    {
+      "slug": "sasol",
+      "name": "Sasol",
+      "sector": "Mining & Energy",
+      "tracked_since": "2026-09-27",
+      "open_count": 54,
+      "eligible_from": "2026-12-27",
+      "reason": "tracked_days"
+    },
+    {
+      "slug": "telkom",
+      "name": "Telkom",
+      "sector": "Telecoms & Tech",
+      "tracked_since": "2026-09-27",
+      "open_count": 1,
+      "eligible_from": null,
+      "reason": "tracked_days_and_open_listings"
+    },
+    {
+      "slug": "tigerbrands",
+      "name": "Tiger Brands",
+      "sector": "Retail & FMCG",
+      "tracked_since": "2026-09-27",
+      "open_count": 92,
+      "eligible_from": "2026-12-27",
+      "reason": "tracked_days"
+    }
+  ],
+  "earliest_eligible_from": "2026-12-27"
+}

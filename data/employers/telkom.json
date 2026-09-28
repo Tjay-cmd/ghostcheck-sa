@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "telkom",
+  "slug": "telkom",
+  "name": "Telkom",
+  "sector": "Telecoms & Tech",
+  "ats_type": "successfactors",
+  "source_url": "https://jobs.telkom.co.za/",
+  "active": true,
+  "tracked_since": "2026-09-27",
+  "tracked_days": 0,
+  "has_data": true,
+  "last_run": {
+    "date": "2026-09-27",
+    "time": "12:03",
+    "status": "ok"
+  },
+  "last_successful_check_at": "2026-09-27T12:03:04+02:00",
+  "consecutive_failed_runs": 0,
+  "check_status": "ok",
+  "total_listings_seen": 1,
+  "metrics": {
+    "open_count": {
+      "value": 1,
+      "unit": "count",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": true,
+      "unavailable_reason": null,
+      "available_from": null
+    },
+    "median_days_seen": {
+      "value": null,
+      "unit": "days",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "gate",
+      "available_from": null
+    },
+    "share_open_90": {
+      "value": null,
+      "unit": "percent",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "gate",
+      "available_from": null
+    },
+    "repost_rate": {
+      "value": null,
+      "unit": "percent",
+      "numerator": null,
+      "denominator": null,
+      "window_label": null,
+      "window_start": null,
+      "available": false,
+      "unavailable_reason": "gate",
+      "available_from": null
+    },
+    "long_open_possible_from": "2026-12-27"
+  },
+  "overview": {
+    "eligible": false,
+    "eligible_from": null,
+    "reason": "tracked_days_and_open_listings"
+  },
+  "listings": {
+    "open": [
+      {
+        "listing_id": "vx300x1sxy",
+        "employer_slug": "telkom",
+        "employer_name": "Telkom",
+        "title": "Manager: Facilities Management",
+        "location": "Johannesburg, Gauteng, ZA",
+        "first_seen": "2026-09-27",
+        "last_seen": "2026-09-27",
+        "days_seen": 0,
+        "status": "open",
+        "closed_on": null,
+        "age_state": "seen",
+        "open_before_tracking": true,
+        "reposted": false,
+        "repost_count": 0,
+        "chain_first_seen": null
+      }
+    ],
+    "recently_closed": []
+  }
+}
