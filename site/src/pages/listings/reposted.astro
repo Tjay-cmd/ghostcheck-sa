@@ -1,0 +1,62 @@
+---
+/**
+ * Reposted listings page
+ */
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ListingCard from '@/components/ListingCard.astro';
+import EmptyState from '@/components/EmptyState.astro';
+import { getAllListings } from '@/lib/data';
+import { getChipLabels } from '@/lib/format';
+
+const listings = getAllListings().filter(l => l.reposted && l.repost_count > 0);
+const sortedListings = listings.sort((a, b) => 
+  new Date(b.first_seen).getTime() - new Date(a.first_seen).getTime()
+);
+
+const chipLabels = getChipLabels();
+---
+
+<BaseLayout title="Reposted Listings" description="Job listings that have been reposted">
+  <div class="listings-page">
+    <div class="container">
+      <h1>Reposted Listings</h1>
+      <p class="page-subtitle">
+        {chipLabels.reposted} · {sortedListings.length} listings
+      </p>
+      
+      {sortedListings.length === 0 ? (
+        <EmptyState
+          icon="repeat-2"
+          heading="No reposted listings right now"
+          message="Check back as we track more listings over time."
+        />
+      ) : (
+        <div class="listings-grid">
+          {sortedListings.map((listing) => (
+            <ListingCard listing={listing} showEmployer={true} />
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .listings-page {
+    padding: var(--s-6) 0;
+  }
+
+  .page-subtitle {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-6);
+  }
+
+  .listings-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+  }
+</style>

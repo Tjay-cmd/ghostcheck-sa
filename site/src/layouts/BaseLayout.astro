@@ -1,0 +1,70 @@
+---
+/**
+ * Base Layout - used by all pages
+ */
+
+import SiteHeader from '@/components/SiteHeader.astro';
+import SiteFooter from '@/components/SiteFooter.astro';
+import StaleDataBanner from '@/components/StaleDataBanner.astro';
+import { getSiteConfig } from '@/lib/rules';
+import { getSiteData } from '@/lib/data';
+import '@/styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = 'GhostCheck SA tracks South African employer job listings and shows how long they\'ve been up.',
+  noindex = false,
+} = Astro.props;
+
+const _config = getSiteConfig();
+const site = getSiteData();
+
+const fullTitle = title === 'GhostCheck SA' ? title : `${title} · GhostCheck SA`;
+
+// Cloudflare Web Analytics token (optional)
+const cfToken = import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Stale check data -->
+    {site.stale.stale_after && site.last_successful_run_at && (
+      <meta
+        name="stale-check"
+        data-stale-after={site.stale.stale_after}
+        data-last-checked={site.last_successful_run_at}
+      />
+    )}
+    
+    <!-- Cloudflare Web Analytics -->
+    {cfToken && (
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={JSON.stringify({ token: cfToken })}
+      ></script>
+    )}
+  </head>
+  <body>
+    <SiteHeader />
+    <StaleDataBanner />
+    <main>
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>

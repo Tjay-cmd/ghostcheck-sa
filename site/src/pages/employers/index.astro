@@ -1,0 +1,113 @@
+---
+/**
+ * Employers index - A-Z listing of all employers
+ */
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import { getAllEmployers } from '@/lib/data';
+
+const employers = getAllEmployers();
+const activeEmployers = employers.filter(e => e.active);
+---
+
+<BaseLayout title="Employers A–Z" description="Browse all tracked employers alphabetically">
+  <div class="employers-index">
+    <div class="container">
+      <h1>Employers A–Z</h1>
+      <p class="page-subtitle">
+        {activeEmployers.length} tracked employers
+      </p>
+      
+      <div class="employers-list">
+        {activeEmployers.map((employer) => (
+          <a href={`/employers/${employer.slug}/`} class="employer-row">
+            <div class="employer-info">
+              <div class="employer-name">{employer.name}</div>
+              <div class="employer-meta">
+                <span class="employer-sector">{employer.sector}</span>
+                {employer.has_data && employer.tracked_since && (
+                  <>
+                    <span class="meta-separator">·</span>
+                    <span class="employer-open-count">
+                      {employer.metrics.open_count.value || 0} open
+                    </span>
+                  </>
+                )}
+              </div>
+            </div>
+            <div class="employer-chevron" aria-hidden="true">›</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .employers-index {
+    padding: var(--s-6) 0;
+  }
+
+  .page-subtitle {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-6);
+  }
+
+  .employers-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+  }
+
+  .employer-row {
+    display: flex;
+    align-items: center;
+    gap: var(--s-4);
+    padding: var(--s-4);
+    background: var(--c-bg);
+    border: 1px solid var(--c-border-subtle);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--c-text);
+    transition: border-color 0.2s;
+    min-height: 44px;
+  }
+
+  .employer-row:hover {
+    border-color: var(--c-border);
+  }
+
+  .employer-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .employer-name {
+    font-size: var(--fs-base);
+    font-weight: 600;
+    line-height: var(--lh-base);
+    margin-bottom: var(--s-1);
+  }
+
+  .employer-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+  }
+
+  .meta-separator {
+    color: var(--c-border);
+  }
+
+  .employer-chevron {
+    flex-shrink: 0;
+    font-size: 24px;
+    color: var(--c-text-muted);
+  }
+</style>

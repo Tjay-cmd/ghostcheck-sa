@@ -1,0 +1,514 @@
+---
+/**
+ * Listing detail page - shows full history, repost chain, gaps
+ */
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import AgeBadge from '@/components/AgeBadge.astro';
+import RepostBadge from '@/components/RepostBadge.astro';
+import Banner from '@/components/Banner.astro';
+import Icon from '@/components/Icon.astro';
+import { getAllEmployers, getListingDetail } from '@/lib/data';
+import { formatDate } from '@/lib/format';
+
+export async function getStaticPaths() {
+  const employers = getAllEmployers();
+  const paths = [];
+  
+  for (const employer of employers) {
+    const openListings = employer.listings.open;
+    const closedListings = employer.listings.recently_closed;
+    const allListings = [...openListings, ...closedListings];
+    
+    for (const listing of allListings) {
+      paths.push({
+        params: {
+          slug: employer.slug,
+          listingId: listing.listing_id,
+        },
+      });
+    }
+  }
+  
+  return paths;
+}
+
+const { slug, listingId } = Astro.params;
+const listing = getListingDetail(listingId);
+
+const isClosed = listing.status === 'closed';
+const hasGaps = listing.gaps.length > 0;
+const hasRepostHistory = listing.chain.length > 0;
+const hasLaterReposts = listing.later_reposts.length > 0;
+const checkStatus = listing.employer.check_status;
+---
+
+<BaseLayout
+  title={listing.title}
+  description={`${listing.title} at ${listing.employer_name}`}
+  noindex={isClosed}
+>
+  <div class="listing-page">
+    <div class="container">
+      <div class="listing-header">
+        <a href={`/employers/${listing.employer_slug}/`} class="back-link">
+          <Icon name="chevron-right" size={16} class="back-icon" />
+          <span>Back to {listing.employer_name}</span>
+        </a>
+        
+        <h1>{listing.title}</h1>
+        
+        <div class="listing-meta">
+          <a href={`/employers/${listing.employer_slug}/`} class="listing-employer">
+            <Icon name="building-2" size={16} />
+            {listing.employer_name}
+          </a>
+          {listing.location && (
+            <span class="listing-location">
+              <Icon name="map-pin" size={16} />
+              {listing.location}
+            </span>
+          )}
+        </div>
+        
+        <div class="listing-badges">
+          <AgeBadge
+            ageState={listing.age_state}
+            daysSeen={listing.days_seen}
+            openBeforeTracking={listing.open_before_tracking}
+            trackedSince={listing.open_before_tracking ? listing.first_seen : null}
+            lastSeen={listing.last_seen}
+            variant="full"
+          />
+          
+          {listing.reposted && listing.repost_count > 0 && (
+            <RepostBadge
+              repostCount={listing.repost_count}
+              chainFirstSeen={listing.chain_first_seen}
+              variant="full"
+            />
+          )}
+        </div>
+      </div>
+      
+      {checkStatus !== 'ok' && listing.employer.last_successful_check_at && (
+        <Banner type="info" class="check-banner">
+          <p>
+            We couldn't check this careers page on {listing.employer.last_run?.date ? formatDate(listing.employer.last_run.date) : 'recently'}. Last confirmed listed on {formatDate(listing.last_seen)}.
+          </p>
+        </Banner>
+      )}
+      
+      <div class="apply-card">
+        {isClosed ? (
+          <>
+            <p class="apply-closed">
+              This listing is no longer on {listing.employer_name}'s careers page.
+            </p>
+            <a href={`/employers/${listing.employer_slug}/`} class="btn btn-primary">
+              See {listing.employer_name}'s open listings
+            </a>
+            <a href={listing.url} target="_blank" rel="noopener nofollow" class="btn btn-secondary">
+              Original link (may no longer work)
+              <Icon name="external-link" size={16} />
+            </a>
+          </>
+        ) : (
+          <>
+            <a href={listing.url} target="_blank" rel="noopener nofollow" class="btn btn-primary btn-large">
+              Apply on {listing.employer_name}'s site
+              <Icon name="external-link" size={16} />
+            </a>
+            <p class="apply-helper">
+              Opens the employer's own posting on {listing.apply_domain}. We don't host job descriptions.
+            </p>
+          </>
+        )}
+      </div>
+      
+      <section class="timeline-section">
+        <h2>Timeline</h2>
+        <dl class="fact-list">
+          <dt>First seen</dt>
+          <dd>
+            <time datetime={listing.first_seen}>{formatDate(listing.first_seen)}</time>
+            {listing.open_before_tracking && (
+              <span class="fact-note">Already listed when we started tracking {listing.employer_name}</span>
+            )}
+          </dd>
+          
+          <dt>Last seen</dt>
+          <dd><time datetime={listing.last_seen}>{formatDate(listing.last_seen)}</time></dd>
+          
+          <dt>Days seen</dt>
+          <dd class="tabular">{listing.days_seen}+</dd>
+          
+          <dt>Status</dt>
+          <dd>{isClosed ? 'No longer listed' : 'Still listed'}</dd>
+          
+          {hasGaps && (
+            <>
+              <dt>Gaps</dt>
+              <dd>
+                {listing.gaps.map((gap, i) => (
+                  <div class="gap-item">
+                    Not listed {formatDate(gap.closed_on)} to {formatDate(gap.reopened_on)}, then back with the same job ID
+                  </div>
+                ))}
+              </dd>
+            </>
+          )}
+        </dl>
+        <p class="methodology-link">
+          <a href="/about/#how-age-is-measured">
+            <Icon name="info" size={16} />
+            How we count days
+          </a>
+        </p>
+      </section>
+      
+      {(hasRepostHistory || hasLaterReposts) && (
+        <section class="repost-section">
+          <h2>Repost history</h2>
+          
+          {hasLaterReposts && (
+            <Banner type="info" class="later-repost-notice">
+              <p>
+                A similar listing was posted later on {formatDate(listing.later_reposts[0].first_seen)}.{' '}
+                <a href={`/employers/${listing.employer_slug}/${listing.later_reposts[0].listing_id}/`}>View it</a>
+              </p>
+            </Banner>
+          )}
+          
+          {hasRepostHistory ? (
+            <div class="repost-timeline">
+              <div class="timeline-item timeline-current">
+                <div class="timeline-marker">●</div>
+                <div class="timeline-content">
+                  <div class="timeline-title">This listing</div>
+                  <div class="timeline-dates">
+                    {formatDate(listing.first_seen)} → {isClosed ? formatDate(listing.last_seen) : 'still listed'} · {listing.days_seen}+ days
+                  </div>
+                </div>
+              </div>
+              
+              {listing.chain.map((earlier) => (
+                <div class="timeline-item timeline-earlier">
+                  <div class="timeline-marker">○</div>
+                  <div class="timeline-content">
+                    <div class="timeline-title">
+                      <a href={`/employers/${listing.employer_slug}/${earlier.listing_id}/`}>
+                        Earlier listing
+                      </a>
+                    </div>
+                    <div class="timeline-dates">
+                      {formatDate(earlier.first_seen)} → {formatDate(earlier.last_seen)} · {earlier.days_seen}+ days
+                    </div>
+                    <div class="timeline-basis">Same title and location, new job ID</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p>We haven't seen an earlier listing like this one.</p>
+          )}
+          
+          <p class="methodology-link">
+            <a href="/about/#reposts">
+              <Icon name="info" size={16} />
+              What "Reposted" means
+            </a>
+          </p>
+        </section>
+      )}
+      
+      {listing.more_at_employer.length > 0 && (
+        <section class="more-section">
+          <h2>More open listings at {listing.employer_name}</h2>
+          <ul class="more-list">
+            {listing.more_at_employer.slice(0, 3).map((other) => (
+              <li>
+                <a href={`/employers/${listing.employer_slug}/${other.listing_id}/`}>
+                  {other.title}
+                  {other.age_state === 'fresh' && ' (New)'}
+                  {other.days_seen > 0 && ` (${other.days_seen}+ days)`}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a href={`/employers/${listing.employer_slug}/`} class="see-all-link">
+            See all {listing.employer.open_count} →
+          </a>
+        </section>
+      )}
+      
+      <div class="correction-link">
+        <a href="/about/#corrections">
+          Is something wrong? Request a correction →
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .listing-page {
+    padding: var(--s-6) 0;
+  }
+
+  .listing-header {
+    margin-bottom: var(--s-6);
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-1);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    text-decoration: none;
+    margin-bottom: var(--s-3);
+  }
+
+  .back-link:hover {
+    color: var(--c-primary);
+  }
+
+  .back-icon {
+    transform: rotate(180deg);
+  }
+
+  .listing-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-3);
+    margin-bottom: var(--s-3);
+  }
+
+  .listing-employer,
+  .listing-location {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    color: var(--c-text-muted);
+  }
+
+  .listing-employer {
+    text-decoration: none;
+  }
+
+  .listing-employer:hover {
+    color: var(--c-primary);
+  }
+
+  .listing-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-3);
+  }
+
+  .check-banner {
+    margin-bottom: var(--s-5);
+  }
+
+  .apply-card {
+    padding: var(--s-5);
+    background: var(--c-surface);
+    border-radius: 8px;
+    border: 1px solid var(--c-border-subtle);
+    margin-bottom: var(--s-6);
+  }
+
+  .apply-closed {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    margin-bottom: var(--s-4);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--s-2);
+    padding: var(--s-3) var(--s-4);
+    border-radius: 8px;
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    min-height: 44px;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+  .btn-primary {
+    background: var(--c-primary);
+    color: var(--c-on-primary);
+  }
+
+  .btn-secondary {
+    background: var(--c-bg);
+    color: var(--c-text);
+    border: 1px solid var(--c-border);
+  }
+
+  .btn-large {
+    width: 100%;
+    padding: var(--s-4);
+    font-size: var(--fs-lg);
+    line-height: var(--lh-lg);
+  }
+
+  .apply-helper {
+    margin-top: var(--s-3);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin-bottom: 0;
+  }
+
+  .timeline-section,
+  .repost-section,
+  .more-section {
+    margin-bottom: var(--s-6);
+    padding-bottom: var(--s-6);
+    border-bottom: 1px solid var(--c-border-subtle);
+  }
+
+  .fact-list {
+    display: grid;
+    gap: var(--s-3);
+    margin-bottom: var(--s-4);
+  }
+
+  .fact-list dt {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    font-weight: 600;
+  }
+
+  .fact-list dd {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+  }
+
+  .fact-note {
+    display: block;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin-top: var(--s-1);
+  }
+
+  .gap-item {
+    padding: var(--s-2);
+    background: var(--banner-info-bg);
+    color: var(--banner-info-text);
+    border-radius: 4px;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+  }
+
+  .methodology-link {
+    margin: 0;
+  }
+
+  .methodology-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+  }
+
+  .later-repost-notice {
+    margin-bottom: var(--s-4);
+  }
+
+  .repost-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-4);
+    margin-bottom: var(--s-4);
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: var(--s-3);
+  }
+
+  .timeline-marker {
+    flex-shrink: 0;
+    width: 24px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--c-primary);
+  }
+
+  .timeline-content {
+    flex: 1;
+  }
+
+  .timeline-title {
+    font-weight: 600;
+    margin-bottom: var(--s-1);
+  }
+
+  .timeline-dates {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-1);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .timeline-basis {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+  }
+
+  .more-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--s-3) 0;
+  }
+
+  .more-list li {
+    margin-bottom: var(--s-2);
+  }
+
+  .more-list a {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+  }
+
+  .see-all-link {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+  }
+
+  .correction-link {
+    padding-top: var(--s-5);
+  }
+
+  .correction-link a {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+  }
+
+  @media (min-width: 640px) {
+    .fact-list {
+      grid-template-columns: 140px 1fr;
+      gap: var(--s-2) var(--s-4);
+    }
+  }
+</style>

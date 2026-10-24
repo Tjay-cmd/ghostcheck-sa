@@ -1,0 +1,59 @@
+---
+/**
+ * 404 Not Found page
+ */
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import EmptyState from '@/components/EmptyState.astro';
+---
+
+<BaseLayout title="Page Not Found" description="The requested page was not found" noindex={true}>
+  <div class="not-found-page">
+    <div class="container">
+      <EmptyState
+        icon="search"
+        heading="We can't find that listing"
+        message="It may have been removed after a correction request."
+      >
+        <a href="/" class="btn btn-primary">Search listings</a>
+        <a href="/employers/" class="btn btn-secondary">Browse employers</a>
+      </EmptyState>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found-page {
+    padding: var(--s-8) 0;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--s-2);
+    padding: var(--s-3) var(--s-5);
+    border-radius: 8px;
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    min-height: 44px;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+  .btn-primary {
+    background: var(--c-primary);
+    color: var(--c-on-primary);
+  }
+
+  .btn-secondary {
+    background: var(--c-surface);
+    color: var(--c-text);
+    border: 1px solid var(--c-border);
+  }
+</style>
