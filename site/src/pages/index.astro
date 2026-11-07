@@ -1,0 +1,334 @@
+---
+/**
+ * Home page - shows recent listings with search (client-side)
+ */
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ListingCard from '@/components/ListingCard.astro';
+import EmptyState from '@/components/EmptyState.astro';
+import { getAllListings, getSiteData } from '@/lib/data';
+import { getChipLabels } from '@/lib/format';
+
+const site = getSiteData();
+const allListings = getAllListings();
+
+// Sort by newest first_seen, take first 25
+const recentListings = allListings
+  .sort((a, b) => new Date(b.first_seen).getTime() - new Date(a.first_seen).getTime())
+  .slice(0, 25);
+
+const chipLabels = getChipLabels();
+---
+
+<BaseLayout title="GhostCheck SA" description="Track how long South African employer job listings have been up">
+  <div class="home-page">
+    <div class="container">
+      <div class="home-intro">
+        <h1>How long has that job been up?</h1>
+        <p class="home-subtitle">
+          We check South African employer career pages every day and show how long each listing has been up, and whether it's been posted before.
+        </p>
+      </div>
+      
+      <!-- Search UI (JS-enhanced) -->
+      <div class="search-section">
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Role or employer, e.g. graduate engineer"
+          autocomplete="off"
+        />
+        
+        <div class="filter-chips">
+          <label class="chip-label">
+            <input type="radio" name="age" value="" checked />
+            <span>All</span>
+          </label>
+          <label class="chip-label">
+            <input type="radio" name="age" value="new" />
+            <span>{chipLabels.new}</span>
+          </label>
+          <label class="chip-label">
+            <input type="radio" name="age" value="long_open" />
+            <span>{chipLabels.longOpen}</span>
+          </label>
+          <label class="chip-label">
+            <input type="checkbox" id="reposted-filter" />
+            <span>{chipLabels.reposted}</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="results-header">
+        <p class="results-count">
+          <span id="result-count">{site.counts.open_listings} open listings</span> · {site.counts.employers_tracked} employers
+        </p>
+        <div class="results-controls">
+          <label for="sort-select" class="sr-only">Sort by</label>
+          <select id="sort-select" class="sort-select">
+            <option value="newest">Newest seen</option>
+            <option value="longest">Longest seen</option>
+            <option value="employer">Employer A–Z</option>
+          </select>
+          <a href="/about/#how-age-is-measured" class="methodology-link">How we count ⓘ</a>
+        </div>
+      </div>
+      
+      {recentListings.length === 0 ? (
+        <EmptyState
+          icon="calendar-clock"
+          heading="We're collecting our first listings"
+          message="GhostCheck checks employer career pages once a day. Check back soon."
+        />
+      ) : (
+        <>
+          <div id="search-results" class="listings-grid">
+            {recentListings.map((listing) => (
+              <ListingCard listing={listing} showEmployer={true} />
+            ))}
+          </div>
+          
+          <button id="load-more-btn" class="load-more-btn" style="display: none;">
+            Show 25 more
+          </button>
+        </>
+      )}
+      
+      <div class="browse-links">
+        <h2>Browse without searching</h2>
+        <ul class="browse-list">
+          <li><a href="/listings/new/">New listings</a></li>
+          <li><a href="/listings/open-90-plus/">Open 90+ days</a></li>
+          <li><a href="/listings/reposted/">Reposted</a></li>
+          <li><a href="/employers/">All employers A–Z</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { initSearch } from '@/scripts/search';
+  initSearch();
+</script>
+
+<style>
+  .home-page {
+    padding: var(--s-6) 0;
+  }
+
+  .home-intro {
+    margin-bottom: var(--s-6);
+  }
+
+  .home-intro h1 {
+    font-size: var(--fs-xl);
+    line-height: var(--lh-xl);
+    margin-bottom: var(--s-3);
+  }
+
+  .home-subtitle {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    color: var(--c-text-muted);
+    max-width: 60ch;
+  }
+
+  .search-section {
+    margin-bottom: var(--s-5);
+  }
+
+  .search-input {
+    display: block;
+    width: 100%;
+    padding: var(--s-3) var(--s-4);
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    height: 48px;
+    margin-bottom: var(--s-3);
+  }
+
+  .search-input:focus {
+    outline: 2px solid var(--c-primary);
+    outline-offset: 2px;
+    border-color: var(--c-primary);
+  }
+
+  .filter-chips {
+    display: flex;
+    gap: var(--s-2);
+    overflow-x: auto;
+  }
+
+  .chip-label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-1);
+    padding: var(--s-2) var(--s-3);
+    border: 1px solid var(--c-border);
+    border-radius: 999px;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s, border-color 0.2s;
+    min-height: 44px;
+  }
+
+  .chip-label input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .chip-label:hover {
+    background: var(--c-surface);
+  }
+
+  .chip-label input:checked ~ span {
+    background: var(--c-primary);
+    color: var(--c-on-primary);
+    border-color: var(--c-primary);
+    padding: var(--s-2) var(--s-3);
+    border-radius: 999px;
+  }
+
+  .chip-label:has(input:checked) {
+    background: var(--c-primary);
+    color: var(--c-on-primary);
+    border-color: var(--c-primary);
+  }
+
+  .results-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-3);
+    margin-bottom: var(--s-4);
+    padding-bottom: var(--s-3);
+    border-bottom: 1px solid var(--c-border-subtle);
+  }
+
+  .results-count {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin: 0;
+  }
+
+  .results-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+  }
+
+  .sort-select {
+    padding: var(--s-2) var(--s-3);
+    border: 1px solid var(--c-border);
+    border-radius: 4px;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    background: var(--c-bg);
+    cursor: pointer;
+  }
+
+  .methodology-link {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    text-decoration: none;
+  }
+
+  .methodology-link:hover {
+    color: var(--c-primary);
+  }
+
+  .listings-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+  }
+
+  .load-more-btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: var(--s-5) auto 0;
+    padding: var(--s-3) var(--s-5);
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .load-more-btn:hover {
+    background: var(--c-border-subtle);
+  }
+
+  .browse-links {
+    margin-top: var(--s-7);
+    padding-top: var(--s-6);
+    border-top: 1px solid var(--c-border-subtle);
+  }
+
+  .browse-links h2 {
+    font-size: var(--fs-lg);
+    line-height: var(--lh-lg);
+    margin-bottom: var(--s-4);
+  }
+
+  .browse-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+  }
+
+  .browse-list li {
+    margin: 0;
+  }
+
+  .browse-list a {
+    display: flex;
+    align-items: center;
+    padding: var(--s-3) var(--s-4);
+    background: var(--c-surface);
+    border: 1px solid var(--c-border-subtle);
+    border-radius: 8px;
+    color: var(--c-text);
+    text-decoration: none;
+    min-height: 44px;
+    transition: border-color 0.2s;
+  }
+
+  .browse-list a:hover {
+    border-color: var(--c-border);
+  }
+
+  .browse-list a::after {
+    content: '›';
+    margin-left: auto;
+    font-size: 24px;
+    color: var(--c-text-muted);
+  }
+
+  @media (min-width: 640px) {
+    .browse-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--s-3);
+    }
+  }
+</style>

@@ -1,0 +1,79 @@
+---
+/**
+ * Empty state component
+ */
+
+import Icon from './Icon.astro';
+
+interface Props {
+  icon: string;
+  heading: string;
+  message?: string;
+  class?: string;
+}
+
+const {
+  icon,
+  heading,
+  message,
+  class: className = '',
+} = Astro.props;
+---
+
+<div class:list={['empty-state', className]}>
+  <div class="empty-icon">
+    <Icon name={icon} size={48} />
+  </div>
+  <h2 class="empty-heading">{heading}</h2>
+  {message && <p class="empty-message">{message}</p>}
+  {Astro.slots.has('default') && (
+    <div class="empty-actions">
+      <slot />
+    </div>
+  )}
+</div>
+
+<style>
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--s-8) var(--s-4);
+  }
+
+  .empty-icon {
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-4);
+  }
+
+  .empty-heading {
+    font-size: var(--fs-lg);
+    line-height: var(--lh-lg);
+    font-weight: 600;
+    margin-bottom: var(--s-3);
+    color: var(--c-text);
+  }
+
+  .empty-message {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    color: var(--c-text-muted);
+    max-width: 42ch;
+    margin-bottom: var(--s-4);
+  }
+
+  .empty-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+    align-items: center;
+  }
+
+  @media (min-width: 640px) {
+    .empty-actions {
+      flex-direction: row;
+    }
+  }
+</style>

@@ -1,0 +1,59 @@
+---
+/**
+ * Repost badge component
+ */
+
+import Icon from './Icon.astro';
+import { getRepostBadgeCopy } from '@/lib/format';
+
+interface Props {
+  repostCount: number;
+  chainFirstSeen: string | null;
+  variant?: 'compact' | 'full';
+  class?: string;
+}
+
+const {
+  repostCount,
+  chainFirstSeen,
+  variant = 'compact',
+  class: className = '',
+} = Astro.props;
+
+const { label, ariaLabel } = getRepostBadgeCopy(repostCount, chainFirstSeen, variant);
+---
+
+<span
+  class:list={['badge', 'badge-repost', className]}
+  aria-label={ariaLabel}
+>
+  <Icon name="repeat-2" size={14} />
+  <span class="badge-label">{label}</span>
+</span>
+
+<style>
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-1);
+    height: 24px;
+    padding: 2px var(--s-2);
+    border-radius: 999px;
+    font-size: var(--fs-xs);
+    line-height: var(--lh-xs);
+    font-weight: 600;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .badge-label {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .badge-repost {
+    color: var(--badge-repost-text);
+    background-color: var(--badge-repost-bg);
+    border-color: var(--badge-repost-border);
+  }
+</style>

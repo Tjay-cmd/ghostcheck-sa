@@ -1,0 +1,157 @@
+---
+/**
+ * Age badge component
+ * Shows: New, Seen, Open 90+ days, Up since at least, No longer listed
+ */
+
+import Icon from './Icon.astro';
+import { getAgeBadgeCopy } from '@/lib/format';
+
+interface Props {
+  ageState: 'fresh' | 'seen' | 'long_open' | 'closed';
+  daysSeen: number;
+  openBeforeTracking: boolean;
+  trackedSince: string | null;
+  lastSeen: string | null;
+  variant?: 'compact' | 'full';
+  interactive?: boolean;
+  class?: string;
+}
+
+const {
+  ageState,
+  daysSeen,
+  openBeforeTracking,
+  trackedSince,
+  lastSeen,
+  variant = 'compact',
+  interactive = false,
+  class: className = '',
+} = Astro.props;
+
+const { label, ariaLabel } = getAgeBadgeCopy(
+  ageState,
+  daysSeen,
+  openBeforeTracking,
+  trackedSince,
+  lastSeen,
+  variant
+);
+
+// Icon mapping
+const iconMap = {
+  fresh: 'sprout',
+  seen: openBeforeTracking ? 'calendar-clock' : 'clock',
+  long_open: 'hourglass',
+  closed: 'archive',
+};
+
+// Style mapping
+const styleMap = {
+  fresh: 'badge-new',
+  seen: 'badge-seen',
+  long_open: 'badge-long',
+  closed: 'badge-closed',
+};
+
+const icon = iconMap[ageState];
+const badgeClass = styleMap[ageState];
+const isDashed = (ageState === 'seen' || ageState === 'long_open') && openBeforeTracking;
+const hasLeftAccent = ageState === 'long_open';
+---
+
+<span
+  class:list={[
+    'badge',
+    badgeClass,
+    {
+      'badge-dashed': isDashed,
+      'badge-left-accent': hasLeftAccent,
+      'badge-dotted': ageState === 'closed',
+      'badge-interactive': interactive,
+    },
+    className,
+  ]}
+  role={interactive ? 'button' : undefined}
+  tabindex={interactive ? 0 : undefined}
+  aria-label={ariaLabel}
+>
+  <Icon name={icon} size={14} />
+  <span class="badge-label">{label}</span>
+</span>
+
+<style>
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-1);
+    height: 24px;
+    padding: 2px var(--s-2);
+    border-radius: 999px;
+    font-size: var(--fs-xs);
+    line-height: var(--lh-xs);
+    font-weight: 600;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .badge-label {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* New badge */
+  .badge-new {
+    color: var(--badge-new-text);
+    background-color: var(--badge-new-bg);
+    border-color: var(--badge-new-border);
+  }
+
+  /* Seen badge */
+  .badge-seen {
+    color: var(--badge-seen-text);
+    background-color: var(--badge-seen-bg);
+    border-color: var(--badge-seen-border);
+  }
+
+  /* Open 90+ badge */
+  .badge-long {
+    color: var(--badge-long-text);
+    background-color: var(--badge-long-bg);
+    border-color: var(--badge-long-border);
+  }
+
+  .badge-left-accent {
+    border-left-width: 2px;
+  }
+
+  /* Closed badge */
+  .badge-closed {
+    color: var(--badge-closed-text);
+    background-color: var(--badge-closed-bg);
+    border-color: var(--badge-closed-border);
+  }
+
+  /* Border styles */
+  .badge-dashed {
+    border-style: dashed;
+  }
+
+  .badge-dotted {
+    border-style: dotted;
+  }
+
+  /* Interactive */
+  .badge-interactive {
+    cursor: pointer;
+  }
+
+  .badge-interactive:hover {
+    opacity: 0.9;
+  }
+
+  .badge-interactive:focus-visible {
+    outline: 2px solid var(--c-primary);
+    outline-offset: 2px;
+  }
+</style>
