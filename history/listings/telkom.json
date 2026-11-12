@@ -15,7 +15,7 @@
    "location": "Rustenburg, North West, ZA",
    "url": "https://jobs.telkom.co.za/job/Rustenburg-Area-Sales-Manager-CSB-Regions-Nort/1425688633/",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-11"
+   "last_seen": "2026-11-12"
   },
   {
    "ats_job_id": "1439567333",
@@ -191,7 +191,7 @@
    "location": "Centurion, Gauteng, ZA",
    "url": "https://jobs.telkom.co.za/job/Centurion-Tech-Officer-Network-Engineer-Gaut/1455571133/",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-11"
+   "last_seen": "2026-11-12"
   },
   {
    "ats_job_id": "1455616233",
@@ -199,7 +199,7 @@
    "location": "Centurion, Gauteng, ZA",
    "url": "https://jobs.telkom.co.za/job/Centurion-Specialist-Contract-Compliance-and-Systems-Info-Management-Gaut/1455616233/",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-11"
+   "last_seen": "2026-11-12"
   },
   {
    "ats_job_id": "1456217733",
@@ -208,6 +208,46 @@
    "url": "https://jobs.telkom.co.za/openserve/job/Centurion-Snr-Specialist-CEO-Office-%28OS%29-Gaut/1456217733/",
    "first_seen": "2026-11-11",
    "last_seen": "2026-11-11"
+  },
+  {
+   "ats_job_id": "1456465433",
+   "title": "Tech Officer: CNFO Mast and Towers Climber",
+   "location": "Johannesburg, Gauteng, ZA",
+   "url": "https://jobs.telkom.co.za/openserve/job/Johannesburg-Tech-Officer-CNFO-Mast-and-Towers-Climber-Gaut/1456465433/",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12"
+  },
+  {
+   "ats_job_id": "1456500733",
+   "title": "Tech Officer: NFO Customer Facing",
+   "location": "Piet Retief, Mpumalanga, ZA",
+   "url": "https://jobs.telkom.co.za/job/Piet-Retief-Tech-Officer-NFO-Customer-Facing-Mpum/1456500733/",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12"
+  },
+  {
+   "ats_job_id": "1456508533",
+   "title": "Tech Officer: Core Network Field Ops",
+   "location": "Brits, North West, ZA",
+   "url": "https://jobs.telkom.co.za/job/Brits-Tech-Officer-Core-Network-Field-Ops-Nort/1456508533/",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12"
+  },
+  {
+   "ats_job_id": "1456696833",
+   "title": "Branch Manager: Owned & Operated Stores",
+   "location": "Pretoria, Gauteng, ZA",
+   "url": "https://jobs.telkom.co.za/job/Pretoria-Branch-Manager-Owned-&-Operated-Stores-Gaut/1456696833/",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12"
+  },
+  {
+   "ats_job_id": "1456710633",
+   "title": "Ops Specialist: Billing Operations",
+   "location": "Centurion, Gauteng, ZA",
+   "url": "https://jobs.telkom.co.za/openserve/job/Centurion-Ops-Specialist-Billing-Operations-Gaut/1456710633/",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12"
   }
  ]
 }
