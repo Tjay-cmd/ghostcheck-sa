@@ -159,7 +159,7 @@
    "location": "Centurion, Gauteng, ZA",
    "url": "https://jobs.telkom.co.za/job/Centurion-Snr-Manager-Digital-&-Integration-DevOp-Gaut/1452122133/",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-19"
   },
   {
    "ats_job_id": "1452592633",
@@ -239,7 +239,7 @@
    "location": "Pretoria, Gauteng, ZA",
    "url": "https://jobs.telkom.co.za/job/Pretoria-Branch-Manager-Owned-&-Operated-Stores-Gaut/1456696833/",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-19"
   },
   {
    "ats_job_id": "1456710633",
@@ -247,7 +247,7 @@
    "location": "Centurion, Gauteng, ZA",
    "url": "https://jobs.telkom.co.za/openserve/job/Centurion-Ops-Specialist-Billing-Operations-Gaut/1456710633/",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-19"
   },
   {
    "ats_job_id": "1456984133",
@@ -255,7 +255,7 @@
    "location": "Centurion, Gauteng, ZA",
    "url": "https://jobs.telkom.co.za/job/Centurion-Functional-Specialist-Administrator-Ret-Gaut/1456984133/",
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-19"
   },
   {
    "ats_job_id": "1457220633",
@@ -263,15 +263,15 @@
    "location": "Centurion, Gauteng, ZA",
    "url": "https://jobs.telkom.co.za/job/Centurion-Functional-Man-Network-Centre-Operation-Gaut/1457220633/",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-19"
   },
   {
    "ats_job_id": "1457417433",
    "title": "Tech Officer: Cable Joint/Construct/LMT",
    "location": "Butterworth, Eastern Cape, ZA",
-   "url": "https://jobs.telkom.co.za/bcx/job/Butterworth-Tech-Officer-Cable-JointConstructLMT-East/1457417433/",
+   "url": "https://jobs.telkom.co.za/BCX/job/Butterworth-Tech-Officer-Cable-JointConstructLMT-East/1457417433/",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-19"
   },
   {
    "ats_job_id": "1457475933",
@@ -279,7 +279,7 @@
    "location": "Brits, North West, ZA",
    "url": "https://jobs.telkom.co.za/job/Brits-Tech-Officer-CNFO-Mast-and-Towers-Climber-Nort/1457475933/",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-19"
   },
   {
    "ats_job_id": "1457476533",
@@ -295,7 +295,23 @@
    "location": "Burgersfort, Limpopo Province, ZA",
    "url": "https://jobs.telkom.co.za/job/Burgersfort-Tech-Officer-Cable-JointConstructLMT-Limp/1457701733/",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-19"
+  },
+  {
+   "ats_job_id": "1458495033",
+   "title": "Snr Manager: Customer Programme Management",
+   "location": "Centurion, Gauteng, ZA",
+   "url": "https://jobs.telkom.co.za/openserve/job/Centurion-Snr-Manager-Customer-Programme-Management-Gaut/1458495033/",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19"
+  },
+  {
+   "ats_job_id": "1458811033",
+   "title": "Tech Officer: Network Field Operations",
+   "location": "Johannesburg, Gauteng, ZA",
+   "url": "https://jobs.telkom.co.za/openserve/job/Johannesburg-Tech-Officer-Network-Field-Operations-Gaut/1458811033/",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19"
   }
  ]
 }
