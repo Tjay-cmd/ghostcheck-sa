@@ -1,0 +1,335 @@
+---
+/**
+ * Employer detail page - shows metrics and listings for one employer
+ */
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Banner from '@/components/Banner.astro';
+import MetricCard from '@/components/MetricCard.astro';
+import ListingCard from '@/components/ListingCard.astro';
+import EmptyState from '@/components/EmptyState.astro';
+import Icon from '@/components/Icon.astro';
+import { getAllEmployers, getEmployerData } from '@/lib/data';
+import { formatDate, formatDateTime, getMetricGateMessage, getLongOpenEarlyMessage } from '@/lib/format';
+import { getRules } from '@/lib/rules';
+
+export async function getStaticPaths() {
+  const employers = getAllEmployers();
+  return employers.map((employer) => ({
+    params: { slug: employer.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const employer = getEmployerData(slug);
+const rules = getRules();
+
+const openListings = employer.listings.open;
+const recentlyClosed = employer.listings.recently_closed;
+const hasData = employer.has_data;
+const checkStatus = employer.check_status;
+const isGateNotMet = !employer.metrics.median_days_seen.available;
+---
+
+<BaseLayout title={employer.name} description={`View ${employer.name}'s job listing history and metrics`}>
+  <div class="employer-page">
+    <div class="container">
+      <div class="employer-header">
+        <a href="/employers/" class="back-link">
+          <Icon name="chevron-right" size={16} class="back-icon" />
+          <span>All employers</span>
+        </a>
+        
+        <h1>{employer.name}</h1>
+        <div class="employer-meta">
+          <span>{employer.sector}</span>
+          <span class="meta-separator">·</span>
+          <span class="ats-label">{employer.ats_type}</span>
+        </div>
+        
+        {hasData && employer.tracked_since && (
+          <div class="employer-tracking">
+            <p class="tracking-line">
+              <Icon name="calendar-clock" size={16} />
+              Tracked since {formatDate(employer.tracked_since)}
+            </p>
+            {employer.last_successful_check_at && (
+              <p class="tracking-line">
+                <Icon name="refresh-cw" size={16} />
+                Last checked {formatDateTime(employer.last_successful_check_at)}
+              </p>
+            )}
+          </div>
+        )}
+      </div>
+      
+      {checkStatus !== 'ok' && checkStatus !== 'never_succeeded' && employer.last_successful_check_at && employer.last_run && (
+        <Banner type="info" class="check-banner">
+          <p>
+            {checkStatus === 'failed_streak' ? (
+              <>We haven't been able to check {employer.name}'s careers page since {formatDate(employer.last_run.date)}. Listings below may be out of date.</>
+            ) : (
+              <>We couldn't check {employer.name}'s careers page on {formatDate(employer.last_run.date)}. Figures below are from the last successful check on {formatDate(employer.last_successful_check_at.split('T')[0])}.</>
+            )}
+          </p>
+        </Banner>
+      )}
+      
+      {!hasData ? (
+        <EmptyState
+          icon="calendar-clock"
+          heading={`We've added ${employer.name} but haven't completed a check yet`}
+          message="Check back soon for listings and metrics."
+        />
+      ) : (
+        <>
+          <div class="metrics-grid">
+            {isGateNotMet ? (
+              <div class="metric-gate-notice">
+                <Banner type="info">
+                  <p>
+                    {getMetricGateMessage(
+                      employer.name,
+                      employer.metrics.median_days_seen.available_from
+                    )}
+                  </p>
+                </Banner>
+              </div>
+            ) : (
+              <>
+                <MetricCard label="median days seen" metric={employer.metrics.median_days_seen} />
+                <MetricCard 
+                  label="open 90+ days" 
+                  metric={employer.metrics.share_open_90}
+                  note={employer.metrics.long_open_possible_from ? getLongOpenEarlyMessage(employer.metrics.long_open_possible_from) : undefined}
+                />
+                <MetricCard label="reposted" metric={employer.metrics.repost_rate} />
+              </>
+            )}
+            <MetricCard label="open listings" metric={employer.metrics.open_count} />
+          </div>
+          
+          <div class="context-note">
+            <p>
+              Long-open and reposted listings are common for graduate programmes, bursaries and talent pools.{' '}
+              <a href="/about/#how-age-is-measured">What these numbers mean →</a>
+            </p>
+          </div>
+          
+          <section class="listings-section">
+            <h2>Open listings ({openListings.length})</h2>
+            
+            {openListings.length === 0 ? (
+              <EmptyState
+                icon="building-2"
+                heading={`${employer.name} has no open listings on its careers page right now`}
+                message="We'll keep checking daily."
+              />
+            ) : (
+              <div class="listings-grid">
+                {openListings.map((listing) => (
+                  <ListingCard listing={listing} showEmployer={false} />
+                ))}
+              </div>
+            )}
+          </section>
+          
+          {recentlyClosed.length > 0 && (
+            <details class="recently-closed">
+              <summary>Recently no longer listed ({recentlyClosed.length})</summary>
+              <div class="listings-grid">
+                {recentlyClosed.map((listing) => (
+                  <ListingCard listing={listing} showEmployer={false} />
+                ))}
+              </div>
+            </details>
+          )}
+          
+          <div class="employer-links">
+            <a href={employer.source_url} target="_blank" rel="noopener noreferrer" class="external-link">
+              Official careers site
+              <Icon name="external-link" size={16} />
+            </a>
+            <a href={`/about/#corrections`} class="correction-link">
+              Is something wrong? Request a correction →
+            </a>
+          </div>
+        </>
+      )}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .employer-page {
+    padding: var(--s-6) 0;
+  }
+
+  .employer-header {
+    margin-bottom: var(--s-6);
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-1);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    text-decoration: none;
+    margin-bottom: var(--s-3);
+  }
+
+  .back-link:hover {
+    color: var(--c-primary);
+  }
+
+  .back-icon {
+    transform: rotate(180deg);
+  }
+
+  .employer-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-3);
+  }
+
+  .meta-separator {
+    color: var(--c-border);
+  }
+
+  .ats-label {
+    text-transform: uppercase;
+    font-size: var(--fs-xs);
+  }
+
+  .employer-tracking {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+    margin-top: var(--s-3);
+  }
+
+  .tracking-line {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin: 0;
+  }
+
+  .check-banner {
+    margin-bottom: var(--s-5);
+  }
+
+  .metrics-grid {
+    display: grid;
+    gap: var(--s-4);
+    margin-bottom: var(--s-5);
+  }
+
+  .metric-gate-notice {
+    grid-column: 1 / -1;
+  }
+
+  .context-note {
+    padding: var(--s-3);
+    background: var(--c-surface);
+    border-radius: 8px;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-6);
+  }
+
+  .context-note p {
+    margin: 0;
+  }
+
+  .listings-section {
+    margin-bottom: var(--s-6);
+  }
+
+  .listings-section h2 {
+    margin-bottom: var(--s-4);
+  }
+
+  .listings-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+  }
+
+  .recently-closed {
+    margin-bottom: var(--s-6);
+    border: 1px solid var(--c-border-subtle);
+    border-radius: 8px;
+    padding: var(--s-4);
+  }
+
+  .recently-closed summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    user-select: none;
+  }
+
+  .recently-closed summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .recently-closed summary::before {
+    content: '▸';
+    display: inline-block;
+    margin-right: var(--s-2);
+    transition: transform 0.2s;
+  }
+
+  .recently-closed[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .recently-closed .listings-grid {
+    margin-top: var(--s-4);
+  }
+
+  .employer-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+    padding-top: var(--s-5);
+    border-top: 1px solid var(--c-border-subtle);
+  }
+
+  .external-link,
+  .correction-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+  }
+
+  @media (min-width: 640px) {
+    .metrics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .metrics-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .employer-links {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+</style>

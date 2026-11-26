@@ -1,0 +1,38 @@
+---
+/**
+ * Last Checked Chip - shows when data was last checked
+ */
+
+import Icon from './Icon.astro';
+import { formatTime } from '@/lib/format';
+import { getSiteData } from '@/lib/data';
+
+const site = getSiteData();
+const lastChecked = site.last_successful_run_at;
+const time = lastChecked ? formatTime(lastChecked) : 'unknown';
+---
+
+<span class="last-checked-chip">
+  <Icon name="refresh-cw" size={14} />
+  <span>Checked today, {time}</span>
+</span>
+
+<script>
+  // Optional: convert to relative time on client
+  // For now, just show the absolute time
+</script>
+
+<style>
+  .last-checked-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-1);
+    padding: var(--s-1) var(--s-2);
+    background: var(--c-surface);
+    border-radius: 999px;
+    font-size: var(--fs-xs);
+    line-height: var(--lh-xs);
+    color: var(--c-text-muted);
+    white-space: nowrap;
+  }
+</style>

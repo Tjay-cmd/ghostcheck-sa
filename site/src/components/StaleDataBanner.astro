@@ -1,0 +1,60 @@
+---
+/**
+ * Stale Data Banner - shown when last check is too old
+ */
+
+import Banner from './Banner.astro';
+import { formatDateTime } from '@/lib/format';
+import { getSiteData } from '@/lib/data';
+
+const site = getSiteData();
+const stale = site.stale;
+---
+
+{stale.stale_at_build && stale.last_run_date && (
+  <Banner type="warning" class="stale-banner">
+    <p>
+      <strong>Our daily check hasn't run since {formatDateTime(stale.last_run_date)}.</strong>{' '}
+      Numbers may be out of date.
+    </p>
+  </Banner>
+)}
+
+<script>
+  // Client-side check for staleness
+  const staleAfter = document.querySelector('[data-stale-after]');
+  if (staleAfter) {
+    const staleAfterTime = staleAfter.getAttribute('data-stale-after');
+    const lastChecked = staleAfter.getAttribute('data-last-checked');
+    
+    if (staleAfterTime && lastChecked) {
+      const staleAfterDate = new Date(staleAfterTime);
+      const now = new Date();
+      
+      if (now > staleAfterDate) {
+        const banner = document.createElement('div');
+        banner.className = 'banner banner-warning stale-banner';
+        banner.setAttribute('role', 'status');
+        banner.innerHTML = `
+          <div class="banner-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+          </div>
+          <div class="banner-content">
+            <p><strong>Our daily check hasn't run recently.</strong> Numbers may be out of date.</p>
+          </div>
+        `;
+        
+        const header = document.querySelector('header');
+        if (header && header.nextSibling) {
+          header.parentNode?.insertBefore(banner, header.nextSibling);
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  .stale-banner {
+    margin-bottom: var(--s-4);
+  }
+</style>
